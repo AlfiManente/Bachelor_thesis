@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/thesis"] 1762470325.46997 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1762470346.37154 0
-  "build/thesis.bcf" 1762470345.82689 109306 26953f410df2288e695603410fceb4ba "lualatex"
+["biber build/thesis"] 1763051233.60699 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1763051246.24413 0
+  "build/thesis.bcf" 1763051245.63456 109306 26953f410df2288e695603410fceb4ba "lualatex"
   "references.bib" 1689752110 3224 cb0f2026a86d6546926c9f0fbc4ab6d8 ""
   (generated)
   "build/thesis.bbl"
   "build/thesis.blg"
   (rewritten before read)
-["lualatex"] 1762470341.41409 "thesis.tex" "build/thesis.pdf" "thesis" 1762470346.37187 0
+["lualatex"] 1763051240.37964 "thesis.tex" "build/thesis.pdf" "thesis" 1763051246.24457 0
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -238,6 +238,7 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1749582435.61989 127345 444420d954a0d4be0dfafcd355add72e ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1749582439.52413 128317 67112028f60489335697cab7d1cffea5 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1749582439.78414 127688 a393d0dc675d433979153263e4b79290 ""
+  "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc" 1750969262.13094 128939 bb9aab2eb6f650830ca662cf07386ef2 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc" 1749582440.22617 125985 8af6da6c8028b5d87a2cd3ba63821a52 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc" 1749672825.60332 135564 f3b8ac1e8bbd14f2ddde66e404f95638 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1749582440.15817 128164 afd4b820b28a615704bd908b35e55bde ""
@@ -252,12 +253,12 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1760631790 5631844 454969244ed651204b7a3d3851d8276d ""
   "Plots/Histogramm.pdf" 1689752110 119320 5f91f729ea4b1950f46273316b5dfc12 ""
   "Plots/texmaker.png" 1689752110 18692 f015087942be308a2c67da6ce54e1b7f ""
-  "build/thesis.aux" 1762470345.81389 10802 fc62d310022bbfa52eb5584d1fabe178 "lualatex"
-  "build/thesis.bbl" 1762470331.42323 11475 52bbfe77fa46d1af55813091d706d8f5 "biber build/thesis"
-  "build/thesis.run.xml" 1762470345.8285 2447 f9d685a9166f2a7795bee1dce0927d14 "lualatex"
-  "build/thesis.toc" 1762470345.82489 1337 d628afad395503cbd98066da02d696c2 "lualatex"
-  "content/00_abstract.tex" 1689752110 424 37da04fed18247ff2fdbb3f6b0dc70de ""
-  "content/01_einleitung.tex" 1689752110 495 abd2416eb054faba815ef65b974e5c39 ""
+  "build/thesis.aux" 1763051245.62056 10824 4645cc4d1c4f462f82de43d34a0593fe "lualatex"
+  "build/thesis.bbl" 1763051234.8013 11475 52bbfe77fa46d1af55813091d706d8f5 "biber build/thesis"
+  "build/thesis.run.xml" 1763051245.63658 2447 f9d685a9166f2a7795bee1dce0927d14 "lualatex"
+  "build/thesis.toc" 1763051245.63256 1339 373f322b719aebfc3a9524296467a594 "lualatex"
+  "content/00_abstract.tex" 1763049763.60245 1215 26f130fa55383a8c6774692f7a1e59be ""
+  "content/01_einleitung.tex" 1763051226.30342 1181 56132eb0185a526b52ba75e6bba51b92 ""
   "content/02_struktur.tex" 1689752110 1861 6a0d745a27ce023f5497e1ee90df8a0c ""
   "content/03_grundlagen.tex" 1689752110 8902 770a6fb2b0bc3663cf4e4d68d5c56e83 ""
   "content/04_figs_tabs.tex" 1689752110 2158 db7f8ce8bb66a163da47dd8c965655fb ""
@@ -265,7 +266,7 @@
   "content/a_anhang.tex" 1689752110 275 751a760c85d178f3467917b9d9f2b6bc ""
   "content/hints.tex" 1689752110 1545 c52a368b61e9125206f505d76a9d5790 ""
   "logos/tu-logo.pdf" 1689752110 13157 1c5905f8a3419899042add57a2182b18 ""
-  "thesis.tex" 1689752110 6403 6c7c605288d52afeac3713fb0f53d967 ""
+  "thesis.tex" 1762890114.13905 6502 11a3133e0804a90905e49f4a1a9f910e ""
   "tudothesis.cls" 1689752110 3685 b0bb31b030adef56ee034961847fd78d ""
   (generated)
   "build/thesis.aux"
