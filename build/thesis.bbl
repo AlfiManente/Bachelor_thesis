@@ -16,5 +16,43 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{UZH_SM}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=be92dfc662c321cabc4e30411fc92db0}{%
+           family={Serra},
+           familyi={S\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{bibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorbibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authornamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Standard Model}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+      \verb{url}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{atlas_higgs}
+  \missing{cms_higgs}
+  \missing{higgs}
+  \missing{higgs_mass}
+\endrefsection
 \endinput
 
