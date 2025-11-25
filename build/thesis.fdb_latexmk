@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/thesis"] 1763717285.77537 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1763717296.90715 0
-  "build/thesis.bcf" 1763717296.40777 108928 c583c24c85bb28d6d615c1ef65a7a060 "lualatex"
+["biber build/thesis"] 1764028801.20857 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1764028813.39706 0
+  "build/thesis.bcf" 1764028812.84755 109063 bcf7171da9d8e252b270c383f2024afb "lualatex"
   "references.bib" 1763712781.37303 166 13d49508b4a61ef476a36d6db598e3fe ""
   (generated)
   "build/thesis.bbl"
   "build/thesis.blg"
   (rewritten before read)
-["lualatex"] 1763717291.91099 "thesis.tex" "build/thesis.pdf" "thesis" 1763717296.90749 0
+["lualatex"] 1764028807.90818 "thesis.tex" "build/thesis.pdf" "thesis" 1764028813.39741 0
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -14,6 +14,7 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf" 1255129361 110496 b9c8767d4cc3bf3f4b21f676bf89aa78 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1255129361 110400 d844cffffa1af59f9d2bb1bfdb6f1a2c ""
+  "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf" 1255129361 111872 0b5e13b31880d81af0a80d609d006699 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf" 1255129361 111948 cee9e390fd6d23cfb4d6871ba2a9ee5b ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf" 1255129361 108740 82741d58d9334b5242a3acb1d982bd05 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf" 1255129361 118508 34f973aec7dfcf01fb8c0a36b108dcd2 ""
@@ -245,13 +246,13 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1760632366.54958 376334 2df6f5fdc025450ae36d3a0780b892cb ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/tex/generic/config/language.dat" 1760631587.50663 6852 a999c2c6d6731f81509e518672d1bd97 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1760631790 5631844 454969244ed651204b7a3d3851d8276d ""
-  "build/thesis.aux" 1763717296.39677 7320 1b9cdf489ae0efa083851b6a45f94ae7 "lualatex"
-  "build/thesis.bbl" 1763717286.85972 1837 bd244f96a2c4c8a500c639a9ff045672 "biber build/thesis"
-  "build/thesis.run.xml" 1763717296.40938 2447 f9d685a9166f2a7795bee1dce0927d14 "lualatex"
-  "build/thesis.toc" 1763717296.40577 843 ca5e5215cb4a12f0dee434440dd45267 "lualatex"
+  "build/thesis.aux" 1764028812.83655 8899 9d9ac1633e4c62de723b9b70e48a30a1 "lualatex"
+  "build/thesis.bbl" 1764028802.34213 1862 c3a6b8429ae37f5909a5160ff523afbf "biber build/thesis"
+  "build/thesis.run.xml" 1764028812.85008 2447 6dc6d7096b36570b09ad9062b6bbc292 "lualatex"
+  "build/thesis.toc" 1764028812.84555 1302 1959d8bd11ade0aad429e6d1e590cb9d "lualatex"
   "content/00_abstract.tex" 1763495315.20877 1970 7abd30ffca134e7f9fb6aec70aa40067 ""
-  "content/01_introduction.tex" 1763685756.51545 2741 a798980927d56dc34e805de3f97a756c ""
-  "content/02_theory.tex" 1763717276.55101 4758 717f76353783c5222b34a12cb9358562 ""
+  "content/01_introduction.tex" 1764028727.49511 2763 68ac2529b538afeb4b2338cf303421ad ""
+  "content/02_theory.tex" 1764028793.16302 9265 bbdb85538326899f07c0ee5e9190360e ""
   "content/03_detector.tex" 1763684490.76946 35 1f345c79d0ff505946f99947977d331c ""
   "content/04_object_event.tex" 1763684444.16596 64 bee6fa392af2770f30b729eeb4991213 ""
   "content/05_study.tex" 1763684420.99848 49 a14280a07f3f0571992a0f02d4541958 ""
@@ -259,8 +260,9 @@
   "content/Eidesstattliche_Versicherung.pdf" 1689752110 82694 1cc820dc3b02e947f02bbe73189f6c6f ""
   "content/a_anhang.tex" 1689752110 275 751a760c85d178f3467917b9d9f2b6bc ""
   "imgs/SM1.png" 1763712082.53751 544470 d8dbc8c8021105c11d9ecac39686f921 ""
+  "imgs/fig_10.png" 1762290654.70753 140750 1ec5e8595e3fc28357cf7ad52872091b ""
   "logos/tu-logo.pdf" 1689752110 13157 1c5905f8a3419899042add57a2182b18 ""
-  "thesis.tex" 1763714592.39164 7087 f16fd5b92c7adb83504413183265fcf7 ""
+  "thesis.tex" 1764025279.23041 7156 8971648b04982a259bb6bc50074aa1cd ""
   "tudothesis.cls" 1689752110 3685 b0bb31b030adef56ee034961847fd78d ""
   (generated)
   "build/thesis.aux"
