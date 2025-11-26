@@ -1,2 +1,59 @@
 \chapter{objet definition  and event selection}
 \label{chapter4}
+
+\section{Monte Carlo Samples}
+
+Das hier ist im Prinzip was ich verstehen muss und dazu kann ich mehr in Niklas Master These lesen
+
+\begin{itemize}
+    \item analysis by studying simulations of signal and background processes and seperating them
+    \item Processes are simulated with different monte carlo simulators, which each simulate any process better or worse
+    \item what part is simulated with data? Multijet?
+    \item hard interaction with pertubative theory
+    \item strong coupling non-pertubative
+    \item parton showers and hadronisation described by phenomological models
+    \item PYTHIA: Lund String model, HERWIG: heavy cluster model,
+    \item Matrix element calculation by POWHEG BOX, SHERPA or aMC@NLO
+    \item EVTGEN for heavy flavour decays 
+\end{itemize}
+
+\begin{itemize}
+    \item Welche Programme wurden für welche Samples von welchen Prozessen benutzt?
+    \item Wo kann ich diese nachlesen? Die stehen halt im Container Namen ;( + mehr Details bei AMI nachlesen
+    \item Wieso wurden diese Programme und Generatoren für die verschiedenen Prozesse benutzt?
+    \item Welche Prozesse habe ich jetzt genutzt?
+    \begin{itemize}
+        \item single top s-channel ist unser signal
+        \item $\ttbar background$ dominant background
+        \item single top $t$ channel
+        \item single top $\overline{t}$
+        \item $\overline{t}$ + W? Was ist das für ein Prozess?
+        \item $t$ + W ?
+        \item W lep nu, mit veto. Wieso genau haben wir diese benutzt?
+        \item z ee ?
+        \item z mu mu?
+        \item z tau tau?
+    \end{itemize}
+    \item was gibt es dort für wichtige Parameter? $p_\rm{T}^\text{hard}$? $h_\text{damp}$?
+    \item Zuerst Signal simulation und dann background von der Reihenfolge her
+    \item ATLAS Detector Response simulation vie GEANT4 (fullsim) or ATLfast(fastsim)
+\end{itemize}
+
+\section{object definition}
+
+\begin{itemize}
+    \item Nach welchen teilchen schauen wir in der Signatur? leptons (e,\mu), neutrinos through $\etmiss$, jets and b-tagged jets
+    \item Ansprechen dass Tau nicht gemessen wird wegen short lifetime, aber decay particles can be possible
+    \item Likelihood criteria? isolation criteria?
+    \item $\pT$ und $|\eta|$ definitionen für tight and loose particles
+    \item transverse and longitudinal impact parameter specification: $|z_0 \sin \theta|<\SI{0.5}{\mm}$ und $|d_0/\sigma(d_0)|<5$
+    \item anti-$k_t$ jet algo?
+\end{itemize}
+
+\section{event selection}
+
+\begin{itemize}
+    \item state preselection (TopCP)
+    \item table with final selection (FF) 
+    \item 
+\end{itemize}
