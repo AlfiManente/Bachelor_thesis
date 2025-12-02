@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Bianchi:2837191}{unpublished}{}{}
+      \name{author}{2}{}{%
+        {{hash=95eb0ac335bc193a5030f51eff45afaf}{%
+           family={Bianchi},
+           familyi={B\bibinitperiod},
+           given={Riccardo\bibnamedelima Maria},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{fullhash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{fullhashraw}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{bibnamehash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{authorbibnamehash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{authornamehash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{authorfullhash}{19ce8d4b291243c2a83925ecf5e8112d}
+      \strng{authorfullhashraw}{19ce8d4b291243c2a83925ecf5e8112d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{General Photo}
+      \field{title}{{ATLAS experiment schematic or layout illustration}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2837191
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2837191
+      \endverb
+    \endentry
     \entry{UZH_SM}{online}{}{}
       \name{author}{1}{}{%
         {{hash=be92dfc662c321cabc4e30411fc92db0}{%
@@ -54,6 +89,7 @@
   \missing{higgs}
   \missing{higgs_mass}
   \missing{prev_measure}
+  \missing{ttbar_cross}
 \endrefsection
 \endinput
 

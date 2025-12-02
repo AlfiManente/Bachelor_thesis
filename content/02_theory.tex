@@ -105,6 +105,7 @@ The parton density function (PDF) is a representation of the probability distrub
 
             \end{feynman}
         \end{tikzpicture}
+        \caption{Single top-quark production s-channel}
     \end{subfigure}
     % \hfill
     \begin{subfigure}{0.5\textwidth}
@@ -124,6 +125,7 @@ The parton density function (PDF) is a representation of the probability distrub
               };
             \end{feynman}
         \end{tikzpicture}
+        \caption{Leptonic decay of the top quark}
     \end{subfigure}
     \caption{Feynman Diagram of the singlte top-quark s-channel production mode and further decay of the top-quark.}
     \label{fig:schan_feynman}
@@ -132,31 +134,115 @@ The parton density function (PDF) is a representation of the probability distrub
 
 \subsection{Top quark decay}
 
-\begin{itemize}
-    \item decay via weak interaction
-    \item decay into W boson and bottom quark because of CKM $V_tb$ approx 1
-    \item W boson can decay hadronically 2/3 or leptonically 1/3.  Hadronic channel has bigger phase space because of more color charge possibilities
-    \item dileptonic, semileptonic or hadronic challenge
-    \item hadronic decay can be detected through jets
-    \item leptonic decay leads to undetected neutrino. This leads to $E_t^\text{miss}$(how is it calculated?)
-    \item What do the different channel signatures look like?
-    \item We use semileptonic channel because of multijet background
-\end{itemize}
+The top quarks decay occurs via the weak interaction, hinted by the resulting decay products consisting of a $b$-quark and a $W$-boson. 
+Furhter, the $W$-boson decays either hadronically $\sfrac{2}{3}$ or leptonically  $\sfrac{1}{3}$ of the times. 
+Hadronic decay results into quark pairs, wheresas leptonic decay emits a lepton and its corresponding neutrino.
+As there are different color permutations the quarks can carry, the phase space for the hadronic decay is larger, making it more likely than the leptonic decay.
+During the s-channel analysis only leptonic $W$-boson decays are selected, as the resulting jets from the hadronic decay are contaminated by multijet background.
+Since neutrinos cannot be directly detected, the event has to be examined for missing transverse momentum $\etmiss$. 
+If the sum of all transverse momenta of all the outgoing particles, does not add to zero, then a particle has remained undetected and the event has missing transverse momentum $\etmiss$, as prior to the $pp$ collision both beam momenta should cancel out.
 
 \subsection{Background Processes}
 
-Hier kann ich im Prinzip alles aus der Präsi rein hauen
+There are processes with similar signatures in the detector. 
+Differentiating these processes from the signal process of interest is a major task in any analysis.
+These so called background processes consist predominantly of $\ttbar$ production and W+jets production for the single top s-channel analysis. 
+In the LHC experiment $\ttbar$ production occurs mostly through gluon-gluon fusion, but with less probability can also happen through quark-pair-annihilation.
+With a theoretical cross-section of  $\sigma_{\ttbar}^{\rm{Theo.}}=\asym{832}{20}{29}{\pico\barn}$\cite{ttbar_cross}, it exceeds every other top quark production mode. 
+The other single top quark production modes can be mistaken for signal as well, but to a lesser degree, since their cross sections are noticeably smaller than $\ttbar$ with $\sigma_{t-\rm{chan.}}^{\rm{Theo.}}=\asym{216.99}{9.04}{7.71}{\pico\barn} $ and $\sigma_{tW-\rm{Prod.}}^{\rm{Theo.}}=\SI{71.7 \pm 3.8}{\pico\barn}$.
+Other minor backgrounds stem from multijet background processes, Z+jets or diboson(WW,WZ,ZZ) production.
+\autoref{fig:background_feyn} shows the LO Feynman diagrams for $\ttbar$ production via gluon-gluon fusion in the s-channel, and the other two single top-quark production modes.
 
-\begin{itemize}
-    \item What is background (Processes with similar signature)
-    \item What are the most relevant backgrounds
-    \item Feynman diagramms of background
-    \item erklären wann background als signature gesehen werden kann
-    \item Also im Prinzip präsi. Bei Noah steht nicht viel 
-    \item Beschreibe welche Unsicherheiten genau die vorherige Messung verschlechtert
-\end{itemize}
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a);
+                \vertex [right=of a](b);
+                % initial state
+                \vertex [above left=of a] (i1) {$g$};
+                \vertex [below left=of a] (i2) {$g$};
+                % final state
+                \vertex [above right=of b] (f1) {$t$};
+                \vertex [below right=of b] (f2) {$\overline{t}$};
+
+
+                \diagram* {
+                (i1) -- [gluon] (a) -- [gluon] (i2);
+                (a) -- [gluon, edge label={$g$}] (b);
+                (f1) -- [anti fermion] (b) -- [anti fermion] (f2);
+                };
+            \end{feynman}
+        \end{tikzpicture}
+        \caption{$\ttbar$-production through gluon gluon fusion.}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a);
+                \vertex [below=of a] (b);
+                \vertex [below left=3mm and 12mm of b] (c1) {$b$};
+                \vertex [below right=3mm and 12mm of b] (c2) {$t$};
+                \vertex [above left=3mm and 12mm of a]  (d1) {$u$};
+                \vertex [above right=3mm and 12mm of a] (d2) {$d$};
+
+                \diagram* {
+                (d1) -- [fermion] (a) -- [fermion] (d2);
+                (a) -- [boson, edge label=\(W^+\)] (b);
+                (c1) -- [fermion] (b) -- [fermion] (c2);
+                };
+            \end{feynman}
+        \end{tikzpicture}
+        \caption{Single top $t$-channel. \\ ~ \\  }
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a);
+                \vertex [above left=of a] (i1) {$b$};
+                \vertex [below left=of a] (i2) {$g$};
+                \vertex [right=of a] (b);
+                \vertex [above right=of b] (f1) {$W^-$};
+                \vertex [below right=of b] (f2) {$t$};
+                    
+                \diagram* {
+                (i1) -- [fermion] (a) -- [gluon, opacity=0.6] (i2);
+                (a) -- [fermion, edge label={$b$}](b);
+                (f2) -- [anti fermion] (b) -- [boson, opacity=0.6] (f1);
+                };
+            \end{feynman}
+        \end{tikzpicture}
+        \caption{Associated $tW$ production.}
+    \end{subfigure}
+    \caption{Feynman diagrams at LO for the major background processes in the analysis of the single top quark s-channel production mode.}
+    \label{fig:background_feyn}
+\end{figure}
+
+Not only does the $\ttbar$-production mode hold a high cross-section, but the fact that it produces real top-quark decays makes it a difficult background. 
+The two $W$-bosons, resulting from the $t$-quark and $\overline{t}$-quark decay, again can decay leptonically or hadronically. 
+If both $W$-bosons decay leptonically, the dileptonic final state, can mimic the signal signature if one of the leptons stays undetected. 
+For the semileptonic decay, where one $W$-boson decays leptonically and one hadronically, the final state signature can emulate the signal if only two b-tagged jets get detected.
+The fully hadronic decay is very unlikely to be mistaken for the signal. 
+Likewise the single top-quark production mode in the $t$-channel and the associated $tW$ production show real top quark decays in their signatures.
+For the $t$-channel the final state reproduces the signal signature if a b-tagged jet or misidentified lighter quark jet gets associated with the event.
+In the associated $tW$-production, the $b$-quark turns into a $t$-quark by emitting a $W$-boson.
+If this $W$-boson decays hadronically and produces a b-tagged jet or a jet that gets misidentified, the final state signature is the same as the signal signature.
+Provided, the $W$-boson decays leptonically and two b-tagged jets or misidentified jets get associated with the event, the W+jets background mimics the signal.
+And in the case of multijet background, leptons from heavy flavor decays, electrons from photon conversion or jets misidentified as leptons paired with two associated b-tagged jets or misidentified jets lead to the signal signature.
+
+
 
 \subsection{Previous measurement}
+
+\begin{itemize}
+    \item Beschreibe welche Unsicherheiten genau die vorherige Messung verschlechtert
+\end{itemize}
 
 In \autoref{fig:prev_measure} previous measurements of the three different single top-quark production modes at different center of mass energies $\sqrt{s}$ are shown, taken at the ATLAS and CMS experiments at the LHC with data from $pp$-collisions.
 

@@ -2379,10 +2379,11 @@
     <bcf:citekey order="4" intorder="1">higgs_mass</bcf:citekey>
     <bcf:citekey order="5" intorder="1">UZH_SM</bcf:citekey>
     <bcf:citekey order="6" intorder="1">UZH_SM</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">prev_measure</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">ttbar_cross</bcf:citekey>
     <bcf:citekey order="8" intorder="1">prev_measure</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Bianchi:2837191</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">prev_measure</bcf:citekey>
     <bcf:citekey order="10" intorder="1">Bianchi:2837191</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Bianchi:2837191</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
