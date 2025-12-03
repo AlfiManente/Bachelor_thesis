@@ -8,10 +8,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Background Processes}{5}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Previous measurement}{7}{subsection.2.2.4}%
 \contentsline {chapter}{\numberline {3}The ATLAS detector}{8}{chapter.3}%
-\contentsline {chapter}{\numberline {4}objet definition and event selection}{10}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Object Definition and Event Selection}{10}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Monte Carlo Samples}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}object definition}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}event selection}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.2}Systematic Samples}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Object Definition}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Event Selection}{12}{section.4.4}%
 \contentsline {chapter}{\numberline {5}main study and results}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Analysis strategy}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}DNN Model variables}{13}{section.5.2}%

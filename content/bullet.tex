@@ -136,3 +136,65 @@ Hier kann ich im Prinzip alles aus der Präsi rein hauen
     \item measured (expected) significance
     \item which data at which lumi
 \end{itemize}
+
+%03 Detector
+
+Habe ich jetzt schon geschrieben, aber müsste auch so passen.
+
+%04 Object def and event sel
+
+%4.1 Monte Carlo sims
+
+\begin{itemize}
+    \item analysis by studying simulations of signal and background processes and seperating them (Als Intro zu dem Kapitel)
+    \item Processes are simulated with different monte carlo simulators, which each simulate any process better or worse (Ist aber nicht nur in Bezug zu den Unsicherheiten, sondern auch so)
+    \item what part is simulated with data? Multijet? (Stimmt, gucken wir uns eigentlich Multijet background an?)
+    \item hard interaction with pertubative theory (Auch rein als Intro)
+    \item strong coupling non-pertubative (hadronisation und asymptotic freedom sorgen dafür dass man das nicht mit ME simulieren kann )
+    \item parton showers and hadronisation described by phenomological models
+    \item PYTHIA: Lund String model, HERWIG: heavy cluster model,
+    \item Matrix element calculation by POWHEG BOX, SHERPA or aMC@NLO
+    \item EVTGEN for heavy flavour decays 
+\end{itemize}
+
+\begin{itemize}
+    \item Welche Programme wurden für welche Samples von welchen Prozessen benutzt?
+    \item Wo kann ich diese nachlesen? Die stehen im Container Namen und sind eigentlich eins zu eins bei Niklas schon beschrieben worden!!!
+    \item Wieso wurden diese Programme und Generatoren für die verschiedenen Prozesse benutzt? (Kann ich mir im Prinzip auch von Niklas nehmen)
+    \item Welche Prozesse habe ich jetzt genutzt?
+    \begin{itemize}
+        \item single top s-channel ist unser signal
+        \item $\ttbar background$ dominant background
+        \item single top $t$ channel
+        \item single top $\overline{t}$
+        \item $\overline{t}$ + W? Was ist das für ein Prozess? associated $tw$ production
+        \item $t$ + W ? associated $tw$ production 
+        \item W lep nu, mit veto. Wieso genau haben wir diese benutzt? W+jets
+        \item z ee ? z + jets
+        \item z mu mu?
+        \item z tau tau?
+    \end{itemize}
+    \item was gibt es dort für wichtige Parameter? $p_\rm{T}^\text{hard}$? $h_\text{damp}$? (werden wir diese noch benutzen? Sind ja am simulieren)
+    \item ATLAS Detector Response simulation vie GEANT4 (fullsim) or ATLfast(fastsim)
+    \item Wie ist denn hier die Reihenfolge? Erstmal alle Programme und ihren nutzen erklären und dann Block artig welche samples womit simuliert worden sind. Dann muss ich die einzelnen Samples nicht begründen, da dies ja schon mit dem Intro abgefrühstückt ist!
+\end{itemize}
+
+%4.2 Object def
+
+\begin{itemize}
+    \item Nach welchen teilchen schauen wir in der Signatur? leptons (e,\mu), neutrinos through $\etmiss$, jets and b-tagged jets
+    \item Ansprechen dass Tau nicht gemessen wird wegen short lifetime, aber decay particles can be possible
+    \item Likelihood criteria? isolation criteria?
+    \item $\pT$ und $|\eta|$ definitionen für tight and loose particles
+    \item transverse and longitudinal impact parameter specification: $|z_0 \sin \theta|<\SI{0.5}{\mm}$ und $|d_0/\sigma(d_0)|<5$
+    \item anti-$k_t$ jet algo?
+\end{itemize}
+
+%4.3 Event Selection
+
+\begin{itemize}
+    \item state preselection (TopCP)
+    \item table with final selection (FF) 
+    \item here only signal region, on longer term validation/contro region
+    \item table with event yields
+\end{itemize}

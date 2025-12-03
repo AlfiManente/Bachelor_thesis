@@ -1,60 +1,70 @@
-\chapter{objet definition  and event selection}
+\chapter{Object Definition  and Event Selection}
 \label{chapter4}
 
 \section{Monte Carlo Samples}
 
-Das hier ist im Prinzip was ich verstehen muss und dazu kann ich mehr in Niklas Master These lesen
-
+In order to study processes in particle physics, signal processes have to be seperated from background processes. 
+Instead of only using recorded data, simulations are done, to better compare these processes with their SM predicitons, via varying assumptions and parameters.
+In this thesis the single top-quark $s$-channel production mode is to be examined, with the major backgrounds being $\ttbar$-production, single top-quark production in the $t$-channel, associated $tW$-production, $W$+jets and $Z$+jets production.
 \begin{itemize}
-    \item analysis by studying simulations of signal and background processes and seperating them
-    \item Processes are simulated with different monte carlo simulators, which each simulate any process better or worse
-    \item what part is simulated with data? Multijet?
-    \item hard interaction with pertubative theory
-    \item strong coupling non-pertubative
-    \item parton showers and hadronisation described by phenomological models
-    \item PYTHIA: Lund String model, HERWIG: heavy cluster model,
-    \item Matrix element calculation by POWHEG BOX, SHERPA or aMC@NLO
-    \item EVTGEN for heavy flavour decays 
-\end{itemize}
+    \item Wie gehen wir mir Multijet Background um?
+\end{itemize} 
+Monte Carlo (MC) simulators are used to reproduce particle events using a Markow Chain process. 
+At LO and NLO, hard scattering events can be calculated using pertubation theory, by calculating the relevant matrix elements (ME).
+Whereas parton showers (PS) and hadronization due to the strong interaction have to be calculated, utilizing phenomenological models to incorporate the effects of confinement and asymptotic freedom present in QCD. 
+These models use different hadronization models and free parameter, which are tuned using recorded data. 
+As a general purpose MC simulator \textsc{Sherpa} can calculate the hard scattering ME, as well as parton showers and hadronisation. \textsc{Powheg box v2} can generate hard scattering events up to NLO. \textsc{Pythia 8} models parton shower and hadronisation via the \textit{Lund String model}, typically making use of the \textit{A14} tune. 
+\textsc{Herwig 7} calculates parton showers and hadronisation via the \textit{heavy cluster model}.
+Finally, \textsc{Evtgen} simulates the decay heavy-flavour hadrons, especially $b$ and $c$ hadrons.
+During all simulations a top-quark mass of $\SI{172.5}{\GeV}$ is utilized.
 
-\begin{itemize}
-    \item Welche Programme wurden für welche Samples von welchen Prozessen benutzt?
-    \item Wo kann ich diese nachlesen? Die stehen halt im Container Namen ;( + mehr Details bei AMI nachlesen
-    \item Wieso wurden diese Programme und Generatoren für die verschiedenen Prozesse benutzt?
-    \item Welche Prozesse habe ich jetzt genutzt?
+For the nominal single top-quark and antitop-quark $s$-channel samples, \textsc{Powheg} simulations combined with \textsc{Pythia} are used under the \textit{A14} tune. Heavy-flavour decays are further calculated by \textsc{Evtgen}.
+
+The $t$-channel single top-quark and anti-quark processes similarly make use \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used (Was ist das genau?).
+
+Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO. The \textsc{NNPDF3.0nlo} PDF set is used in \textsc{Herwig} for these samples.
+
+The $\ttbar$ production is both simulated with the full-sim and fast-sim detector model, while utilizing the \textsc{Powheg} generator at NLO with the \textsc{NNPDF3.0nlo} PDF set, combined with \textsc{Pythia}. The $h_\rm{damp}$ parameter, which regulates the first gluon emission beyond the Born configuration (Was ist das?), is set to $1.5 \cdot m_\rm{top} \simeq \SI{258.75}{\GeV}$.
+
+For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used, instead of \textsc{Sherpa 2.2.14}. Here \textsc{Sherpa} calculates the matrix elements at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with parton shower models.  
+
+The Drell-Yan (was ist das?) production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. Samples inside different invariant-mass regions, involving a low-mass interval of $(10 < m_{ll} < \SI{40}{\GeV})$, is used to improve description of dilepton spectra.
+
+\section{Systematic Samples}
+
+\section{Object Definition}
+
+The signal signature consist of different objects of significance: leptons, either electrons or muons, and their corresponding neutrinos, as well as hadron jets, especially important b-tagged jets. 
+To reconstruct these objects from the detector response a framework for the respective object defintions is to be used.
+
+Electrons are reconstructed from particle tracks in the ID and energy deposits in the ECAL. 
+A measured $\pT > \SI{10}{\GeV}$ and $|\eta_\rm{cluster}| < 2.47$, while deposits in the barrel-end cap transition region $1.36 < |\eta_\rm{cluster}|<1.52$ are discarded, are necessary, as well as passing the TightLH and isolation working point, for an electron to be identified as such. 
+Muons require at least a $\pT > \SI{10}{\GeV}$ and $|\eta|<2.5$, while passing the medium quality definition and tight isolation working point.
+Jets are reconstructed with the anti-$k_t$ algorithm with a radius parameter of $\Delta R = 0.4$.
+The \textsc{GN2v01} algorithm, determines if a jet is to be determined as b-tagged.
+
+\section{Event Selection}
+
+
+    \begin{tabular}{|l|c|}
+        \hline
+        & \textbf{SR} \\
+        \hline
+        $\rm{n}(e,\mu)$ &  == 1 with $\pT > \SI{30}{\GeV}$  \\
+        $\rm{n}(\text{jets})$ &  == 2, in $|\eta| < 2.5$  \\
+        $\rm{n}(b-tags)$ & == 2, @77\%, in $|\eta|<2.5$ \\ 
+        Leading jet $\pT$ & $> \SI{40}{\GeV}$, in $|\eta|<2.5$ \\
+        Subleading jet $\pT$    & $> \SI{30}{\GeV}$, in $|\eta|<2.5$ \\
+        \hline
+        Missing transverse energy ($\etmiss$) & $> \SI{35}{\GeV}$ \\
+        Transverse $W$ boson mass & $> \SI{30}{\GeV}$ \\
+        \hline
+        Additional jets (low $\pT$) veto & No jets with $\pT < \SI{30}{\GeV}$ \\
+        Forward jets veto & No jets with $|\eta|> 2.5$ \\ 
+        Additional  leptons veto & No extra leptons with $\pT < \SI{30}{\GeV}$ \\
+        \hline
+    \end{tabular}
+
     \begin{itemize}
-        \item single top s-channel ist unser signal
-        \item $\ttbar background$ dominant background
-        \item single top $t$ channel
-        \item single top $\overline{t}$
-        \item $\overline{t}$ + W? Was ist das für ein Prozess?
-        \item $t$ + W ?
-        \item W lep nu, mit veto. Wieso genau haben wir diese benutzt?
-        \item z ee ?
-        \item z mu mu?
-        \item z tau tau?
+        \item Include table with event yields
     \end{itemize}
-    \item was gibt es dort für wichtige Parameter? $p_\rm{T}^\text{hard}$? $h_\text{damp}$?
-    \item Zuerst Signal simulation und dann background von der Reihenfolge her
-    \item ATLAS Detector Response simulation vie GEANT4 (fullsim) or ATLfast(fastsim)
-\end{itemize}
-
-\section{object definition}
-
-\begin{itemize}
-    \item Nach welchen teilchen schauen wir in der Signatur? leptons (e,\mu), neutrinos through $\etmiss$, jets and b-tagged jets
-    \item Ansprechen dass Tau nicht gemessen wird wegen short lifetime, aber decay particles can be possible
-    \item Likelihood criteria? isolation criteria?
-    \item $\pT$ und $|\eta|$ definitionen für tight and loose particles
-    \item transverse and longitudinal impact parameter specification: $|z_0 \sin \theta|<\SI{0.5}{\mm}$ und $|d_0/\sigma(d_0)|<5$
-    \item anti-$k_t$ jet algo?
-\end{itemize}
-
-\section{event selection}
-
-\begin{itemize}
-    \item state preselection (TopCP)
-    \item table with final selection (FF) 
-    \item here only signal region, on longer term validation/contro region
-    \item table with event yields
-\end{itemize}
