@@ -6,21 +6,19 @@
 In order to study processes in particle physics, signal processes have to be seperated from background processes. 
 Instead of only using recorded data, simulations are done, to better compare these processes with their SM predicitons, via varying assumptions and parameters.
 In this thesis the single top-quark $s$-channel production mode is to be examined, with the major backgrounds being $\ttbar$-production, single top-quark production in the $t$-channel, associated $tW$-production, $W$+jets and $Z$+jets production.
-\begin{itemize}
-    \item Wie gehen wir mir Multijet Background um?
-\end{itemize} 
+As multijet background is estimated via fits to data, it is dropped out of consideration.
 Monte Carlo (MC) simulators are used to reproduce particle events using a Markow Chain process. 
 At LO and NLO, hard scattering events can be calculated using pertubation theory, by calculating the relevant matrix elements (ME).
 Whereas parton showers (PS) and hadronization due to the strong interaction have to be calculated, utilizing phenomenological models to incorporate the effects of confinement and asymptotic freedom present in QCD. 
 These models use different hadronization models and free parameter, which are tuned using recorded data. 
 As a general purpose MC simulator \textsc{Sherpa} can calculate the hard scattering ME, as well as parton showers and hadronisation. \textsc{Powheg box v2} can generate hard scattering events up to NLO. \textsc{Pythia 8} models parton shower and hadronisation via the \textit{Lund String model}, typically making use of the \textit{A14} tune. 
 \textsc{Herwig 7} calculates parton showers and hadronisation via the \textit{heavy cluster model}.
-Finally, \textsc{Evtgen} simulates the decay heavy-flavour hadrons, especially $b$ and $c$ hadrons.
+Finally, \textsc{Evtgen} simulates the decay of heavy-flavour hadrons, especially $b$ and $c$ hadrons.
 During all simulations a top-quark mass of $\SI{172.5}{\GeV}$ is utilized.
 
 For the nominal single top-quark and antitop-quark $s$-channel samples, \textsc{Powheg} simulations combined with \textsc{Pythia} are used under the \textit{A14} tune. Heavy-flavour decays are further calculated by \textsc{Evtgen}.
 
-The $t$-channel single top-quark and anti-quark processes similarly make use \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used (Was ist das genau?).
+The $t$-channel single top-quark and anti-quark processes similarly make use \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used.
 
 Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO. The \textsc{NNPDF3.0nlo} PDF set is used in \textsc{Herwig} for these samples.
 
@@ -29,8 +27,6 @@ The $\ttbar$ production is both simulated with the full-sim and fast-sim detecto
 For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used, instead of \textsc{Sherpa 2.2.14}. Here \textsc{Sherpa} calculates the matrix elements at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with parton shower models.  
 
 The Drell-Yan (was ist das?) production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. Samples inside different invariant-mass regions, involving a low-mass interval of $(10 < m_{ll} < \SI{40}{\GeV})$, is used to improve description of dilepton spectra.
-
-\section{Systematic Samples}
 
 \section{Object Definition}
 
@@ -44,6 +40,12 @@ Jets are reconstructed with the anti-$k_t$ algorithm with a radius parameter of 
 The \textsc{GN2v01} algorithm, determines if a jet is to be determined as b-tagged.
 
 \section{Event Selection}
+
+With the expected signal signature in mind, a framework for the event selection is used. 
+For single top quark production in the $s$-channel, a charged lepton, either electron or muon, missing transverse momentum $\etmiss$ from the undetected neutrino, and two b-tagged jets are expected.
+A preselection in the ntuple production inside \textsc{TopCPToolkit} is utilized. 
+Only events with at least two b-tagged jets with $\pT > \SI{20}{\GeV}$, of which at least one must fullfill the 85\% working point requirements, and exatly one isolated lepton with $\pT > \SI{28}{\GeV}$, survive.
+The precise event selection is then achieved inside \textsc{FastFrames}, a software tool to further process ntuples and gather histograms from.
 
 
     \begin{tabular}{|l|c|}
