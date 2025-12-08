@@ -26,7 +26,7 @@ The $\ttbar$ production is both simulated with the full-sim and fast-sim detecto
 
 For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used, instead of \textsc{Sherpa 2.2.14}. Here \textsc{Sherpa} calculates the matrix elements at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with parton shower models.  
 
-The Drell-Yan (was ist das?) production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. Samples inside different invariant-mass regions, involving a low-mass interval of $(10 < m_{ll} < \SI{40}{\GeV})$, is used to improve description of dilepton spectra.
+The Drell-Yan production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. Samples inside different invariant-mass regions, involving a low-mass interval of $(10 < m_{ll} < \SI{40}{\GeV})$, is used to improve description of dilepton spectra.
 
 \section{Object Definition}
 
@@ -46,8 +46,26 @@ For single top quark production in the $s$-channel, a charged lepton, either ele
 A preselection in the ntuple production inside \textsc{TopCPToolkit} is utilized. 
 Only events with at least two b-tagged jets with $\pT > \SI{20}{\GeV}$, of which at least one must fullfill the 85\% working point requirements, and exatly one isolated lepton with $\pT > \SI{28}{\GeV}$, survive.
 The precise event selection is then achieved inside \textsc{FastFrames}, a software tool to further process ntuples and gather histograms from.
+For this analysis a single signal region (SR) is defined, without any other validation regions.
+Events inside the signal region encompass two central jets, each in a $|\eta|<2.5$ range and fulfilling the $77\%$ b-tagging working point. 
+Further transverse momentum requirements are used, where the leading jet has to satisfy $\pT > \SI{40}{\GeV}$, while the subleading jet requires $\pT > \SI{30}{\GeV}$.
+Exactly one isolated lepton, either an electron or muon, with $\pT > \SI{30}{\GeV}$ has to be included. 
+An additional lepton veto discards all events with an extra lepton with $\pT < \SI{30}{\GeV}$.
+The missing transverse momentum of the undetected neutrino in an event has to fulfill $\etmiss > \SI{35}{\GeV}$, while the reconstructed transverse mass of the $W$-boson,
+
+\begin{equation*}
+ m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))}
+\end{equation*}    
+
+is required to be $m_T^W > \SI{30}{\GeV}$.
+Another additional jet veto is used, where events with additional jets carrying $\pT > \SI{30}{\GeV}$ or additional jets in the forward region ($|\eta|> 2.5$) are rejected. 
+The SR definition with all the event selection cuts used in this analysis is shown in \autoref{tab:eventsel}.
 
 
+\begin{table}
+    \centering
+    \caption{Definition of the event selection for the Signal Region used in this analysis.}
+    \label{tab:eventsel}
     \begin{tabular}{|l|c|}
         \hline
         & \textbf{SR} \\
@@ -66,8 +84,24 @@ The precise event selection is then achieved inside \textsc{FastFrames}, a softw
         Additional  leptons veto & No extra leptons with $\pT < \SI{30}{\GeV}$ \\
         \hline
     \end{tabular}
+\end{table}
 
-    \begin{itemize}
-        \item Include table with event yields
-    \end{itemize}
-
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|S|}
+\hline
+ & {}\\
+\hline
+  s-channel   & 4139.99 \pm 850.839 \\
+  single top tchan   & 9334.36 \pm 1853.71 \\
+  single top tW   & 2619.05 \pm 612.957 \\
+  Z+jets   & 1654.39 \pm 882.368 \\
+  W+jets   & 15159.5 \pm 7858.56 \\
+  ttbar   & 75216.7 \pm 18753.3 \\
+\hline
+  Total  & 108124 \pm 24971.1 \\
+\hline
+\end{tabular}
+\caption{Yields of the analysis}
+\end{center}
+\end{table}

@@ -1,22 +1,22 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/thesis.blg'
-[72] biber:342> INFO - === So Dez  7, 2025, 22:11:39
-[86] Biber.pm:421> INFO - Reading 'build/thesis.bcf'
-[150] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
-[162] Biber.pm:4487> INFO - Processing section 0
-[170] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[171] bibtex.pm:1713> INFO - LaTeX decoding ...
-[173] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[208] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[208] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[208] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[209] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[215] bbl.pm:676> INFO - Writing 'build/thesis.bbl' with encoding 'UTF-8'
-[216] bbl.pm:779> INFO - Output to build/thesis.bbl
-[216] Biber.pm:132> WARN - I didn't find a database entry for 'higgs' (section 0)
-[216] Biber.pm:132> WARN - I didn't find a database entry for 'atlas_higgs' (section 0)
-[216] Biber.pm:132> WARN - I didn't find a database entry for 'cms_higgs' (section 0)
-[217] Biber.pm:132> WARN - I didn't find a database entry for 'higgs_mass' (section 0)
-[217] Biber.pm:132> WARN - I didn't find a database entry for 'ttbar_cross' (section 0)
-[217] Biber.pm:132> WARN - I didn't find a database entry for 'prev_measure' (section 0)
-[217] Biber.pm:134> INFO - WARNINGS: 6
+[68] biber:342> INFO - === Mo Dez  8, 2025, 12:28:25
+[81] Biber.pm:421> INFO - Reading 'build/thesis.bcf'
+[143] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
+[155] Biber.pm:4487> INFO - Processing section 0
+[163] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[164] bibtex.pm:1713> INFO - LaTeX decoding ...
+[167] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[203] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[203] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[209] bbl.pm:676> INFO - Writing 'build/thesis.bbl' with encoding 'UTF-8'
+[210] bbl.pm:779> INFO - Output to build/thesis.bbl
+[210] Biber.pm:132> WARN - I didn't find a database entry for 'higgs' (section 0)
+[211] Biber.pm:132> WARN - I didn't find a database entry for 'atlas_higgs' (section 0)
+[211] Biber.pm:132> WARN - I didn't find a database entry for 'cms_higgs' (section 0)
+[211] Biber.pm:132> WARN - I didn't find a database entry for 'higgs_mass' (section 0)
+[211] Biber.pm:132> WARN - I didn't find a database entry for 'ttbar_cross' (section 0)
+[211] Biber.pm:132> WARN - I didn't find a database entry for 'prev_measure' (section 0)
+[211] Biber.pm:134> INFO - WARNINGS: 6
