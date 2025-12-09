@@ -12,14 +12,14 @@
 \contentsline {section}{\numberline {4.1}Monte Carlo Samples}{12}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Object Definition}{13}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Event Selection}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}main study and results}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Analysis strategy}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}DNN Model variables}{16}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Separation power}{16}{section.5.3}%
-\contentsline {section}{\numberline {5.4}profile likelihood fit}{16}{section.5.4}%
-\contentsline {section}{\numberline {5.5}systematic uncertainties}{16}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Summary and outlook}{17}{chapter.6}%
+\contentsline {chapter}{\numberline {5}Analysis}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analysis Strategy}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}DNN Model}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Binned Likelihood Fit}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Systematic Uncertainties}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Results}{19}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Summary and outlook}{20}{chapter.6}%
 \def \@chapapp {\appendixname }
-\contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}Appendix}{21}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{22}{chapter*.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

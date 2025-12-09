@@ -198,3 +198,63 @@ Habe ich jetzt schon geschrieben, aber müsste auch so passen.
     \item here only signal region, on longer term validation/contro region
     \item table with event yields
 \end{itemize}
+
+% 5 Analysis
+
+% 5.1 Analysis Strategy
+
+\begin{itemize}
+    \item binned maximum likelihood für signal strength √
+    \item only one signal region (Soll ich da noch groß drauf eingehen? Eigentlich reicht das doch in der event sel!)
+    \item we discriminate signal from the background through DDN output written by Niklas Düser √
+    \item ME method schwierig bei kleinem B/S √
+    \item I will discuss the effects of different systematics on the signal extraction √
+\end{itemize}
+
+% 5.2 DNN Model
+
+\begin{itemize}
+    \item Da besonders s-channel sehr wenig signal hat (S/B sehr klein), sind moderne machine learning ansätze gut √
+    \item DNN geschrieben von Niklas Düser für Masterarbeit an TU Dortmund? √
+    \item Nutzt mehrere high level kinematic variables zur evaluation √
+    \item Preprocessing ansprechen? (Habe ich in einem Satz) √
+    \item two fold split ansprechen? √
+    \item Model shape ansprechen? (sprengt das den Rahmen?)
+    \item Fullsim and fastsim (more statistics) used for training (Habe ich auch in einem Satz erwähnt) √
+    \item Seperation Power is so gesehen das was als model output ausgegeben wird (Nicht ganz, sonder ist eine Metrik welche die komplette Seperation bestimmt über alle bins)
+    \item λ, also expected event yields nimmt dann model output um später signal strength μ fitten zu können √
+\end{itemize}
+
+% 5.3 Binned Likelihood Fit
+
+\begin{itemize}
+    \item Formel für profile binned likelihood aufstellen √
+    \item poisson verteilung zeigen mit λ als erwartungswert √
+    \item wir fitten μ durch λ und θ durch die constraint terms √
+    \item μ^ und θ^ als die Werte, welche die Likelihood maximieren √
+    \item negative log likelihood erwähnen √
+    \item ratio test erwähnen?
+    \item Hätte ich hier nochmal TREx Fitter erwähnen sollen?
+    \item Hier mehr auf die Nuisance Parameter eingehen und wie diese als \pm σ skaliert werden.
+    \item Welche NPs werden als Gaussian und welche als Poissonian gemoddeled?
+    \item Welche Parameter sind jetzt free floating?
+    \item Wenden wir einen Asimov Fit an bei den Systematic Plots?
+\end{itemize}
+
+% 5.4 Systematic Uncertainties
+
+\begin{itemize}
+    \item Wie kann ich meine Systematics grob kategorisieren? (Modelling systematics[PS,ME], background modelling(ttbar[PS,ME]), detector modelling eigentlich auch. Ist der Rest kleinkram?) √
+    \item ME und PS Unsicherheiten durch die anderen Samples, das kann ich auch nochmal in Niklas these nachschauen (Wo denn? Chapter 9.2, auch 6.2) √
+    \item Hier nicht die jeweiligen Samples aufzählen, sonder erklären welche variablen variiert werden bei den jeweiligen systematics √
+    \item different cross section uncertainties. Welche haben wir vorher fest gesetzt und welche sind free floating?
+    \item Welche Uncertainties haben wir sonst? Besonders die verschiedenen Jet uncertatainy kategrorien aufzählen
+    \item smoothing und symmetrization ansprechen. 
+    \item Systematic Tabelle hier schon einfügen oder in den results? (in den Results mit den jeweiligen pulls)
+\end{itemize}
+
+% 5.5 Results
+
+\begin{itemize}
+    \item 
+\end{itemize}

@@ -2384,6 +2384,8 @@
     <bcf:citekey order="9" intorder="1">prev_measure</bcf:citekey>
     <bcf:citekey order="10" intorder="1">Bianchi:2837191</bcf:citekey>
     <bcf:citekey order="11" intorder="1">Bianchi:2837191</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Seema:2706904</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">niklas_master</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

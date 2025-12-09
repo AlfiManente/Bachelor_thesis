@@ -1,36 +1,79 @@
-\chapter{main study and results}
+\chapter{Analysis}
 \label{chapter5}
 
-\section{Analysis strategy}
+\section{Analysis Strategy}
 
-\begin{itemize}
-    \item wirkungsquerschnitt über signal region
-    \item ME method schwierig bei kleinem B/S
-    \item 
-    \item Discriminant variable is DNN
-    \item Profile likelihood fit hier erwähnen
-\end{itemize}
+Throughout this analysis, steps are taken to determine the signal strength $\mu_{\rm{s-chan.}}=\sfrac{\sigma_{\rm{s-chan.}}^{\rm{measured}}}{\sigma_{\rm{s-chan.}}^{\rm{theory}}}$ of the single top quark $s$-channel process. 
+This is done via a binned likelihood fit, where a \textit{Deep Neural Network} (DNN) output is used as discriminant value, to descern signal events from background events.
+Only one signal region, pulled from the event selection in \autoref{tab:eventsel}, is defined in this thesis.
+As systematic uncertainties are the limiting factors in the search for the single top quark $s$-channel process, the systematics with the biggest impact are further inspected and discussed. 
 
-\section{DNN Model variables}
 
-\begin{itemize}
-    \item Fullsim and fastsim(more statistics) used for training
-\end{itemize}
+\section{DNN Model}
 
-\section{Separation power}
+Especially in studying the single top quark $s$-channel process, a modern machine learning approach is sensible as the small signal to background ratio ($S/B 3.4 \%$) \cite{Seema:2706904} makes traditional methods difficult. 
+Therefore a DNN output will be used as the discriminant for a binned likelihood fit.
+The applied DNN was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master} and makes use of several high-level kinematic variables to descern signal events from background events.
+The model was trained on both fullsim and fastsim datasets, as well as including single top quark $s$-channel samples with varying top quark masses for increased statistics.
+Angular variables are cosine transformed to avoid discontinuities at $\pm \pi$ and variables carrying long tails are log-transformed to compress their dynamic range.
+All variables are transformed into standardised units, to avoid distortion of variable importance due to their absolute values.
+Data is split into even and odd samples, only in respect to their event number without taking any other variable feature into consideration. 
+The DNN model outputs a value between 0 and 1, where 1 marks an event as totally corresponding to the signal and 0 marks the event as background. 
+With the neural network output $x$ as the discriminant, the expected number of events $\lambda_i (\mu, \theta) = \mu \cdot s_i (\theta) + b_i (\theta)$ is used to incorporate the signal strength. 
+Here $s_i(\theta)$ and $b_i(\theta)$ signify the expected signal and background contributions for the i-th bin, which are gathered by putting signal and background events through the DNN model and evaluating the output score $x$.
+Systematic uncertainties can influence the seperation. 
+This is considered through the nuisance parameters (NP) $\theta$, which will be affected further through fitting the binned likelihood. 
+The signal strength $\mu$ serves then as a scaling factor for the expected signal yields across all bins. 
 
-\begin{itemize}
-    \item 
-\end{itemize}
+\section{Binned Likelihood Fit}
 
-\section{profile likelihood fit}
+To determine the signal strength, a binned profile likelihood fit is performed, which modifies the signal strength and the NPs to maximize the likelihood fuction. 
+The likelihood function states the probability by which an outcome happens in respect of a set of given model parameters. 
+It is used as a framework to determine the signal strength parameter $\mu$ and the various NPs of the different systematic uncertainties for which the highest probability is achieved, where the single top quark $s$-channel is most likely to occur.
+As High Energy Particle Physics (HEP) generates large amounts of data, histograms where data is gathered into bins, instead of encompassing each data point individually, are of use. 
+The binning of data also introduces Poisson probabilities into the likelihood as can be seen in the following equation.
 
-\begin{itemize}
-    \item 
-\end{itemize}
+\begin{equation*}
+    \mathcal{L}(\mu, \theta) = \prod_{i=1}^{N_{\rm{bins}}} \rm{Pois}(n_i|\lambda_i(\mu, \theta)) \cdot \prod_{j=1}^{N_{\rm{NP}}}\pi_j (\theta_j). 
+\end{equation*}
 
-\section{systematic uncertainties}
+The binned likelihood function multiplies the Poisson probabilities $\rm{Pois} (n|\lambda)$ in each bin, which state the probability of observing $n$ events under the expectation $\lambda$
 
-\begin{itemize}
-    \item 
-\end{itemize}
+\begin{equation*}
+    \rm{Pois} (n|\lambda) = \frac{\lambda^n e^{-\lambda}}{n!},
+\end{equation*}
+
+multiplied with the product of all constraint terms $\pi_j (\theta_j)$ for each NP $j$.
+These constraint term incorporate prior knowledge on the NPs and are typically modelled either as Gaussian or log-normal distributions.
+By maximizing the likelihood function via variaton of the parameters $\mu$ and $\theta_j$, their final values are determined by $\displaystyle \hat{\mu}, \hat{\theta} = \operatorname*{argmax}_{\mu, \theta} \mathcal{L}(\mu, \theta)$.
+
+Typically the negative logarithm of the likelihood function $-\ln \mathcal{L}$ is minimized, as the maximum does not move when taking the logarithm and minimization is often computationally more efficient. 
+Thus the binned profile likelihood form a framework for implementing the DNN output as discriminant and enabling the determination of the signal strength $\mu$ and the systematics encoded inside the NPs $\theta_j$ 
+
+\section{Systematic Uncertainties}
+
+A rough categorisation of the systematic uncertainties yield single top $s$-channel signal modelling uncertainties, background modelling uncertainties, where the $\ttbar$ process is especially studied, and detector modelling uncertainties. 
+
+Signal modelling uncertainties occur because of different choices for ME matching and PS simulation by utilizing different generators and choosing values for special variables, that instruct these generators. 
+For the single top quark $s$-channel process, additional samples were produced varying the $\pT^{\rm{hard}}$ to 1, changing ME emissions to be specified by the transverse momentum given by \textsc{Powheg} when utilized by \textsc{Pythia}.
+This systematic then tests the ME matching descriptions of the hardest emission and further the subsequent PS. 
+Additionaly a sample with \textsc{Herwig} was produced, assesing uncertainties stemming from the different definition for emission hardness, and choice of parton shower and hadronisation model in the individall generators.
+Another sample is produced with the same ME and PS models as the nominal samples, but in the fastsim regime to evaluate uncertainties from different detector modelling procedures. 
+Similarly, to attain further precision the for the largest background, futher samples were generated for the $\ttbar$ process.
+Again, instead of \textsc{Pythia}, \textsc{Powheg} is interfaced with \textsc{Herwig} to study ME matching systematics. 
+Another set of samples with $\pT^{\rm{hard}}=1$ is produced for the $\ttbar$ process. Lastly samples where the $h_{\rm{damp}}$ parameter is increased to $3 \cdot m_{\rm{top}}$ from $1.5 \cdot m_{\rm{top}}$ are generated, which enables studying of uncertainties related to damping radiation with high $\pT$ in the hardest emissions.
+
+Additionaly to the ME and PS matching systematic uncertainties, each background process carries uncertainties in their cross-section. 
+For the single top quark production modes an uncertainty of $6\%$ is set.
+The $W$+jets and $Z$+jets background processes are estimated to have an cross-section uncertainty of $50\%$.
+As $\ttbar$ does have the biggest yield, it is sensible to let its cross-section uncertainty be modelled as a free floating normalisation factor.
+
+The detector modelling uncertainties in this study encompass the following:
+Wie kann ich hier am besten meine Uncertainties aufzählen?
+
+In order to achieve independence from statistical fluctuations, the systematics distributions are smoothed. 
+For uncertainties containing an up and down variation, two-sided symmetrization is done. 
+The up and down variation for each respective bin $i$ consists therefore of the mean of both given by $\pm \frac{n_i^{\rm{up}} - n_i^{\rm{down}}}{2}$.
+Uncertainties with only an up or down variation undergo one-sided symmetrisation, in which the the existing variation is mirrored for the missing variation.  
+
+\section{Results}
