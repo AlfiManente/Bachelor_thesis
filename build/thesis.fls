@@ -522,6 +522,10 @@ INPUT ./imgs/ATLAS_schematic.png
 INPUT ./content/04_object_event.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./content/05_study.tex
+INPUT ./imgs/seperation.png
+INPUT ./imgs/seperation.png
+INPUT ./imgs/SR-Schannel_postFit.png
+INPUT ./imgs/SR-Schannel_postFit.png
 INPUT ./content/06_outlook.tex
 INPUT ./content/a_anhang.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc

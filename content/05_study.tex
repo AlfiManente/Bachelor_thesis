@@ -13,7 +13,35 @@ As systematic uncertainties are the limiting factors in the search for the singl
 
 Especially in studying the single top quark $s$-channel process, a modern machine learning approach is sensible as the small signal to background ratio ($S/B 3.4 \%$) \cite{Seema:2706904} makes traditional methods difficult. 
 Therefore a DNN output will be used as the discriminant for a binned likelihood fit.
-The applied DNN was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master} and makes use of several high-level kinematic variables to descern signal events from background events.
+The applied DNN was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master} and makes use of several high-level kinematic variables to descern signal events from background events. 
+For every single particle that gets reconstructed, the kinematic variables $\pT, \eta, \varphi$ and the invariant mass $m$ get included as features for the DNN model.
+Whereas for particle pairs their pseudorapidity difference $\Delta \eta$ and the difference in azimuthal angle $\Delta \varphi$ between them is incorporated as feature.
+From the detector measurements of the final state particles, every other particle can be retraced up to the virtal $W$-boson. 
+First, the final state lepton and corresponding neutrino are reproduced. 
+The neutrino cannot be measured directly via the detector but is inferred via studying the missing transverse momentum $\etmiss$ of the event and further implying the longitudinal impulse of the neutrino, from the condition that the leptons and the neutrinos momentum squared must equal the invariant mass of the decaying $W_{\rm{Decay}}$-boson.
+With the lepton and neutrino reconstructed, the $W_{\rm{Decay}}$-boson of the top quark decay can be solved for.
+The leading b-tagged jet, of the top quark decay gets measured directly by the detector.
+With information about the leading b-jet and the $W_{\rm{Decay}}$-boson, the top quark can be reconstructed.
+From detector measurements, the subleading b-jet from the s-channel process itself gets assessed, and with the reconstructed top quark, the last possible step is to reconstruct the virtual $W_{\rm{Prod.}}$-boson.
+Further the transverse mass of the $W_{\rm{Decay}}$-boson defined as $\mtw = \sqrt{2 \pT^l \etmiss (1-\cos \Delta\varphi)}$, with $\pT^l$ the transverse momentum of the lepton decay product and $\Delta\varphi$ the angle between lepton and neutrino, is included as feature.
+As well as the transverse mass of the top quark, defined as $m_{\rm{T}}^{\rm{top}} = \sqrt{E_{\rm{T,sum.}}^2 - p_{\rm{T,sum.}}^2}$, with the sums of the transverse energies and transverse momenta of the top quarks decay particles, being the lepton, neutrino and $b$-quark.
+The scalar sum of the transverse energies of all final-state paricles is called $H_{\rm{T}}$, whereas $H_{\rm{T,had.}}$ and $H_{\rm{T,lep}}$ sum only over the transverse energies of the final state hadrons or leptons respectively.
+Another set of event shape variables are inferred through the momentum tensor, that encodes the high-levels momentum distributions of the reconstructed objects. Its elements are derived by the formular
+
+\begin{equation*}
+    M_{ij}=\frac{\sum^N_{k=1} p_{k,i}p_{k,j}}{\sum^N_{k=1} p_k^2}, ~ i,j \in x,y,z
+\end{equation*}
+
+by summing over all final-state particles, where $p_{k,i}$ denotes the $i$-th component of the $k$-th final state particle. 
+Through the sorted eigenvalues of the momentum tensor $\lambda_0 > \lambda_1 > \lambda_2$ further event variables are constructed:
+
+\begin{align*}
+    &\text{Aplanarity}:  & \mathcal{A} &= \frac{3 \lambda_2}{2}, \\
+    &\text{Planarity}:   & \mathcal{P} &= \frac{3(\lambda_2 + \lambda_1)}{2}, \\
+    &\text{Spericity}:   & \mathcal{S} &= \lambda_1 - \lambda_2. \\
+\end{align*}
+
+
 The model was trained on both fullsim and fastsim datasets, as well as including single top quark $s$-channel samples with varying top quark masses for increased statistics.
 Angular variables are cosine transformed to avoid discontinuities at $\pm \pi$ and variables carrying long tails are log-transformed to compress their dynamic range.
 All variables are transformed into standardised units, to avoid distortion of variable importance due to their absolute values.
@@ -24,12 +52,56 @@ Here $s_i(\theta)$ and $b_i(\theta)$ signify the expected signal and background 
 Systematic uncertainties can influence the seperation. 
 This is considered through the nuisance parameters (NP) $\theta$, which will be affected further through fitting the binned likelihood. 
 The signal strength $\mu$ serves then as a scaling factor for the expected signal yields across all bins. 
+The DNNs output is shown in the form of the seperation plot in \autoref{subfig:seperation} and the combined DNN output histograms of each respective process shown in \autoref{subfig:histos}. The event yields given out from the DNN are shown in \autoref{tab:yields}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgs/seperation.png}
+        \caption{The seperation plot shows the output score of the DNN on the $x$-axis for the $s$-channel signal histogram and the sum of the background histograms. Both histograms are normalised. A seperation of $30.1 \%$ is achieved, displayed by the observably seperated peaks with yet significant overlap of both distributions.}
+        \label{subfig:seperation}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgs/SR-Schannel_postFit.png}
+        \caption{The combined DNN output for every process of interest in this analysis. Histograms are stacked, where the signal yield is displayed in \textcolor{red}{red} on the top of the stack.}
+        \label{subfig:histos}
+    \end{subfigure}
+    \caption{The DNNs output is shown with a seperation plot and the combined DNN output for the different processes }
+    \label{fig:dnn_output}
+\end{figure}
+
+Ich muss mir nochmal anschauen wie ich die Event yield einfügen möchte
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{l S }
+        \hline
+         Sample & {}\\
+        \hline
+          s-channel             & 4139.99 \pm 860.569 \\
+          single top tchan      & 9334.36 \pm 1853.71 \\
+          single top tW         & 2619.05 \pm 612.957 \\
+          Z+jets                & 1654.39 \pm 882.368 \\
+          W+jets                & 15159.5 \pm 7858.56 \\
+          ttbar                 & 75216.7 \pm 18753.3 \\
+        \hline
+          Total                 & 108124 \pm 24971.5 \\
+        \hline
+        \end{tabular}
+    \caption{Yields of the analysis}
+    \end{center}
+\end{table}
+
+
 
 \section{Binned Likelihood Fit}
 
-To determine the signal strength, a binned profile likelihood fit is performed, which modifies the signal strength and the NPs to maximize the likelihood fuction. 
+To determine the signal strength, a binned profile likelihood fit is performed with the TRExFitter interface for the HistFactory tool (citation), which modifies the signal strength and the NPs to maximize the likelihood fuction. 
 The likelihood function states the probability by which an outcome happens in respect of a set of given model parameters. 
-It is used as a framework to determine the signal strength parameter $\mu$ and the various NPs of the different systematic uncertainties for which the highest probability is achieved, where the single top quark $s$-channel is most likely to occur.
+It is used as a framework to determine the signal strength parameter $\mu$ and the various NPs of the different systematic uncertainties for which the highest probability is achieved, where the single top quark $s$-channel process is most likely to occur.
 As High Energy Particle Physics (HEP) generates large amounts of data, histograms where data is gathered into bins, instead of encompassing each data point individually, are of use. 
 The binning of data also introduces Poisson probabilities into the likelihood as can be seen in the following equation.
 
@@ -44,20 +116,28 @@ The binned likelihood function multiplies the Poisson probabilities $\rm{Pois} (
 \end{equation*}
 
 multiplied with the product of all constraint terms $\pi_j (\theta_j)$ for each NP $j$.
-These constraint term incorporate prior knowledge on the NPs and are typically modelled either as Gaussian or log-normal distributions.
+A NP of $\theta_j = 0$ conforms to the nominal prediction made by the simulation, while $\theta_j = \pm 1$ varries the NP in one standard deviation $\pm \sigma$.
+The constraint term can be modelled as a Gaussian function, where $\theta_j^0$ is set to the nominal value and  $\sigma_{\theta_j^0}$ to the uncertainty estimate. 
+One standard deviation estimates for the uncertainties are provided as histograms. 
+NPs are also included as free parameters, called as normalization factors (NF).
+These are handled as multiplicative factors for signal or background components in the shape of $b(\vec{\theta},k) = k \cdot b (\vec{\theta})$, which is done for the $W$+jets process.
+Statistical uncertainties stemming from the limited number of simulated events are included as NPs $\gamma_i$ for each respective bin $i$ with a nominal value $1$ and modelled as a Poisson term.    
 By maximizing the likelihood function via variaton of the parameters $\mu$ and $\theta_j$, their final values are determined by $\displaystyle \hat{\mu}, \hat{\theta} = \operatorname*{argmax}_{\mu, \theta} \mathcal{L}(\mu, \theta)$.
-
-Typically the negative logarithm of the likelihood function $-\ln \mathcal{L}$ is minimized, as the maximum does not move when taking the logarithm and minimization is often computationally more efficient. 
-Thus the binned profile likelihood form a framework for implementing the DNN output as discriminant and enabling the determination of the signal strength $\mu$ and the systematics encoded inside the NPs $\theta_j$ 
+Typically the negative logarithm of the likelihood function $-\ln \mathcal{L}$ is minimized, as the maximum does not move when taking the logarithm and minimization is often computationally more efficient.
+The negative log-likelihood (NLL) function is fitted with \textsc{Minuit} (citation).
+$\mu$ and all NPs can vary while fitting, where $\mu$ and the NFs are free-floating, while the NPs are penalized based on their respective uncertainties.
+If after the fit the NP is changed from the nominal value, the data has pulled the NP. 
+If after the fit the uncertainty of a NP is smaller then the provided uncertainty $\sigma_{\theta_j^0}$, the data achieved a constrainment on the systematic uncertainty provided by the NP. 
+Thus the binned profile likelihood forms a framework for implementing the DNN output as discriminant and enabling the determination of the signal strength $\mu$ and the systematics encoded inside the NPs $\theta_j$ 
 
 \section{Systematic Uncertainties}
 
 A rough categorisation of the systematic uncertainties yield single top $s$-channel signal modelling uncertainties, background modelling uncertainties, where the $\ttbar$ process is especially studied, and detector modelling uncertainties. 
 
-Signal modelling uncertainties occur because of different choices for ME matching and PS simulation by utilizing different generators and choosing values for special variables, that instruct these generators. 
-For the single top quark $s$-channel process, additional samples were produced varying the $\pT^{\rm{hard}}$ to 1, changing ME emissions to be specified by the transverse momentum given by \textsc{Powheg} when utilized by \textsc{Pythia}.
+Modelling uncertainties occur because of different choices for ME matching and PS simulation by utilizing different generators and choosing values for special variables, that instruct these generators. 
+For the single top quark $s$-channel signal process, additional samples were produced varying the $\pT^{\rm{hard}}$ to 1, changing ME emissions to be specified by the transverse momentum given by \textsc{Powheg} when utilized by \textsc{Pythia}.
 This systematic then tests the ME matching descriptions of the hardest emission and further the subsequent PS. 
-Additionaly a sample with \textsc{Herwig} was produced, assesing uncertainties stemming from the different definition for emission hardness, and choice of parton shower and hadronisation model in the individall generators.
+Additionaly a sample with \textsc{Herwig} was produced, assesing uncertainties stemming from the different definition for emission hardness, and choice of parton shower and hadronisation model in the individual generators.
 Another sample is produced with the same ME and PS models as the nominal samples, but in the fastsim regime to evaluate uncertainties from different detector modelling procedures. 
 Similarly, to attain further precision the for the largest background, futher samples were generated for the $\ttbar$ process.
 Again, instead of \textsc{Pythia}, \textsc{Powheg} is interfaced with \textsc{Herwig} to study ME matching systematics. 
@@ -68,8 +148,20 @@ For the single top quark production modes an uncertainty of $6\%$ is set.
 The $W$+jets and $Z$+jets background processes are estimated to have an cross-section uncertainty of $50\%$.
 As $\ttbar$ does have the biggest yield, it is sensible to let its cross-section uncertainty be modelled as a free floating normalisation factor.
 
-The detector modelling uncertainties in this study encompass the following:
-Wie kann ich hier am besten meine Uncertainties aufzählen?
+
+The detector modelling uncertainties in this study encompass one-sided and two-sided systematics, where two-sides systematics entail an up and down variation for the positive and negative pull of each respective uncertainty.
+One-sided systematic uncertainties entail two systematics for the missing transverse momentum $\etmiss$, which parametrise the Track Soft Term (TST) resolution in parallel and perpendicular components. 
+Two-sided systematics are more numerous.
+The luminosity uncertainty is given as $0.83\%$.
+Jet uncertainties come in form of jet energy resolution (JER), jet vertex tagger (Jvt) and jet energy scale (JES) uncertainties. 
+JER uncertainties containt effects of noise and campaign difference pre-recommendations, effects from the difference of data and simulation gathered from the MC20 campaign, and various NP modelling uncertainties.
+For Jvt two different efficiency uncertainties are included. 
+The JES is effected by jet flavour composition and response, $b$-jet energy scale, various NP modelling effects on a detector, modelling or mixed level. 
+Further, the effect of pile-up, punch through and jet $\eta$ intercalibration on the JES are included, as well as different pre-recommendations for different further effects on the JES. 
+Many uncertainties for the effect of flavour tagging are considered, especially for $b$- and $c$- tagging.
+Besides jet uncertainties, effects of uncertainties on the electron and muon modelling are taken into account, as well as the effect of pile-up reweighting. 
+Uncertainties for the single top quark $s$-channel signal and $\ttbar$ background modelling stem additionaly from renormalisation and factorisation effects, moreover initial and final state radiation modelling uncertainties are regarded. 
+
 
 In order to achieve independence from statistical fluctuations, the systematics distributions are smoothed. 
 For uncertainties containing an up and down variation, two-sided symmetrization is done. 
