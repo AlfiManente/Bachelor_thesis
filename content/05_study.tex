@@ -65,36 +65,13 @@ The DNNs output is shown in the form of the seperation plot in \autoref{subfig:s
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{imgs/SR-Schannel_postFit.png}
+        \includegraphics[width=\textwidth]{imgs/SR-Schannel.png}
         \caption{The combined DNN output for every process of interest in this analysis. Histograms are stacked, where the signal yield is displayed in \textcolor{red}{red} on the top of the stack.}
         \label{subfig:histos}
     \end{subfigure}
     \caption{The DNNs output is shown with a seperation plot and the combined DNN output for the different processes }
     \label{fig:dnn_output}
 \end{figure}
-
-Ich muss mir nochmal anschauen wie ich die Event yield einfügen möchte
-
-\begin{table}[htbp]
-    \begin{center}
-        \begin{tabular}{l S }
-        \hline
-         Sample & {}\\
-        \hline
-          s-channel             & 4139.99 \pm 860.569 \\
-          single top tchan      & 9334.36 \pm 1853.71 \\
-          single top tW         & 2619.05 \pm 612.957 \\
-          Z+jets                & 1654.39 \pm 882.368 \\
-          W+jets                & 15159.5 \pm 7858.56 \\
-          ttbar                 & 75216.7 \pm 18753.3 \\
-        \hline
-          Total                 & 108124 \pm 24971.5 \\
-        \hline
-        \end{tabular}
-    \caption{Yields of the analysis}
-    \end{center}
-\end{table}
-
 
 
 \section{Binned Likelihood Fit}
@@ -169,3 +146,107 @@ The up and down variation for each respective bin $i$ consists therefore of the 
 Uncertainties with only an up or down variation undergo one-sided symmetrisation, in which the the existing variation is mirrored for the missing variation.  
 
 \section{Results}
+
+After fitting the NLL onto the Asimov Dataset (ich muss nochmal erklären was ein Asimov Datensatz ist), the signal strength results in $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
+The DNNs output is therefore still consistent with the SM prediction, even after incorporating several more systematic uncertainties into this analysis, as where considered in Niklas' work.
+From the fit the NPs influences on the signal strength are now accessible. 
+The ranking plot sorts the NPs, with the most influential NP shown on the top of the plot, based on their influence on the signal strength. 
+The pre-fit impact of a NP is determined by calculating the shift in the signal strength between the nominal fit and a fit where the respective NP is fixed to the value $\hat{\theta} \pm \Delta \theta$. 
+Here $\Delta \theta = 1$, which resembles the pre-fit uncertainty of the NP parameter of one standard deviation $\sigma$ as used in the constraint term.
+For the post-fit impact a nominal fit and a fit where the NP is fixed with the value $\hat{\theta} \pm \Delta \hat{\theta}$ is compared.
+$\Delta \hat{\theta}$ describes the uncertainty of the NP after the fit, with $\hat{\theta}$ being the value for the respective NP maximizing the likelihood function. 
+The ranking plot for this analysis is displayed in \autoref{fig:ranking}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/ranking_plot.png}
+    \caption{The ranking plot sorts the NPs from top to bottom regarding their influence on the signal strength.}
+    \label{fig:ranking}
+\end{figure}
+
+The ranking plot reveals that the dominant uncertainty originates from the PS and hadronisation modelling of the single top quark s-channel process.
+This is expected, since the hadronic signature of the signal consists only of two $b$-tagged jets, whose correlation depend strongly on the modelling of hard emissions and subsequent showering.
+Furthermore, the features with the greatest impact on the DNNs output are the leading and subleading jets transverse momenta, explaining the strong correspondance to the PS and hadronisation modelling uncertainty. 
+On the detector level the jet energy resolution uncertainties, given by noise pre-recommendation uncertainty and the effective NP 1 uncertainty, have a significant effect on the jet reconstruction and moreover on the jets momenta. 
+Following, is the theoretical prior for the $\ttbar$ cross-section uncertainty and the $\mu_{\rm{R}}$ uncertainty for the $\ttbar$ process.
+Since $\ttbar$ is the major top quark production mode and the major background in this analysis, the background modelling uncertainties show a significant impact. 
+The small signal to backround ratio of the single top-quark s-channel process and the large cross-section of the $\ttbar$ process explain the sensitivity on the signal strength.
+Especially the renormalisation uncertainty described by $\mu_{\rm{R}}$ effects the QCD emissions from the $\ttbar$ background, corresponding to alteriations in the kinematic variables of the background signature.
+In combination with the high sensitivity of the DNN to these high-level kinematics, this explains its large impact.
+Ratio plots of these NPs effects in contrast to the nominal prediction are displayed in \autoref{fig:ratioplots}.
+
+\begin{figure}
+    \centering
+    % Ratio Plot: s-channel PS/hadr
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/ps_sig.png}
+        \caption{PS and hadronisation modelling uncertainty for the signal process. \\}
+        \label{subfig:pshadwignal}
+    \end{subfigure}
+    \hfill
+    % Ratio Plot: JERUnc_Noise_PreRec
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/jer_noise.png}
+        \caption{Jet Energy Resolution Noise pre-recommendation uncertainty for the signal process.}
+        \label{subfig:jernoiseprerec}
+    \end{subfigure}
+    % Ratio Plot: ttbar cros section
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/xsec_ttbar.png}
+        \caption{Prior cross-section uncertainty for the $\ttbar$ background process.}
+        \label{subfig:ttbarxsec}
+    \end{subfigure}
+    \hfill
+    % Ratio Plot: JER_EffectiveNP_1
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/jer_effective.png}
+        \caption{Jet Energy Resolution effective NP 1 uncertainty for the signal process.}
+        \label{subfig:jereffnp1}
+    \end{subfigure}
+    % Ratio Plot: ttbar mu_R
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/mur_ttbar.png}
+        \caption{Uncertainty for the renormalisation factor $\mu_{\rm{R}}$ for the $\ttbar$ background process.}
+        \label{subfig:ttbarmur}
+    \end{subfigure}
+    \hfill
+    % Ratio Plot: s-channel ME matching
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{imgs/syst/me_match_sig.png}
+        \caption{ME matching uncertainty for the signal process.}
+        \label{subfig:mesignal}
+    \end{subfigure}
+    \caption{Ratio plots for the six uncertainties with the biggest impact on the signal strength in this analysis.}
+    \label{fig:ratioplots}
+\end{figure}
+
+The impact of the overall uncertainties are diminished by the DNN model in comparison the the MEM method used in the previous measurement. 
+This is displayed in \autoref{tab:cat_impagt_sigxsecoversm}, where the procentual impact of the systematics grouped by categories are displayed.
+These were determined similarly to the single impacts on shown in the ranking plot. 
+Here the whole set of NPs corresponding to a category are fixed while fitting and then compared to full fit. 
+
+
+\begin{table}
+    \centering
+    \caption{Observed impact of the uncertainties on the measured signal strength of the single top quark s-channel process grouped into categories.}
+    \label{tab:cat_impagt_sigxsecoversm}
+    \begin{tabular}{l c c}
+        \toprule
+        Systematic & Previous measurement: $\frac{\Delta \mu}{\mu} [\%]$ & Current measurement  $\frac{\Delta \mu}{\mu} [\%]$ \\
+        \midrule
+        Signal Modelling                & $+ 18/- 8$  & $+ 6/-6$ \\
+        Jet Energy Resolution           & $+ 18/- 12$ & $+ 11/-9$ \\
+        Jet Vertex Tagger               &  --     & $+ 1/-1$ \\
+        Jet Energy Scale                & $+ 18/- 13$ & $+ 5/-4$ \\
+        Flavor Tagging                  & $+ 12/- 10$ & $+ 4/-4$ \\
+        Luminosity                      & $+ 4/- 3$   & $+ 1/-1$ \\
+        Pile-up Reweighting             & $+ 5/- 3$   & $+ 4/-3$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
