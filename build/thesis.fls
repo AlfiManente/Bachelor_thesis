@@ -526,8 +526,8 @@ INPUT ./imgs/seperation.png
 INPUT ./imgs/seperation.png
 INPUT ./imgs/SR-Schannel.png
 INPUT ./imgs/SR-Schannel.png
-INPUT ./imgs/ranking_plot.png
-INPUT ./imgs/ranking_plot.png
+INPUT ./imgs/Ranking_SigXsecOverSM_Breakdown.png
+INPUT ./imgs/Ranking_SigXsecOverSM_Breakdown.png
 INPUT ./imgs/syst/ps_sig.png
 INPUT ./imgs/syst/ps_sig.png
 INPUT ./imgs/syst/jer_noise.png

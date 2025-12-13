@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  13 DEC 2025 23:30
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  14 DEC 2025 00:10
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2557,63 +2557,64 @@ Package luatex.def Info: imgs/SR-Schannel.png  used on input line 68.
 [18]
 
 [19]
-<imgs/ranking_plot.png, id=243, 598.235pt x 508.90125pt>
-File: imgs/ranking_plot.png Graphic file (type png)
-<use imgs/ranking_plot.png>
-Package luatex.def Info: imgs/ranking_plot.png  used on input line 162.
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=244, 598.235pt x 508.90125pt>
+File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
+<use imgs/Ranking_SigXsecOverSM_Breakdown.png>
+Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
+t line 167.
 (luatex.def)             Requested size: 197.17763pt x 167.73604pt.
 
 
 [20]
-<imgs/syst/ps_sig.png, id=249, 798.985pt x 574.145pt>
+<imgs/syst/ps_sig.png, id=253, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
-Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 183.
+Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 190.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=250, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=254, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
-Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 191.
+Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 198.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--192
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 [][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 Jet En-ergy Res-o-lu-tion Noise pre-
 
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 192--192
+Underfull \hbox (badness 1112) in paragraph at lines 199--199
 \TU/lmr/m/n/9 recommendation un-cer-tainty for the sig-nal
  []
 
-<imgs/syst/xsec_ttbar.png, id=251, 798.985pt x 574.145pt>
+<imgs/syst/xsec_ttbar.png, id=255, 798.985pt x 574.145pt>
 File: imgs/syst/xsec_ttbar.png Graphic file (type png)
 <use imgs/syst/xsec_ttbar.png>
-Package luatex.def Info: imgs/syst/xsec_ttbar.png  used on input line 198.
+Package luatex.def Info: imgs/syst/xsec_ttbar.png  used on input line 205.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_effective.png, id=252, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=256, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
-Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 206.
+Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 213.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=253, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=257, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
-Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 213.
+Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 220.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=254, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=258, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
-Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 221.
+Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 228.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
 
-[21<./imgs/ranking_plot.png>]
+[21<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
 
 [22<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/xsec_ttbar.pn
 g><./imgs/syst/jer_effective.png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_matc
 h_sig.png>]
-Overfull \hbox (32.57027pt too wide) in paragraph at lines 239--252
+Overfull \hbox (32.57027pt too wide) in paragraph at lines 246--259
  [][] 
  []
 
@@ -2679,13 +2680,13 @@ Overfull \hbox (556.0219pt too wide) in paragraph at lines 205--205
 
 
 ]
-<content/Eidesstattliche_Versicherung.pdf, id=336, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=342, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 208.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=338, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=344, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2722,7 +2723,7 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: AF56166F4D01439D433E6FF73EE5FAC7;21867.
+(rerunfilecheck)             Checksum: E142AD0F850D1D4396E9EF9963E96CAD;22046.
 
 
 LaTeX Warning: There were undefined references.
@@ -2735,15 +2736,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 55920 strings out of 476291
+ 55925 strings out of 476291
  125007,2848258 words of node,token memory allocated
- 921 words of node memory still in use:
+ 933 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 5 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 57 attribute, 79 glue_spec, 30 attribute_list, 2 write, 13 pdf_acti
+rn, 4 glyph, 59 attribute, 79 glue_spec, 31 attribute_list, 2 write, 14 pdf_acti
 on nodes
-   avail lists: 1:20,2:6363,3:1736,4:182,5:439,6:112,7:9520,8:70,9:1030,10:24,11
-:740,12:1
- 76835 multiletter control sequences out of 65536+600000
+   avail lists: 1:20,2:6361,3:1736,4:182,5:439,6:111,7:9521,8:70,9:1030,10:24,11
+:748,12:1
+ 76839 multiletter control sequences out of 65536+600000
  180 fonts using 60757767 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
@@ -2768,10 +2769,10 @@ ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (33 pages, 1502892 bytes).
+Output written on thesis.pdf (33 pages, 1504211 bytes).
 
-PDF statistics: 527 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 84 named destinations out of 1000 (max. 131072)
+PDF statistics: 533 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 85 named destinations out of 1000 (max. 131072)
  168 words of extra memory for PDF output out of 10000 (max. 100000000)
 

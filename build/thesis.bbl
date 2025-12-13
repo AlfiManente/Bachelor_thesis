@@ -614,6 +614,75 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevD.110.030001
       \endverb
     \endentry
+    \entry{covariance_matrix_method}{misc}{}{}
+      \name{author}{8}{}{%
+        {{hash=5ae9b0a6f3bb2287179db06f149f1eff}{%
+           family={Pinto},
+           familyi={P\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod}}}%
+        {{hash=81ba4a7fe29ffcb965383c516e0eb135}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhibo},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3bc6a51fa98894b626f99f52d605d060}{%
+           family={Balli},
+           familyi={B\bibinitperiod},
+           given={Fabrice},
+           giveni={F\bibinitperiod}}}%
+        {{hash=74d4ee61ca77486f49672be587d1eef0}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f23f59440f98247409280be38b70b511}{%
+           family={Boonekamp},
+           familyi={B\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cb3b0e334d5da83a079a3aee93531a36}{%
+           family={Chapon},
+           familyi={C\bibinitperiod},
+           given={Émilien},
+           giveni={É\bibinitperiod}}}%
+        {{hash=afa526f761983b326a45537997387c78}{%
+           family={Kawamoto},
+           familyi={K\bibinitperiod},
+           given={Tatsuo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=28268b073f0c88a98ba16de905c0a6f1}{%
+           family={Malaescu},
+           familyi={M\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{abde844ee4ceb5d13e2592528d5b7ea8}
+      \strng{fullhash}{af3c57f0781edbf575bae9c7924d9695}
+      \strng{fullhashraw}{af3c57f0781edbf575bae9c7924d9695}
+      \strng{bibnamehash}{abde844ee4ceb5d13e2592528d5b7ea8}
+      \strng{authorbibnamehash}{abde844ee4ceb5d13e2592528d5b7ea8}
+      \strng{authornamehash}{abde844ee4ceb5d13e2592528d5b7ea8}
+      \strng{authorfullhash}{af3c57f0781edbf575bae9c7924d9695}
+      \strng{authorfullhashraw}{af3c57f0781edbf575bae9c7924d9695}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.data-an}
+      \field{eprinttype}{arXiv}
+      \field{title}{Uncertainty components in profile likelihood fits}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2307.04007
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2307.04007
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2307.04007
+      \endverb
+    \endentry
     \entry{Seema:2706904}{report}{}{}
       \name{author}{7}{}{%
         {{hash=fb2f81220a3629888e8982f6d70f2dbb}{%

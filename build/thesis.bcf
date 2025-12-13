@@ -2402,6 +2402,7 @@
     <bcf:citekey order="23" intorder="1">Bianchi:2837191</bcf:citekey>
     <bcf:citekey order="24" intorder="1">Seema:2706904</bcf:citekey>
     <bcf:citekey order="25" intorder="1">niklas_master</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">covariance_matrix_method</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

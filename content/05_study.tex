@@ -147,32 +147,41 @@ Uncertainties with only an up or down variation undergo one-sided symmetrisation
 
 \section{Results}
 
-After fitting the NLL onto the Asimov Dataset (ich muss nochmal erklären was ein Asimov Datensatz ist), the signal strength results in $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
-The DNNs output is therefore still consistent with the SM prediction, even after incorporating several more systematic uncertainties into this analysis, as where considered in Niklas' work.
+After fitting the NLL onto the Asimov Dataset, the signal strength results in $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
+The DNNs output is therefore still consistent with the SM prediction, even after incorporating several more systematic uncertainties into this analysis, as were considered in Niklas' work.
 From the fit the NPs influences on the signal strength are now accessible. 
 The ranking plot sorts the NPs, with the most influential NP shown on the top of the plot, based on their influence on the signal strength. 
-The pre-fit impact of a NP is determined by calculating the shift in the signal strength between the nominal fit and a fit where the respective NP is fixed to the value $\hat{\theta} \pm \Delta \theta$. 
-Here $\Delta \theta = 1$, which resembles the pre-fit uncertainty of the NP parameter of one standard deviation $\sigma$ as used in the constraint term.
-For the post-fit impact a nominal fit and a fit where the NP is fixed with the value $\hat{\theta} \pm \Delta \hat{\theta}$ is compared.
-$\Delta \hat{\theta}$ describes the uncertainty of the NP after the fit, with $\hat{\theta}$ being the value for the respective NP maximizing the likelihood function. 
+Their respective impacts are calculated using the \textit{covariance matrix method} \cite{covariance_matrix_method}.
+Here the impact $I=\sigma_\text{total}^a C_{a,n} \sigma^n$ is determined with the correlation $C_{a,n}$ between the POI $a$ and the NP $n$, the total uncertainty $\sigma_\text{total}^a$ of the NP and the uncertainty $\sigma^n$ of the POI. 
 The ranking plot for this analysis is displayed in \autoref{fig:ranking}
+
+ 
+%The pre-fit impact of a NP is determined by calculating the shift in the signal strength between the nominal fit and a fit where the respective NP is fixed to the value $\hat{\theta} \pm \Delta \theta$. 
+%Here $\Delta \theta = 1$, which resembles the pre-fit uncertainty of the NP parameter of one standard deviation $\sigma$ as used in the constraint term.
+%For the post-fit impact a nominal fit and a fit where the NP is fixed with the value $\hat{\theta} \pm \Delta \hat{\theta}$ is compared.
+%$\Delta \hat{\theta}$ describes the uncertainty of the NP after the fit, with $\hat{\theta}$ being the value for the respective NP maximizing the likelihood function. 
+
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{imgs/ranking_plot.png}
+    \includegraphics[width=0.7\textwidth]{imgs/Ranking_SigXsecOverSM_Breakdown.png}
     \caption{The ranking plot sorts the NPs from top to bottom regarding their influence on the signal strength.}
     \label{fig:ranking}
 \end{figure}
 
 The ranking plot reveals that the dominant uncertainty originates from the PS and hadronisation modelling of the single top quark s-channel process.
 This is expected, since the hadronic signature of the signal consists only of two $b$-tagged jets, whose correlation depend strongly on the modelling of hard emissions and subsequent showering.
-Furthermore, the features with the greatest impact on the DNNs output are the leading and subleading jets transverse momenta, explaining the strong correspondance to the PS and hadronisation modelling uncertainty. 
-On the detector level the jet energy resolution uncertainties, given by noise pre-recommendation uncertainty and the effective NP 1 uncertainty, have a significant effect on the jet reconstruction and moreover on the jets momenta. 
+
+Furthermore, the features with the greatest impact on the DNNs output are the leading and subleading jets transverse momenta, explaining the strong correspondance to the PS and hadronisation modelling uncertainty. (Das muss ich aber noch im DNN Kapitel erklären)
+
+On the detector level the jet energy resolution uncertainties, given by the noise pre-recommendation uncertainty and the effective NP 1 uncertainty, have a significant effect on the jet reconstruction and moreover on the jet momenta. 
 Following, is the theoretical prior for the $\ttbar$ cross-section uncertainty and the $\mu_{\rm{R}}$ uncertainty for the $\ttbar$ process.
 Since $\ttbar$ is the major top quark production mode and the major background in this analysis, the background modelling uncertainties show a significant impact. 
 The small signal to backround ratio of the single top-quark s-channel process and the large cross-section of the $\ttbar$ process explain the sensitivity on the signal strength.
 Especially the renormalisation uncertainty described by $\mu_{\rm{R}}$ effects the QCD emissions from the $\ttbar$ background, corresponding to alteriations in the kinematic variables of the background signature.
-In combination with the high sensitivity of the DNN to these high-level kinematics, this explains its large impact.
+Finally, the pile-up reweighting uncertainties have effect on jet multiplicies, their energies and several other high-level kinematics. 
+Pile up describes the effects that happen, when in the crossing of a bunch in the LHC, several $pp$-collisions happen in the same time and can contaminate each other (was genau ist pile up und wie kann ich das besser erklären?)
+These uncertainties directly effect the high-level kinematic variables implemented as features in the DNN. 
 Ratio plots of these NPs effects in contrast to the nominal prediction are displayed in \autoref{fig:ratioplots}.
 
 \begin{figure}
