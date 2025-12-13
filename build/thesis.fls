@@ -543,6 +543,8 @@ INPUT ./imgs/syst/me_match_sig.png
 INPUT ./content/06_outlook.tex
 INPUT ./content/a_anhang.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
+INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
+INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc
 INPUT ./content/Eidesstattliche_Versicherung.pdf
 INPUT ./content/Eidesstattliche_Versicherung.pdf
 INPUT ./content/Eidesstattliche_Versicherung.pdf

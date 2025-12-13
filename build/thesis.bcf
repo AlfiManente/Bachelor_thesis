@@ -2373,19 +2373,27 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">higgs</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">atlas_higgs</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">cms_higgs</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">higgs_mass</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">UZH_SM</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">UZH_SM</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">ttbar_cross</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">prev_measure</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">prev_measure</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Bianchi:2837191</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Bianchi:2837191</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Seema:2706904</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">niklas_master</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">higgs_disc1</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">higgs_disc2</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">top_quark_disc1</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">top_quark_disc2</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">topmass_estimate</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">topmass_prec</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">particle_rev</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">lastmeasure_atlas</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">higgs</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">atlas_higgs</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">cms_higgs</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">higgs_mass</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">UZH_SM</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">UZH_SM</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">ttbar_cross</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">prev_measure</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">prev_measure</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Bianchi:2837191</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Bianchi:2837191</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Seema:2706904</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">niklas_master</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

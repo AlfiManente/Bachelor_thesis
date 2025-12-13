@@ -1,25 +1,25 @@
 \babel@toc {american}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Properties of the Top Quark within the Standard Model}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview of the Standard Model}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}The Top Quark}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Single top-quark production in the s-channel}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Top quark decay}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Background Processes}{7}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Previous measurement}{8}{subsection.2.2.4}%
-\contentsline {chapter}{\numberline {3}The ATLAS detector}{10}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Object Definition and Event Selection}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Monte Carlo Samples}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Object Definition}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Event Selection}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Analysis}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Analysis Strategy}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}DNN Model}{16}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Binned Likelihood Fit}{18}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Systematic Uncertainties}{20}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Results}{21}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Summary and Outlook}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {2}Properties of the Top Quark within the Standard Model}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview of the Standard Model}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Top Quark}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Single top-quark production in the s-channel}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Top quark decay}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Background Processes}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Previous measurement}{7}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}The ATLAS Detector}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Object Definition and Event Selection}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Monte Carlo Samples}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Object Definition}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Event Selection}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Analysis and Results}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analysis Strategy}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}DNN Model}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Statistical Method}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Systematic Uncertainties}{19}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Results}{20}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Summary and Outlook}{24}{chapter.6}%
 \def \@chapapp {\appendixname }
-\contentsline {chapter}{\numberline {A}Appendix}{26}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{27}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{26}{chapter*.15}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
