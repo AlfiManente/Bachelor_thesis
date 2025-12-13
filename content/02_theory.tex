@@ -48,27 +48,32 @@ It mediates none of the fundamental forces, but by coupling to it fermions and t
 
 \section{The Top Quark}
 
-First postulated by Makoto Kobayashi and Toshihide Maskawa in 1973 and later discovered at Fermilab with the CDF and D\O \, experiments of the Tevatron collider in 1995 in $p\overline{p}$ collisions, the top quark is the last discovered quark in the SM. 
-As up-type quark in the third generation, it carries the heaviest mass of all quarks at $m_\rm{t}= \SI{172.53 \pm 0.29}{\GeV}$ (citation), it posseses a large decay width of $\Gamma_{t}= \asym{1.42}{0.19}{0.15}{\GeV}$ (citation). 
-A large decay width leads to a short mean life time of $\tau = \sfrac{\hbar}{\Gamma_\rm{t}} \approx \SI{5e-25}{\s}$. 
-Unlike other quarks, which hadronise due to colour confinement, the top quark decays before hadronisation is possible, due to its short lifetime. 
-The tops properties, like spin information or kinetic properties, are then to be decoded by studying the decay particles, which makes its analysis especially interesting. 
-The top quark decays almost exclusively into a $\rm{W}$-boson and a $b$-quark.   
+First postulated by Makoto Kobayashi and Toshihide Maskawa in 1973 \cite{top_theory} and later discovered at Fermilab with the CDF and D\O \, experiments of the Tevatron collider in 1995 in $p\overline{p}$ collisions \cite{top_quark_disc1,top_quark_disc2}, the top quark is the last discovered quark in the SM and is the up type quark of the third generation.
+It carries the heaviest mass of all quarks at $m_\rm{t}= \SI{172.95 \pm 0.53}{\GeV}$ \cite{topmass_prec} and posseses a large decay width of $\Gamma_{t}= \asym{1.42}{0.19}{0.15}{\GeV}$ \cite{topdecaywidth}. 
+This large decay width leads to a short mean life time of $\tau = \sfrac{\hbar}{\Gamma_\rm{t}} \approx \SI{5e-25}{\s}$\cite{particle_rev}. 
+Unlike other quarks, which hadronize due to colour confinement, the top quark decays before hadronization is possible, due to this short lifetime. 
+The tops properties, like spin information or kinematic properties, are then to be decoded by studying the decay particles, which makes its analysis especially interesting. 
+The top quark decays almost exclusively into a $W$-boson and a $b$-quark.   
 
-\subsection{Single top-quark production in the s-channel}
+\section{Single Top Quark Production in the s-Channel}
 
-The s-channel is one of the electroweak single top-production modes. 
-In the single top-quark s-channel, a top-quark and a bottom anitquark are created from a virtual $\rm{W}$-boson, after the annihilation of a quark and antiquark. 
-The s-channel shows a $tWb$ vertex, where the CKM matrix element $V_\rm{tb} \approx 1$ is involved.
+The s-channel is one of the electroweak top-production modes, producing a single top or antitop quark. 
+In the single top-quark s-channel, a top-quark and a bottom anitquark are created from a virtual $W$-boson, after the annihilation of a quark and antiquark. 
+The s-channel shows a $tWb$ vertex, with the CKM matrix element being almost one.
 Therefore the s-channel is a strong probe for the electroweak properties of the top quark. 
-In the LHC, the annihilating particles are predominantly valence up quarks ($u$) and antidown ($\overline{d}$) from the pool of sea quarks in the colliding protons. 
-The Feynman diagram of the $s$-channel process at LO is shown in \autoref{subfig:schan}.
+At the LHC, the annihilating particles are predominantly valence up quarks ($u$) and antidown ($\overline{d}$) from the pool of sea quarks in the colliding protons.
+
+(Unterschied zwischen $\overline{u}$ und $d$ als annihilierende Teilchen heraus finden)
+
+The Feynman diagram of the s-channel process at LO in QCD is shown in \autoref{subfig:schan}.
+
+(Den folgenden Teil erst bei der simulationen erwähnen)
 
 The parton density function (PDF) is a representation of the probability distrubtion with wich a parton carries a fraction of the momentum of a hadron, denoted by using the \textit{Bjorken $x$}. 
 $p_i = x p_p$ resembles the momentum fraction the parton $i$ carries from the whole proton momentum $p_p$. 
 Where a parton is a hadron component, either a quark or gluon. 
-The cross-section $\sigma_{\rm{s-chan.}}$ of the single top quark $s$-channel process, is determined using the factorisation theorem of the QCD.
-By convolving the PDFs of the parton constituents $i$ and $j$ with the cross section $\sigma_{ij \rightarrow t\overline{b}}$ of the respective sub-process and then summing over all possible sub-processes, the $s$-channel cross section is determined. 
+The cross-section $\sigma_{\rm{s-chan.}}$ of the single top quark s-channel process, is determined using the factorisation theorem of the QCD.
+By convolving the PDFs of the parton constituents $i$ and $j$ with the cross section $\sigma_{ij \rightarrow t\overline{b}}$ of the respective sub-process and then summing over all possible sub-processes, the s-channel cross section is determined. 
 
 %occuring from the interaction of partons $i$ and $j$ , 
 \begin{equation*}
@@ -93,7 +98,9 @@ The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the 
 
 
 \begin{figure}
+    \centering
     \begin{subfigure}{0.5\textwidth}
+        \centering
         \begin{tikzpicture}
             \begin{feynman}
               \vertex (a);
@@ -122,13 +129,14 @@ The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the 
     \end{subfigure}
     % \hfill
     \begin{subfigure}{0.5\textwidth}
+        \centering
         \begin{tikzpicture}
             \begin{feynman}
               \vertex (a);
               \vertex [right=of a] (b);
               \vertex [above right=7mm and 15mm of b] (c1);
               \vertex [below right=of b] (c2) {$b$};
-              \vertex [above right=8mm of c1] (d1) {$\overline{e}, \, \overline{\mu}$};
+              \vertex [above right=8mm of c1] (d1) {$e^+, \, \mu^+$};
               \vertex [below right=8mm of c1] (d2) {$\nu_e, \, \nu_\mu$};
 
               \diagram* {
@@ -141,33 +149,38 @@ The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the 
         \caption{Leptonic decay of the top quark}
         \label{subfig:topdecay}
     \end{subfigure}
-    \caption{Feynman Diagram of the singlte top-quark s-channel production mode and further decay of the top-quark.}
+    \caption{Feynman diagram of the single top quark s-channel production mode (left) and the leptonic decay of the top quark (right).}
     \label{fig:schan_feynman}
 \end{figure}
 
 
-\subsection{Top quark decay}
+\subsection{Top Quark Decay}
 
-The top quarks decay occurs via the weak interaction, hinted by the resulting decay products consisting of a $b$-quark and a $W$-boson. 
-Furhter, the $W$-boson decays either hadronically $\sfrac{2}{3}$ or leptonically  $\sfrac{1}{3}$ of the times. 
-Hadronic decay results into quark pairs, wheresas the leptonic decay emits a lepton and its corresponding neutrino.
+The top quark decay occurs via the weak interaction, mainly into a $b$-quark and a $W$-boson. 
+Furthermore, the $W$-boson decays either hadronically $\sfrac{2}{3}$ or leptonically  $\sfrac{1}{3}$ of the times. 
+The hadronic decay results into two quarks, whereas the leptonic decay results in a charged lepton and its corresponding neutrino.
+The leptonic decay of the $W$-boson is shown in \autoref{subfig:topdecay}.
 As there are different color permutations the quarks can carry, the phase space for the hadronic decay is larger, making it more likely than the leptonic decay.
-During the s-channel analysis only leptonic $W$-boson decays are selected, as the resulting jets from the hadronic decay are contaminated by multijet background.
-Since neutrinos cannot be directly detected, the event has to be examined for missing transverse momentum $\etmiss$. 
-If the sum of all transverse momenta of all the outgoing particles, does not add to zero, then a particle has remained undetected and the event has missing transverse momentum $\etmiss$, as prior to the $pp$ collision both beam momenta should cancel out. The leptonic decay mode of the top quark, as looked for in this thesis, is shown in \autoref{subfig:topdecay}.
+During the s-channel analysis only leptonic $W$-boson decays are selected, as the final state from the hadronic decay suffers from multijet background production.
+% Since neutrinos cannot be directly detected, the event has to be examined for missing transverse momentum $\etmiss$. 
+If the sum of all transverse momenta of all the outgoing particles, does not add to zero, then a particle has remained undetected and the event has missing transverse momentum $\etmiss$, as prior to the collision.
+Events with neutrinos in the final state are therefore expected to have missing transverse momentum. 
+% both beam momenta should cancel out. The leptonic decay mode of the top quark, as looked for in this thesis, is shown in \autoref{subfig:topdecay}.
 
-The searched for signature consist therefore of a charged lepton from the leptonic $W$-boson decay, missing transverse momentum $\etmiss$ from the undetectable neutrino, and two b-tagged jets, one produced from the $\overline{b}$-quark of the s-channel process itself and one from the $b$-quark of the top-quark decay. $\tau$ leptons have a short lifetime and can thus not be detected, but first and second generation leptons from the $\tau$ decay can be observed. Because of that lepton signature is narrowed down to either an electron or muon.
+The searched for signature consist therefore of a charged lepton from the leptonic $W$-boson decay, missing transverse momentum $\etmiss$ from the undetectable neutrino, and two $b$ quarks, one produced from the s-channel process itself and one from the $b$-quark of the top-quark decay. 
+%Hier nochmal erklären was jets sind. Später in der Object selection b-tagging erklären
+$\tau$ leptons have a short lifetime and can thus not be directly detected, but first and second generation leptons from the $\tau$ decay can be observed. Because of that lepton signature is narrowed down to either an electron or muon.
 
 \subsection{Background Processes}
 
-There are processes with similar signatures in the detector. 
-Differentiating these processes from the signal process of interest is a major task in any analysis.
-These so called background processes consist predominantly of $\ttbar$ production and W+jets production for the single top s-channel analysis. 
-In the LHC experiment $\ttbar$ production occurs mostly through gluon-gluon fusion, but with less probability can also happen through quark-pair-annihilation.
+There are physics processes with similar signatures in the detector as the signal process discussed above. 
+Differentiating these processes from the process of interest is a major task in any analysis.
+These so-called background processes consist predominantly of $\ttbar$ production and $W$+jets production for the single top s-channel analysis. 
+In the LHC collisions, $\ttbar$ production occurs mostly through gluon-gluon fusion, but with less probability can also happen through quark-pair-annihilation.
 With a theoretical cross-section of  $\sigma_{\ttbar}^{\rm{Theo.}}=\asym{832}{20}{29}{\pico\barn}$\cite{ttbar_cross}, it exceeds every other top quark production mode. 
-The other single top quark production modes can be mistaken for signal as well, but to a lesser degree, since their cross sections are noticeably smaller than $\ttbar$ with $\sigma_{t-\rm{chan.}}^{\rm{Theo.}}=\asym{216.99}{9.04}{7.71}{\pico\barn} $ and $\sigma_{tW-\rm{Prod.}}^{\rm{Theo.}}=\SI{71.7 \pm 3.8}{\pico\barn}$.
-Other minor backgrounds stem from multijet background processes, Z+jets or diboson(WW,WZ,ZZ) production.
-\autoref{fig:background_feyn} shows the LO Feynman diagrams for $\ttbar$ production via gluon-gluon fusion in the s-channel, and the other two single top-quark production modes.
+The other single top quark production modes can be mistaken for signal as well, but to a lesser degree, since their cross sections are noticeably smaller than $\ttbar$ with $\sigma_{t-\rm{chan.}}^{\rm{Theo.}}=\asym{216.99}{9.04}{7.71}{\pico\barn} $ \cite{tchan_xsec} and $\sigma_{tW-\rm{Prod.}}^{\rm{Theo.}}=\SI{71.7 \pm 3.8}{\pico\barn}$ \cite{tw_xsec}.
+Other minor backgrounds stem from multijet background processes, $Z$+jets or diboson($WW$,$WZ$,$ZZ$) production.
+\autoref{fig:background_feyn} shows the LO Feynman diagrams for $\ttbar$ production via gluon-gluon fusion, and the other two single top-quark production modes.
 
 \begin{figure}
     \centering
@@ -192,7 +205,7 @@ Other minor backgrounds stem from multijet background processes, Z+jets or dibos
                 };
             \end{feynman}
         \end{tikzpicture}
-        \caption{$\ttbar$-production through gluon gluon fusion.}
+        \caption{$\ttbar$ production through gluon gluon fusion.}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.3\textwidth}
@@ -213,7 +226,7 @@ Other minor backgrounds stem from multijet background processes, Z+jets or dibos
                 };
             \end{feynman}
         \end{tikzpicture}
-        \caption{Single top $t$-channel. \\ ~ \\  }
+        \caption{Single top t-channel. \\ ~ \\  }
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.3\textwidth}
@@ -240,21 +253,21 @@ Other minor backgrounds stem from multijet background processes, Z+jets or dibos
     \label{fig:background_feyn}
 \end{figure}
 
-Not only does the $\ttbar$-production mode hold a high cross-section, but the fact that it produces real top-quark decays makes it a difficult background. 
+Not only does the $\ttbar$-production mode hold a large cross-section, but the fact that it produces real top-quark decays makes it a difficult background. 
 The two $W$-bosons, resulting from the $t$-quark and $\overline{t}$-quark decay, again can decay leptonically or hadronically. 
 If both $W$-bosons decay leptonically, the dileptonic final state, can mimic the signal signature if one of the leptons stays undetected. 
-For the semileptonic decay, where one $W$-boson decays leptonically and one hadronically, the final state signature can emulate the signal if only two b-tagged jets get detected.
+For the semileptonic decay, where one $W$-boson decays leptonically and one hadronically, the final state signature can emulate the signal if only two $b$ jets get detected.
 The fully hadronic decay is very unlikely to be mistaken for the signal. 
-Likewise the single top-quark production mode in the $t$-channel and the associated $tW$ production show real top quark decays in their signatures.
-For the $t$-channel the final state reproduces the signal signature if a b-tagged jet or misidentified lighter quark jet gets associated with the event.
+Likewise the single top-quark production mode in the t-channel and the associated $tW$ production also show real top quark decays in their signatures.
+For the t-channel the final state reproduces the signal signature if a $b$ jet or misidentified lighter quark jet gets associated with the event.
 In the associated $tW$-production, the $b$-quark turns into a $t$-quark by emitting a $W$-boson.
-If this $W$-boson decays hadronically and produces a b-tagged jet or a jet that gets misidentified, the final state signature is the same as the signal signature.
-Provided, the $W$-boson decays leptonically and two b-tagged jets or misidentified jets get associated with the event, the W+jets background mimics the signal.
-And in the case of multijet background, leptons from heavy flavor decays, electrons from photon conversion or jets misidentified as leptons paired with two associated b-tagged jets or misidentified jets lead to the signal signature.
+If this $W$-boson decays hadronically and produces a $b$ jet or a jet that gets misidentified, the final state signature is the same as the signal signature.
+If the $W$-boson decays leptonically and two $b$ jets or misidentified jets get associated with the event, the W+jets background also mimics the signal.
+In the case of multijet background, leptons from heavy flavor decays, electrons from photon conversion or jets misidentified as leptons paired with two $b$ jets or misidentified jets lead to the signal signature.
 
 
 
-\subsection{Previous measurement}
+\subsection{Previous Measurements}
 
 \begin{itemize}
     \item Beschreibe welche Unsicherheiten genau die vorherige Messung verschlechtert

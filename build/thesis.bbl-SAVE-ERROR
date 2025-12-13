@@ -19,6 +19,87 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{top_quark_disc2}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=c94a18efec8da5558988aba6737112be}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a1b1dab26759a12ac9c5fb0a6659457e}{%
+           family={Akimoto},
+           familyi={A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b7e02b64c9597ee0a995f9ff1a96f523}{%
+           family={Akopian},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6dc6e706655d0f351fc0b0b6ca11c4f0}{%
+           family={Albrow},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d59023b233fbaa401d525fc68967595c}{%
+           family={Amendolia},
+           familyi={A\bibinitperiod},
+           given={S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=eb65ea13326c1db85aa2000851d0ecb5}{%
+           family={Amidei},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=338c6916553b5a8674dd0049c895e1f5}{%
+           family={Antos},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b878d9c5eb39d9aab09a9f33985b35ff}{%
+           family={Anway-Wiese},
+           familyi={A\bibinithyphendelim W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e978ef48335144ca313c2c937f3551b4}{%
+           family={Aota},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{499c7265df56d8c98dc5a7b9d9c1e573}
+      \strng{fullhash}{be1bcd1e242d2668ce2143a5f5ec54b1}
+      \strng{fullhashraw}{be1bcd1e242d2668ce2143a5f5ec54b1}
+      \strng{bibnamehash}{499c7265df56d8c98dc5a7b9d9c1e573}
+      \strng{authorbibnamehash}{499c7265df56d8c98dc5a7b9d9c1e573}
+      \strng{authornamehash}{499c7265df56d8c98dc5a7b9d9c1e573}
+      \strng{authorfullhash}{be1bcd1e242d2668ce2143a5f5ec54b1}
+      \strng{authorfullhashraw}{be1bcd1e242d2668ce2143a5f5ec54b1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{4}
+      \field{title}{Observation of Top Quark Production in $\overline{\mathit{p}}\mathit{p}$ Collisions with the Collider Detector at Fermilab}
+      \field{volume}{74}
+      \field{year}{1995}
+      \field{pages}{2626\bibrangedash 2631}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.74.2626
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2626
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2626
+      \endverb
+    \endentry
     \entry{Bianchi:2837191}{unpublished}{}{}
       \name{author}{2}{}{%
         {{hash=95eb0ac335bc193a5030f51eff45afaf}{%
@@ -54,6 +135,273 @@
       \verb https://cds.cern.ch/record/2837191
       \endverb
     \endentry
+    \entry{higgs_disc2}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=8ce87b4dc27b48d204336f9068ca8918}{%
+           family={Chatrchyan},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=976aacbef05f89ca796b9641fddac8a8}{%
+           family={Khachatryan},
+           familyi={K\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=eb39bbc4713b0118366317a14ed623c7}{%
+           family={Sirunyan},
+           familyi={S\bibinitperiod},
+           given={A.M.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9905fc4c424322f81b3e50445bddef7}{%
+           family={Tumasyan},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e2872e7b083881b9e21df137964a7b5}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cb3e4dd33251faa3ea6bf48ee2bb905d}{%
+           family={Aguilo},
+           familyi={A\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ab7e1f61569e4e3756a7f94d2498349}
+      \strng{fullhash}{a6a1621aa7d1e688377e30055d6efd46}
+      \strng{fullhashraw}{a6a1621aa7d1e688377e30055d6efd46}
+      \strng{bibnamehash}{4ab7e1f61569e4e3756a7f94d2498349}
+      \strng{authorbibnamehash}{4ab7e1f61569e4e3756a7f94d2498349}
+      \strng{authornamehash}{4ab7e1f61569e4e3756a7f94d2498349}
+      \strng{authorfullhash}{a6a1621aa7d1e688377e30055d6efd46}
+      \strng{authorfullhashraw}{a6a1621aa7d1e688377e30055d6efd46}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{1}
+      \field{title}{Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC}
+      \field{volume}{716}
+      \field{year}{2012}
+      \field{pages}{30\bibrangedash 61}
+      \range{pages}{32}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physletb.2012.08.021
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269312008581
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269312008581
+      \endverb
+    \endentry
+    \entry{topdecaywidth}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Direct top-quark decay width measurement in the ${{t\overline{t} }}$ lepton+jets channel at $\sqrt{s}=8~\text {TeV}$ with the ATLAS experiment}
+      \field{volume}{78}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-018-5595-5
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-018-5595-5
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-018-5595-5
+      \endverb
+    \endentry
+    \entry{lastmeasure_atlas}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{number}{6}
+      \field{title}{Measurement of single top-quark production in the s-channel in proton–proton collisions at $$ \sqrt{s} $$ = 13 TeV with the ATLAS detector}
+      \field{volume}{2023}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/jhep06(2023)191
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/JHEP06(2023)191
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/JHEP06(2023)191
+      \endverb
+    \endentry
+    \entry{topmass_prec}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{month}{8}
+      \field{title}{Measurement of the top quark mass with the ATLAS detector using <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.svg"> <mml:mi>t</mml:mi> <mml:mover accent="true"> <mml:mrow> <mml:mi>t</mml:mi> </mml:mrow> <mml:mrow> <mml:mo stretchy="false">¯</mml:mo> </mml:mrow> </mml:mover> </mml:math> events with a high transverse momentum top quark}
+      \field{volume}{867}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2025.139608
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.physletb.2025.139608
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.physletb.2025.139608
+      \endverb
+    \endentry
+    \entry{higgs_disc1}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{1}
+      \field{title}{Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC}
+      \field{volume}{716}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physletb.2012.08.020
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S037026931200857X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S037026931200857X
+      \endverb
+    \endentry
+    \entry{top_quark_disc1}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5793b69fc117c3ea7cd0ddc70ea8e601}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={D\0},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{fullhash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{fullhashraw}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{bibnamehash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{authorbibnamehash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{authornamehash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{authorfullhash}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \strng{authorfullhashraw}{5793b69fc117c3ea7cd0ddc70ea8e601}
+      \field{extraname}{5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{4}
+      \field{title}{Observation of the Top Quark}
+      \field{volume}{74}
+      \field{year}{1995}
+      \field{pages}{2632\bibrangedash 2637}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.74.2632
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2632
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2632
+      \endverb
+    \endentry
     \entry{niklas_master}{masterthesis}{}{}
       \name{author}{1}{}{%
         {{hash=bd11e068bfc0ceabf096a8ea2d8d1953}{%
@@ -81,6 +429,193 @@
       \field{title}{Search for single top quark production at ATLAS using Deep Neural Networks and Graph Neural Networks.}
       \field{type}{Master's Thesis}
       \field{year}{2025}
+    \endentry
+    \entry{topmass_estimate}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=2d163d48b020e9cefeb0c9d7789a7ea3}{%
+           family={Hayrapetyan},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9905fc4c424322f81b3e50445bddef7}{%
+           family={Tumasyan},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e2872e7b083881b9e21df137964a7b5}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c3e56c7ec41643e71bb8ed51c0f604c7}{%
+           family={Andrejkovic},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f8cc2bcab995df89e658cd6fa56681e6}{%
+           family={Bergauer},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=69636b5f582dddc21efa3a5f503faa71}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{ac89e0374b86539bdff98ed638f8b47f}
+      \strng{fullhash}{dde24c609fe93a608e88b22d9f6e4a46}
+      \strng{fullhashraw}{dde24c609fe93a608e88b22d9f6e4a46}
+      \strng{bibnamehash}{ac89e0374b86539bdff98ed638f8b47f}
+      \strng{authorbibnamehash}{ac89e0374b86539bdff98ed638f8b47f}
+      \strng{authornamehash}{ac89e0374b86539bdff98ed638f8b47f}
+      \strng{authorfullhash}{dde24c609fe93a608e88b22d9f6e4a46}
+      \strng{authorfullhashraw}{dde24c609fe93a608e88b22d9f6e4a46}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{6}
+      \field{number}{26}
+      \field{title}{Combination of Measurements of the Top Quark Mass from Data Collected by the ATLAS and CMS Experiments at <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msqrt><mml:mi>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>7</mml:mn></mml:math> and 8 TeV}
+      \field{volume}{132}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1103/physrevlett.132.261902
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.132.261902
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.132.261902
+      \endverb
+    \endentry
+    \entry{top_theory}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1d18c7040021fd59e144a3f51f75838b}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e3a8410c2e302d471011b343587d0fd4}{%
+           family={Maskawa},
+           familyi={M\bibinitperiod},
+           given={Toshihide},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{c18425b894a41a540867244758451d0e}
+      \strng{fullhash}{c18425b894a41a540867244758451d0e}
+      \strng{fullhashraw}{c18425b894a41a540867244758451d0e}
+      \strng{bibnamehash}{c18425b894a41a540867244758451d0e}
+      \strng{authorbibnamehash}{c18425b894a41a540867244758451d0e}
+      \strng{authornamehash}{c18425b894a41a540867244758451d0e}
+      \strng{authorfullhash}{c18425b894a41a540867244758451d0e}
+      \strng{authorfullhashraw}{c18425b894a41a540867244758451d0e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{CP-Violation in the Renormalizable Theory of Weak Interaction}
+      \field{volume}{49}
+      \field{year}{1973}
+      \field{pages}{652\bibrangedash 657}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1143/PTP.49.652
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1143/PTP.49.652
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1143/PTP.49.652
+      \endverb
+    \endentry
+    \entry{particle_rev}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=25b6d239864c97a90ec8be94cdea417d}{%
+           family={Navas},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7afff7d8d2427ef604d33d6e9f44d22e}{%
+           family={Amsler},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6ff146398dd1f1fd0a4266ed7ef7e608}{%
+           family={Gutsche},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ef54ded808634042016fe9b6bbc840bf}{%
+           family={Hanhart},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=54bb9ded5d0f9a621ff4c94a733fed39}{%
+           family={Hernández-Rey},
+           familyi={H\bibinithyphendelim R\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=95121035c0c64876e65de98cd3ed27d9}{%
+           family={Louren\ifmmode\bibnamedelimb \mbox{ç}\else\bibnamedelima ç\fi{}o},
+           familyi={L\bibinitperiod\bibinitdelim ç\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bcecb964fc91483070e0060b558d9b5c}{%
+           family={Masoni},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cecad2174a242e5eeb449851a14907ee}{%
+           family={Mikhasenko},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9e02c695d9a57f6e8669b26d9be3e077}
+      \strng{fullhash}{72425c1552529259084ed0cefacce730}
+      \strng{fullhashraw}{72425c1552529259084ed0cefacce730}
+      \strng{bibnamehash}{9e02c695d9a57f6e8669b26d9be3e077}
+      \strng{authorbibnamehash}{9e02c695d9a57f6e8669b26d9be3e077}
+      \strng{authornamehash}{9e02c695d9a57f6e8669b26d9be3e077}
+      \strng{authorfullhash}{72425c1552529259084ed0cefacce730}
+      \strng{authorfullhashraw}{72425c1552529259084ed0cefacce730}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{8}
+      \field{title}{Review of Particle Physics}
+      \field{volume}{110}
+      \field{year}{2024}
+      \field{pages}{030001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.110.030001
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.110.030001
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.110.030001
+      \endverb
     \endentry
     \entry{Seema:2706904}{report}{}{}
       \name{author}{7}{}{%

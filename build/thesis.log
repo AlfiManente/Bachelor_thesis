@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  13 DEC 2025 21:21
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  13 DEC 2025 23:30
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2328,7 +2328,21 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                tchan_xsec
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                ttbar_cross
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tw_xsec
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2429,7 +2443,7 @@ LaTeX Warning: Citation 'higgs_mass' on page 2 undefined on input line 38.
 [2
 
 ]
-<imgs/SM1.png, id=108, 763.8939pt x 516.0078pt>
+<imgs/SM1.png, id=110, 763.8939pt x 516.0078pt>
 File: imgs/SM1.png Graphic file (type png)
 <use imgs/SM1.png>
 Package luatex.def Info: imgs/SM1.png  used on input line 44.
@@ -2442,54 +2456,55 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [3<./imgs/SM1.png>]
 
 [4]
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 96--144
-[][] [] 
- []
-
-
 
 [5]
 
-LaTeX Warning: Citation 'ttbar_cross' on page 6 undefined on input line 167.
+LaTeX Warning: Citation 'ttbar_cross' on page 6 undefined on input line 180.
 
 
-Overfull \hbox (8.90327pt too wide) in paragraph at lines 194--195
+LaTeX Warning: Citation 'tchan_xsec' on page 6 undefined on input line 181.
+
+
+LaTeX Warning: Citation 'tw_xsec' on page 6 undefined on input line 181.
+
+
+Overfull \hbox (8.90327pt too wide) in paragraph at lines 207--208
  [][] 
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 195--195
-[][]\TU/lmr/bx/n/9 (a)[][] []|$\TU/LatinModernMath(1)/m/n/9 𝑡[]$\TU/lmr/m/n/
-9 -production through
+Underfull \hbox (badness 1142) in paragraph at lines 208--208
+[][]\TU/lmr/bx/n/9 (a)[][] []|$\TU/LatinModernMath(1)/m/n/9 𝑡[]$ \TU/lmr/m/n
+/9 pro-duc-tion through
  []
 
 
-Overfull \hbox (23.3091pt too wide) in paragraph at lines 236--237
+Overfull \hbox (23.3091pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
 
 
 [6]
-<imgs/fig_10.png, id=147, 1987.425pt x 1261.71375pt>
+<imgs/fig_10.png, id=157, 1987.425pt x 1261.71375pt>
 File: imgs/fig_10.png Graphic file (type png)
 <use imgs/fig_10.png>
-Package luatex.def Info: imgs/fig_10.png  used on input line 267.
+Package luatex.def Info: imgs/fig_10.png  used on input line 280.
 (luatex.def)             Requested size: 335.20438pt x 212.79431pt.
 
 
-LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 268.
+LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 281.
 
 
-LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 268.
+LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 281.
 
 ) (./content/03_detector.tex
 
-[7<./imgs/fig_10.png>]
+[7]
 
-[8]
+[8<./imgs/fig_10.png>]
 chapter 3.
-<imgs/ATLAS_schematic.png, id=161, 1445.4pt x 886.31125pt>
+<imgs/ATLAS_schematic.png, id=172, 1445.4pt x 886.31125pt>
 File: imgs/ATLAS_schematic.png Graphic file (type png)
 <use imgs/ATLAS_schematic.png>
 Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
@@ -2525,12 +2540,12 @@ LaTeX Warning: Reference `tab:yields' on page 16 undefined on input line 55.
 
 
 [16]
-<imgs/seperation.png, id=215, 598.235pt x 574.145pt>
+<imgs/seperation.png, id=225, 598.235pt x 574.145pt>
 File: imgs/seperation.png Graphic file (type png)
 <use imgs/seperation.png>
 Package luatex.def Info: imgs/seperation.png  used on input line 61.
 (luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=216, 598.235pt x 674.52pt>
+<imgs/SR-Schannel.png, id=226, 598.235pt x 674.52pt>
 File: imgs/SR-Schannel.png Graphic file (type png)
 <use imgs/SR-Schannel.png>
 Package luatex.def Info: imgs/SR-Schannel.png  used on input line 68.
@@ -2542,7 +2557,7 @@ Package luatex.def Info: imgs/SR-Schannel.png  used on input line 68.
 [18]
 
 [19]
-<imgs/ranking_plot.png, id=233, 598.235pt x 508.90125pt>
+<imgs/ranking_plot.png, id=243, 598.235pt x 508.90125pt>
 File: imgs/ranking_plot.png Graphic file (type png)
 <use imgs/ranking_plot.png>
 Package luatex.def Info: imgs/ranking_plot.png  used on input line 162.
@@ -2550,12 +2565,12 @@ Package luatex.def Info: imgs/ranking_plot.png  used on input line 162.
 
 
 [20]
-<imgs/syst/ps_sig.png, id=239, 798.985pt x 574.145pt>
+<imgs/syst/ps_sig.png, id=249, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
 Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 183.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=240, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=250, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
 Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 191.
@@ -2571,22 +2586,22 @@ Underfull \hbox (badness 1112) in paragraph at lines 192--192
 \TU/lmr/m/n/9 recommendation un-cer-tainty for the sig-nal
  []
 
-<imgs/syst/xsec_ttbar.png, id=241, 798.985pt x 574.145pt>
+<imgs/syst/xsec_ttbar.png, id=251, 798.985pt x 574.145pt>
 File: imgs/syst/xsec_ttbar.png Graphic file (type png)
 <use imgs/syst/xsec_ttbar.png>
 Package luatex.def Info: imgs/syst/xsec_ttbar.png  used on input line 198.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_effective.png, id=242, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=252, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
 Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 206.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=243, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=253, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
 Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 213.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=244, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=254, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
 Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 221.
@@ -2664,13 +2679,13 @@ Overfull \hbox (556.0219pt too wide) in paragraph at lines 205--205
 
 
 ]
-<content/Eidesstattliche_Versicherung.pdf, id=317, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=336, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 208.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=319, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=338, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2707,29 +2722,29 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 09A452207E7019ECAC9DEFD97A9ECF5F;20555.
+(rerunfilecheck)             Checksum: AF56166F4D01439D433E6FF73EE5FAC7;21867.
 
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 307AF23F28DD88888EB0F690C443BCD6;1918.
+(rerunfilecheck)             Checksum: ACE94C6CC33FED1AB0EAA794A1955730;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55911 strings out of 476291
+ 55920 strings out of 476291
  125007,2848258 words of node,token memory allocated
- 873 words of node memory still in use:
+ 921 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 5 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 49 attribute, 79 glue_spec, 26 attribute_list, 2 write, 9 pdf_actio
-n nodes
-   avail lists: 1:16,2:6208,3:1717,4:167,5:425,6:115,7:9115,8:67,9:1023,10:24,11
+rn, 4 glyph, 57 attribute, 79 glue_spec, 30 attribute_list, 2 write, 13 pdf_acti
+on nodes
+   avail lists: 1:20,2:6363,3:1736,4:182,5:439,6:112,7:9520,8:70,9:1030,10:24,11
 :740,12:1
- 76828 multiletter control sequences out of 65536+600000
- 180 fonts using 60757507 bytes
+ 76835 multiletter control sequences out of 65536+600000
+ 180 fonts using 60757767 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mmono10-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2753,10 +2768,10 @@ ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (33 pages, 1500346 bytes).
+Output written on thesis.pdf (33 pages, 1502892 bytes).
 
-PDF statistics: 504 PDF objects out of 1000 (max. 8388607)
- 388 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 131072)
- 160 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 527 PDF objects out of 1000 (max. 8388607)
+ 410 compressed objects within 5 object streams
+ 84 named destinations out of 1000 (max. 131072)
+ 168 words of extra memory for PDF output out of 10000 (max. 100000000)
 
