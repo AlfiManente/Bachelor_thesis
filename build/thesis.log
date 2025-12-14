@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  14 DEC 2025 20:37
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  14 DEC 2025 21:45
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2321,6 +2321,13 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                keras
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                lumi_unc
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2336,6 +2343,13 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                tchan_xsec
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tensor
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2537,97 +2551,99 @@ chapter 4.
 [14]
 chapter 5.
 
+LaTeX Warning: Citation 'keras' on page 15 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'tensor' on page 15 undefined on input line 22.
+
+
 
 [15
 
 ]
-
-LaTeX Warning: Reference `tab:yields' on page 16 undefined on input line 56.
-
+<imgs/seperation.png, id=220, 598.235pt x 574.145pt>
+File: imgs/seperation.png Graphic file (type png)
+<use imgs/seperation.png>
+Package luatex.def Info: imgs/seperation.png  used on input line 64.
+(luatex.def)             Requested size: 189.28883pt x 181.66261pt.
+<imgs/SR-Schannel.png, id=221, 598.235pt x 674.52pt>
+File: imgs/SR-Schannel.png Graphic file (type png)
+<use imgs/SR-Schannel.png>
+Package luatex.def Info: imgs/SR-Schannel.png  used on input line 71.
+(luatex.def)             Requested size: 189.28883pt x 213.42181pt.
 
 
 [16]
-<imgs/seperation.png, id=225, 598.235pt x 574.145pt>
-File: imgs/seperation.png Graphic file (type png)
-<use imgs/seperation.png>
-Package luatex.def Info: imgs/seperation.png  used on input line 62.
-(luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=226, 598.235pt x 674.52pt>
-File: imgs/SR-Schannel.png Graphic file (type png)
-<use imgs/SR-Schannel.png>
-Package luatex.def Info: imgs/SR-Schannel.png  used on input line 69.
-(luatex.def)             Requested size: 189.28883pt x 213.42181pt.
-
 
 [17<./imgs/seperation.png><./imgs/SR-Schannel.png>]
 
 [18]
 
-LaTeX Warning: Citation 'lumi_unc' on page 19 undefined on input line 142.
-
-
-
 [19]
 
+LaTeX Warning: Citation 'lumi_unc' on page 20 undefined on input line 143.
+
+
+
 [20]
-<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=251, 598.235pt x 508.90125pt>
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=250, 598.235pt x 508.90125pt>
 File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
 <use imgs/Ranking_SigXsecOverSM_Breakdown.png>
 Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
-t line 180.
+t line 181.
 (luatex.def)             Requested size: 276.04749pt x 234.82735pt.
 
 
 [21<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
-<imgs/syst/ps_sig.png, id=261, 798.985pt x 574.145pt>
+
+[22]
+<imgs/syst/ps_sig.png, id=265, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
-Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 216.
+Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 217.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=262, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=266, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
-Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 224.
+Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 225.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
-Underfull \hbox (badness 2393) in paragraph at lines 225--225
+Underfull \hbox (badness 2393) in paragraph at lines 226--226
 [][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 The jet en-ergy res-o-lu-tion noise pre-
  []
 
-<imgs/syst/jer_effective.png, id=263, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=267, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
-Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 231.
+Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 232.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=264, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=268, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
-Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 239.
+Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 240.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=265, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=269, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
-Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 246.
+Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 247.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/pileup.png, id=266, 798.985pt x 574.145pt>
+<imgs/syst/pileup.png, id=270, 798.985pt x 574.145pt>
 File: imgs/syst/pileup.png Graphic file (type png)
 <use imgs/syst/pileup.png>
-Package luatex.def Info: imgs/syst/pileup.png  used on input line 254.
+Package luatex.def Info: imgs/syst/pileup.png  used on input line 255.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
-
-[22]
-
-[23<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
-.png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_match_sig.png><./imgs/syst/pileu
-p.png>]
-Overfull \hbox (75.19864pt too wide) in paragraph at lines 287--312
+Overfull \hbox (75.19864pt too wide) in paragraph at lines 288--313
  [][] 
  []
 
 ) (./content/06_outlook.tex
 
-[24]
+[23]
+
+[24<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
+.png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_match_sig.png><./imgs/syst/pileu
+p.png>]
 
 [25]
 chapter 6.
@@ -2695,13 +2711,13 @@ At-las/GROUPS/PHYSICS/PUB-
 
 
 ]
-<content/Eidesstattliche_Versicherung.pdf, id=359, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=357, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 208.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=361, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=359, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2738,28 +2754,24 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 87756AE196EED4293886156E7F16D35A;22892.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: EC27C2D43A28049AA5E745932ADF3652;22850.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 714694EFFDEBCC4C66D5D576900D96E8;1909.
+(rerunfilecheck)             Checksum: 0B1BE0FB53DD9F78D7AF58C91E0DB3D6;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55932 strings out of 476291
+ 55927 strings out of 476291
  125007,2848258 words of node,token memory allocated
  929 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 61
  attribute, 79 glue_spec, 32 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:20,2:6359,3:1738,4:183,5:490,6:112,7:9522,8:70,9:1030,10:24,11
-:783,12:1
- 76843 multiletter control sequences out of 65536+600000
- 180 fonts using 60758027 bytes
+   avail lists: 1:20,2:6358,3:1740,4:183,5:438,6:112,7:9522,8:70,9:1030,10:25,11
+:781,12:1
+ 76839 multiletter control sequences out of 65536+600000
+ 180 fonts using 60757507 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mmono10-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2783,10 +2795,10 @@ ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (35 pages, 1514007 bytes).
+Output written on thesis.pdf (35 pages, 1512753 bytes).
 
-PDF statistics: 550 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 88 named destinations out of 1000 (max. 131072)
+PDF statistics: 548 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 131072)
  168 words of extra memory for PDF output out of 10000 (max. 100000000)
 

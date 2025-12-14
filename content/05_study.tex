@@ -3,29 +3,36 @@
 
 \section{Analysis Strategy}
 
-Throughout this analysis, steps are taken to determine the signal strength $\mu_{\rm{s-chan.}}=\sfrac{\sigma_{\rm{s-chan.}}^{\rm{measured}}}{\sigma_{\rm{s-chan.}}^{\rm{theory}}}$ of the single top quark $s$-channel process. 
+Throughout this analysis, steps are taken to determine the signal strength $\mu_{\rm{s-chan.}}=\sfrac{\sigma_{\rm{s-chan.}}^{\rm{measured}}}{\sigma_{\rm{s-chan.}}^{\rm{theory}}}$ of the single top quark s-channel process. 
 This is done via a binned likelihood fit, where a \textit{Deep Neural Network} (DNN) output is used as discriminant value, to descern signal events from background events.
-Only one signal region, pulled from the event selection in \autoref{tab:eventsel}, is defined in this thesis.
-As systematic uncertainties are the limiting factors in the search for the single top quark $s$-channel process, the systematics with the biggest impact are further inspected and discussed. 
+Only one signal region, passing the event selection in \autoref{tab:eventsel}, is defined in this thesis.
+As systematic uncertainties are the limiting factors in the search for the single top quark s-channel process, the systematics with the biggest impact are further inspected and discussed. 
 
 
 \section{DNN Model}
 \label{subsec:dnn}
 
-Especially in studying the single top quark $s$-channel process, a modern machine learning approach is sensible as the small signal to background ratio ($S/B 3.4 \%$) \cite{Seema:2706904} makes traditional methods difficult. 
-Therefore a DNN output will be used as the discriminant for a binned likelihood fit.
-The applied DNN was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master} and makes use of several high-level kinematic variables to descern signal events from background events. 
+The single top quark s-channel process is dominated by large backgrounds.
+Extracting signal events from this large background is rather difficult. 
+To achieve an optimal separation between signal and background, a multivariate approach that exploits as much kinematic information as possible is required.
+For this reason, a DNN classification will be used as the discriminant variable in the binned likelihood fit.
+The DNN used in this analysis was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master}. 
+It makes use of several high-level kinematic variables to distinguish signal events from background events. 
+The network architecture consists of an input layer with 128 nodes, followed by four hidden layers with 256, 64, 32 and 16 nodes, respectively.
+The model was trained using the \textsc{Keras} API within the \textsc{TensorFlow} framework \cite{keras, tensor}, employing the binary cross- entropy loss function and the Adam optimizer.
+For the training and validation datasets, the single top quark s-channel events were used as signal, while the $\ttbar$ process, the single top quark t-channel and associated $tW$ production processes, as well as the $W$+jets and $Z$+jets processes were used as background. 
+The training samples correspond to an integrated luminosity of $\SI{28}{fb^{-1}}$.
 For every single particle that gets reconstructed, the kinematic variables $\pT, \eta, \varphi$ and the invariant mass $m$ get included as features for the DNN model.
-Whereas for particle pairs their pseudorapidity difference $\Delta \eta$ and the difference in azimuthal angle $\Delta \varphi$ between them is incorporated as feature.
-From the detector measurements of the final state particles, every other particle can be retraced up to the virtal $W$-boson. 
+For particle pairs their pseudorapidity difference $\Delta \eta$ and the difference in the azimuthal angle $\Delta \varphi$ is incorporated as a feature.
+From the detector measurements of the final state particles, every other particle can be retraced up to the virtual $W$-boson. 
 First, the final state lepton and corresponding neutrino are reproduced. 
-The neutrino cannot be measured directly via the detector but is inferred via studying the missing transverse momentum $\etmiss$ of the event and further implying the longitudinal impulse of the neutrino, from the condition that the leptons and the neutrinos momentum squared must equal the invariant mass of the decaying $W_{\rm{Decay}}$-boson.
-With the lepton and neutrino reconstructed, the $W_{\rm{Decay}}$-boson of the top quark decay can be solved for.
-The leading b-tagged jet, of the top quark decay gets measured directly by the detector.
-With information about the leading b-jet and the $W_{\rm{Decay}}$-boson, the top quark can be reconstructed.
-From detector measurements, the subleading b-jet from the s-channel process itself gets assessed, and with the reconstructed top quark, the last possible step is to reconstruct the virtual $W_{\rm{Prod.}}$-boson.
-Further the transverse mass of the $W_{\rm{Decay}}$-boson defined as $\mtw = \sqrt{2 \pT^l \etmiss (1-\cos \Delta\varphi)}$, with $\pT^l$ the transverse momentum of the lepton decay product and $\Delta\varphi$ the angle between lepton and neutrino, is included as feature.
-As well as the transverse mass of the top quark, defined as $m_{\rm{T}}^{\rm{top}} = \sqrt{E_{\rm{T,sum.}}^2 - p_{\rm{T,sum.}}^2}$, with the sums of the transverse energies and transverse momenta of the top quarks decay particles, being the lepton, neutrino and $b$-quark.
+%The neutrino cannot be measured directly via the detector but is inferred via studying the missing transverse momentum $\etmiss$ of the event and further implying the longitudinal impulse of the neutrino, 
+From the condition that the leptons and the neutrinos momentum squared must equal the invariant mass of the decaying $W_{\rm{Decay}}$-boson the neutrino four-momentum is reconstructed.
+With the lepton and neutrino reconstructed, the top quark mass can be calculated.
+With information about the leading $b$-tagged jet and the $W_{\rm{Decay}}$-boson, the top quark can be reconstructed.
+The top quark four-momentum and the second b-tagged jet are then used to reconstruct the virtual $W_{\rm{Prod.}}$-boson.
+The transverse mass of the $W_{\rm{Decay}}$-boson $\mtw$ and the missing transverse momentum $\etmiss$ of the event are included as feature.
+The transverse mass of the top quark, defined as $m_{\rm{T}}^{\rm{top}} = \sqrt{E_{\rm{T,sum.}}^2 - p_{\rm{T,sum.}}^2}$, with the sums of the transverse energies and transverse momenta of the top quarks decay particles, is also used. 
 The scalar sum of the transverse energies of all final-state paricles is called $H_{\rm{T}}$, whereas $H_{\rm{T,had.}}$ and $H_{\rm{T,lep}}$ sum only over the transverse energies of the final state hadrons or leptons respectively.
 Another set of event shape variables are inferred through the momentum tensor, that encodes the high-levels momentum distributions of the reconstructed objects. Its elements are derived by the formular
 
@@ -39,21 +46,16 @@ Through the sorted eigenvalues of the momentum tensor $\lambda_0 > \lambda_1 > \
 \begin{align*}
     &\text{Aplanarity}:  & \mathcal{A} &= \frac{3 \lambda_2}{2}, \\
     &\text{Planarity}:   & \mathcal{P} &= \frac{3(\lambda_2 + \lambda_1)}{2}, \\
-    &\text{Spericity}:   & \mathcal{S} &= \lambda_1 - \lambda_2. \\
+    &\text{Sphericity}:   & \mathcal{S} &= \lambda_1 - \lambda_2. \\
 \end{align*}
 
+The DNN is applied to all signal and background events in the SR.
+The corresponding distributions are shown in \autoref{fig:dnn_output}.
+\autoref{subfig:separation} shows signal and background normalized to the same integral, to show the achieved separation of the classifier.
+The combined DNN output histograms of each respective process is shown in \autoref{subfig:histos}.
 
-The model was trained on both fullsim and fastsim datasets, as well as including single top quark $s$-channel samples with varying top quark masses for increased statistics.
-Angular variables are cosine transformed to avoid discontinuities at $\pm \pi$ and variables carrying long tails are log-transformed to compress their dynamic range.
-All variables are transformed into standardised units, to avoid distortion of variable importance due to their absolute values.
-Data is split into even and odd samples, only in respect to their event number without taking any other variable feature into consideration. 
-The DNN model outputs a value between 0 and 1, where 1 marks an event as totally corresponding to the signal and 0 marks the event as background. 
-%With the neural network output $x$ as the discriminant, the expected number of events $\lambda_i (\mu, \theta) = \mu \cdot s_i (\theta) + b_i (\theta)$ is used to incorporate the signal strength. 
-%Here $s_i(\theta)$ and $b_i(\theta)$ signify the expected signal and background contributions for the i-th bin, which are gathered by putting signal and background events through the DNN model and evaluating the output score $x$.
-%Systematic uncertainties can influence the seperation. 
-%This is considered through the nuisance parameters (NP) $\theta$, which will be affected further through fitting the binned likelihood. 
-%The signal strength $\mu$ serves then as a scaling factor for the expected signal yields across all bins. 
-The DNNs output is shown in the form of the separation plot in \autoref{subfig:separation} and the combined DNN output histograms of each respective process shown in \autoref{subfig:histos}. The event yields given out from the DNN are shown in \autoref{tab:yields}.
+%Möchte ich hier nochmal auf die Tabelle in Kap 4 Referenzieren?
+%The event yields given out from the DNN are shown in \autoref{tab:yields}.
 
 \begin{figure}
     \centering
@@ -258,7 +260,7 @@ These plots show the relative variation of a given observable under the up- and 
     \label{fig:ratioplots}
 \end{figure}
 
-\newpage
+%\newpage
 
 The overall impact of systematic uncertainties is reduced in this analysis compared to the previous measurement.  
 This improvement is illustrated in \autoref{tab:cat_impact_sigxsecoversm}, which shows the percentage impact of the systematic uncertainties grouped by categories. 

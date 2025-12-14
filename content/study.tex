@@ -390,3 +390,50 @@ Since analyses in High Energy Physics involve large event samples, the data are 
 The framework is used to extract the signal strength parameter $\mu$ together with the nuisance parameters describing systematic uncertainties by maximizing the likelihood function.
 This determines the parameter values that best describe the data assuming the presence of the single top quark $s$-channel signal.
 As High Energy Physics analyses typically involve large data samples, the data are organized in histograms, where events are collected in bins instead of being treated individually.
+
+
+\section{DNN Model}
+\label{subsec:dnn}
+
+The single top quark $s$-channel process is characterized by a small signal yield and is dominated by large background contributions.
+Extracting signal events from this background is therefore particularly challenging.
+To achieve an optimal separation between signal and background, a multivariate approach that exploits as much kinematic information as possible is required.
+For this reason, a deep neural network (DNN) classifier is employed as the discriminant variable in the binned likelihood fit.
+
+The DNN used in this analysis was developed by Niklas Düser as part of his Master's thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master}.
+It utilizes a set of high-level kinematic observables to distinguish signal events from background processes.
+The network architecture consists of an input layer with 128 nodes, followed by three hidden layers with 256, 64 and 32 nodes, respectively, and a multi-node output layer.
+The model was trained using the \textsc{Keras} API within the \textsc{TensorFlow} framework \cite{keras,tensor}, employing the binary cross-entropy loss function and the Adam optimizer.
+
+For the training and validation of the network, simulated single top quark $s$-channel events are used as signal, while the dominant background processes include $\ttbar$ production, single top quark production in the $t$-channel and associated $tW$ production, as well as $W$+jets and $Z$+jets events.
+The training samples correspond to an integrated luminosity of $\SI{28}{fb^{-1}}$.
+
+For each reconstructed physics object, the kinematic variables transverse momentum $\pT$, pseudorapidity $\eta$, azimuthal angle $\varphi$ and invariant mass $m$ are provided as input features to the DNN.
+For pairs of reconstructed objects, the pseudorapidity difference $\Delta\eta$ and the azimuthal angle difference $\Delta\varphi$ are included.
+Based on the reconstructed final-state particles, intermediate resonances are reconstructed up to the virtual $W$ boson.
+
+The neutrino is reconstructed using the measured missing transverse momentum $\etmiss$ and by imposing the invariant mass constraint of the $W$ boson decay.
+This allows the full four-momentum of the neutrino to be inferred.
+Combining the reconstructed neutrino with the charged lepton yields the $W$ boson candidate, which is then combined with the leading $b$-tagged jet to reconstruct the top quark.
+The four-momentum of the reconstructed top quark together with the second $b$-tagged jet is used to reconstruct the virtual $W_{\mathrm{Prod.}}$ boson.
+
+Additional input features include the transverse mass of the $W$ boson $\mtw$, the missing transverse momentum $\etmiss$, and the transverse mass of the top quark,
+defined as
+\[
+m_{\mathrm{T}}^{\mathrm{top}} = \sqrt{E_{\mathrm{T,sum}}^2 - p_{\mathrm{T,sum}}^2},
+\]
+where the sums run over the transverse energies and transverse momenta of the top quark decay products.
+The scalar sum of the transverse energies of all final-state particles is denoted as $H_{\mathrm{T}}$, while $H_{\mathrm{T,had.}}$ and $H_{\mathrm{T,lep}}$ include only hadronic or leptonic objects, respectively.
+
+Event shape variables are derived from the momentum tensor, which encodes the global momentum distribution of the reconstructed final-state objects.
+The momentum tensor is defined as
+\[
+M_{ij} = \frac{\sum_{k=1}^{N} p_{k,i} p_{k,j}}{\sum_{k=1}^{N} p_k^2}, \quad i,j \in \{x,y,z\},
+\]
+where $p_{k,i}$ denotes the $i$-th momentum component of the $k$-th final-state particle.
+From the ordered eigenvalues of the tensor, $\lambda_0 > \lambda_1 > \lambda_2$, the event shape observables aplanarity $\mathcal{A}$, planarity $\mathcal{P}$ and sphericity $\mathcal{S}$ are constructed.
+
+The trained DNN is applied to all signal and background events in the signal region.
+The resulting output distributions are shown in \autoref{fig:dnn_output}.
+In \autoref{subfig:separation}, signal and background distributions are normalized to the same integral to illustrate the separation power of the classifier.
+The combined DNN output distributions for the individual processes are shown in \autoref{subfig:histos}.

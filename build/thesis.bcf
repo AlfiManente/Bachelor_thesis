@@ -2400,8 +2400,9 @@
     <bcf:citekey order="21" intorder="1">prev_measure</bcf:citekey>
     <bcf:citekey order="22" intorder="1">Bianchi:2837191</bcf:citekey>
     <bcf:citekey order="23" intorder="1">Bianchi:2837191</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Seema:2706904</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">niklas_master</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">niklas_master</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">keras</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">tensor</bcf:citekey>
     <bcf:citekey order="26" intorder="1">pthard</bcf:citekey>
     <bcf:citekey order="27" intorder="1">lumi_unc</bcf:citekey>
     <bcf:citekey order="28" intorder="1">covariance_matrix_method</bcf:citekey>

@@ -1,32 +1,34 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/thesis.blg'
-[65] biber:342> INFO - === So Dez 14, 2025, 20:37:14
-[78] Biber.pm:421> INFO - Reading 'build/thesis.bcf'
-[142] Biber.pm:1002> INFO - Found 25 citekeys in bib section 0
-[155] Biber.pm:4487> INFO - Processing section 0
-[163] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[164] bibtex.pm:1713> INFO - LaTeX decoding ...
-[183] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[314] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[315] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[334] bbl.pm:676> INFO - Writing 'build/thesis.bbl' with encoding 'UTF-8'
-[342] bbl.pm:779> INFO - Output to build/thesis.bbl
-[342] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'top_quark_disc1' is not an integer - this will probably not sort properly.
-[342] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'top_quark_disc2' is not an integer - this will probably not sort properly.
-[342] Biber.pm:132> WARN - legacy month field 'June' in entry 'topmass_estimate' is not an integer - this will probably not sort properly.
-[342] Biber.pm:132> WARN - legacy month field 'August' in entry 'topmass_prec' is not an integer - this will probably not sort properly.
-[343] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'particle_rev' is not an integer - this will probably not sort properly.
-[343] Biber.pm:132> WARN - legacy month field 'September' in entry 'niklas_master' is not an integer - this will probably not sort properly.
-[343] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp_9mo3/33e59b5ca9ec342068223d604c3f8d55_37328.utf8, line 28, warning: undefined macro "june"
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'higgs' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'atlas_higgs' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'cms_higgs' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'higgs_mass' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'ttbar_cross' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'tchan_xsec' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'tw_xsec' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'prev_measure' (section 0)
-[343] Biber.pm:132> WARN - I didn't find a database entry for 'lumi_unc' (section 0)
-[343] Biber.pm:134> INFO - WARNINGS: 16
+[64] biber:342> INFO - === So Dez 14, 2025, 21:45:49
+[77] Biber.pm:421> INFO - Reading 'build/thesis.bcf'
+[139] Biber.pm:1002> INFO - Found 26 citekeys in bib section 0
+[151] Biber.pm:4487> INFO - Processing section 0
+[159] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[160] bibtex.pm:1713> INFO - LaTeX decoding ...
+[179] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[298] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[298] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[298] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[298] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[317] bbl.pm:676> INFO - Writing 'build/thesis.bbl' with encoding 'UTF-8'
+[325] bbl.pm:779> INFO - Output to build/thesis.bbl
+[325] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'top_quark_disc1' is not an integer - this will probably not sort properly.
+[325] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'top_quark_disc2' is not an integer - this will probably not sort properly.
+[325] Biber.pm:132> WARN - legacy month field 'June' in entry 'topmass_estimate' is not an integer - this will probably not sort properly.
+[325] Biber.pm:132> WARN - legacy month field 'August' in entry 'topmass_prec' is not an integer - this will probably not sort properly.
+[325] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'particle_rev' is not an integer - this will probably not sort properly.
+[326] Biber.pm:132> WARN - legacy month field 'September' in entry 'niklas_master' is not an integer - this will probably not sort properly.
+[326] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp__VMY/33e59b5ca9ec342068223d604c3f8d55_40178.utf8, line 28, warning: undefined macro "june"
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'higgs' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'atlas_higgs' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'cms_higgs' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'higgs_mass' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'ttbar_cross' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'tchan_xsec' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'tw_xsec' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'prev_measure' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'keras' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'tensor' (section 0)
+[326] Biber.pm:132> WARN - I didn't find a database entry for 'lumi_unc' (section 0)
+[326] Biber.pm:134> INFO - WARNINGS: 18
