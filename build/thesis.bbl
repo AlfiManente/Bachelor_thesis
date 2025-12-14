@@ -778,11 +778,33 @@
       \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
       \endverb
     \endentry
+    \entry{pthard}{report}{}{}
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2023-029}
+      \field{title}{{Studies on the improvement of the matching uncertainty definition in top-quark processes simulated with Powheg+Pythia 8}}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2872787
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2872787
+      \endverb
+    \endentry
   \enddatalist
   \missing{atlas_higgs}
   \missing{cms_higgs}
   \missing{higgs}
   \missing{higgs_mass}
+  \missing{lumi_unc}
   \missing{prev_measure}
   \missing{tchan_xsec}
   \missing{ttbar_cross}

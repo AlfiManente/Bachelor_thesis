@@ -532,14 +532,14 @@ INPUT ./imgs/syst/ps_sig.png
 INPUT ./imgs/syst/ps_sig.png
 INPUT ./imgs/syst/jer_noise.png
 INPUT ./imgs/syst/jer_noise.png
-INPUT ./imgs/syst/xsec_ttbar.png
-INPUT ./imgs/syst/xsec_ttbar.png
 INPUT ./imgs/syst/jer_effective.png
 INPUT ./imgs/syst/jer_effective.png
 INPUT ./imgs/syst/mur_ttbar.png
 INPUT ./imgs/syst/mur_ttbar.png
 INPUT ./imgs/syst/me_match_sig.png
 INPUT ./imgs/syst/me_match_sig.png
+INPUT ./imgs/syst/pileup.png
+INPUT ./imgs/syst/pileup.png
 INPUT ./content/06_outlook.tex
 INPUT ./content/a_anhang.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
