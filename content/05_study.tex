@@ -134,7 +134,7 @@ In addition, samples interfacing \textsc{Powheg} with \textsc{Herwig} were gener
 Similar modelling variations were applied to the $\ttbar$ background process.
 Further $\ttbar$ samples were produced with $\pT^{\rm hard}=1$, and with the $h_{\rm{damp}}$ parameter increased from $1.5 \cdot m_{\rm top}$ to $3 \cdot m_{\rm top}$, allowing the study of uncertainties related to the modelling of high-$p_T$ radiation in the hardest emissions.
 
-In addition to ME and PS modelling uncertainties, background processes are subject to uncertainties in their theoretical cross-section predictions, which affect their normalisation. 
+In addition to ME and PS modelling uncertainties, background processes are subject to uncertainties in their theoretical cross-section predictions, which affect their normalization. 
 A cross-section uncertainty of $5.2\%$\,\cite{tt_xsec} is assigned to the $\ttbar$ background and $3.7\%$\,\cite{t_xsec} to the single top quark production modes. 
 For the $W$+jets and $Z$+jets background processes, a conservative uncertainty of $50\%$ is assumed.
 
@@ -145,19 +145,19 @@ The integrated luminosity uncertainty is taken to be $0.83\%$~\cite{lumi_unc}.
 Jet-related uncertainties include jet energy resolution (JER), jet vertex tagger (JVT), and jet energy scale (JES) uncertainties. 
 The JER uncertainty is represented by 15 NPs, while two efficiency-related nuisance parameters are used for JVT. 
 The JES uncertainty accounts for effects related to jet flavor composition, flavor response, $b$-jet energy scale, pile-up, punch-through, and jet $\eta$ intercalibration, as well as various pre-recommendations, and is encoded using 32 nuisance parameters.
-Flavour tagging uncertainties are modelled using 55 nuisance parameters for $b$-tagging, 33 for $c$-tagging, and 42 for light-flavor jet tagging. 
+Flavor tagging uncertainties are modelled using 55 nuisance parameters for $b$-tagging, 33 for $c$-tagging, and 42 for light-flavor jet tagging. 
 In addition, four nuisance parameters per flavor are included to describe uncertainties arising from the extrapolation of the jet calibration to the high transverse momentum regime.
 Uncertainties related to the modelling of electrons and muons are also considered.
 For electrons, six nuisance parameters are included, covering trigger efficiencies as well as energy scale and resolution effects for electrons and photons. 
 For muons, 16 nuisance parameters are used to describe momentum scale and resolution uncertainties, as well as trigger-related effects. 
 The uncertainty associated with pile-up reweighting is represented by a single nuisance parameter.
 
-Additional theoretical uncertainties affecting both the single top quark s-channel signal and the $\ttbar$ background arise from variations of the renormalisation and factorisation scales, as well as from initial- and final-state radiation modelling.
+Additional theoretical uncertainties affecting both the single top quark s-channel signal and the $\ttbar$ background arise from variations of the renormalization and factorization scales, as well as from initial- and final-state radiation modelling.
 
 In order to be less dependent on statistical fluctuations, the systematics distributions are smoothed. 
 For uncertainties containing an up and down variation, two-sided symmetrization is applied. 
 The up and down variation for each respective bin $i$ consists therefore of the mean of both, given by $\pm \frac{n_i^{\rm{up}} - n_i^{\rm{down}}}{2}$.
-Uncertainties with only an up or down variation undergo one-sided symmetrisation, in which the the existing variation is mirrored for the missing counterpart.  
+Uncertainties with only an up or down variation undergo one-sided symmetrization, in which the the existing variation is mirrored for the missing counterpart.  
 
 \section{Results}
 
@@ -189,13 +189,13 @@ The leading and subleading jet transverse momenta are the most impactful input f
 This explains the strong sensitivity to PS and hadronization uncertainties, as these directly affect the jet kinematics exploited by the classifier.
 On detector level, jet energy resolution uncertainties, in particular the noise pre-recommendation uncertainty and the effective NP~1 uncertainty, have a sizable impact. 
 These uncertainties affect the reconstructed jet momenta and therefore propagate directly to high-level kinematic variables used by the DNN.
-Uncertainties related to the modelling of the $\ttbar$ background, including the theoretical prior on the $\ttbar$ cross-section and the renormalisation scale uncertainty $\mu_{\rm R}$, also show a significant impact. 
+Uncertainties related to the modelling of the $\ttbar$ background, including the theoretical prior on the $\ttbar$ cross-section and the renormalization scale uncertainty $\mu_{\rm R}$, also show a significant impact. 
 As $\ttbar$ constitutes the dominant background process and the signal-to-background ratio of the single top $s$-channel is small, the analysis is particularly sensitive to variations in the $\ttbar$ kinematic description.
-In particular, variations of the renormalisation scale affect the amount of QCD radiation in the $\ttbar$ process, leading to altered jet multiplicities and kinematic distributions, which in turn influence the DNN output.
+In particular, variations of the renormalization scale affect the amount of QCD radiation in the $\ttbar$ process, leading to altered jet multiplicities and kinematic distributions, which in turn influence the DNN output.
 In addition to parton shower and hadronization uncertainties, the ME matching uncertainty exhibits a strong impact on the extracted signal strength. The ME matching procedure governs the transition between hard emissions described by the fixed-order matrix element and soft or collinear radiation modelled by the PS. 
 For the single top quark s-channel process, which is characterised by a very simple hadronic final state consisting of only two $b$-tagged jets, the modelling of additional radiation plays a particularly important role. Variations in the ME matching scheme affect the jet multiplicity as well as the transverse momentum and angular correlations of the $b$-jets.
-Since the DNN relies strongly on jet-related high-level kinematic variables, these modelling differences propagate directly to the classifier output, leading to a sizeable shape effect. Moreover, the ME matching uncertainty cannot be efficiently constrained by the fit, as it does not primarily affect the overall normalisation but rather the kinematic structure of the signal events.
-Pile-up refers to additional $pp$ interactions occurring in the same or neighbouring bunch crossings as the hard-scatter event. 
+Since the DNN relies strongly on jet-related high-level kinematic variables, these modelling differences propagate directly to the classifier output, leading to a sizeable shape effect. Moreover, the ME matching uncertainty cannot be efficiently constrained by the fit, as it does not primarily affect the overall normalization but rather the kinematic structure of the signal events.
+Pile-up refers to additional $pp$ interactions occurring in the same or neighboring bunch crossings as the hard-scatter event. 
 These interactions introduce extra tracks and energy deposits in the detector, which can bias the reconstruction of jets, missing transverse momentum and other event-level observables.
 Uncertainties related to pile-up reweighting therefore affect jet multiplicities, jet energies and several high-level kinematic variables, and consequently propagate to the DNN classification.
 Final State Radiation (FSR) uncertainties of the $\ttbar$ background process similarly influence hadronic signatures from the major background source.
@@ -238,7 +238,7 @@ These plots show the relative variation of a given observable under the up- and 
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/mur_ttbar.png}
-        \caption{Uncertainty for the renormalisation scale $\mu_{\rm{R}}$ for the $\ttbar$ background process.}
+        \caption{Uncertainty for the renormalization scale $\mu_{\rm{R}}$ for the $\ttbar$ background process.}
         \label{subfig:ttbarmur}
     \end{subfigure}
     % Ratio Plot: s-channel ME matching
