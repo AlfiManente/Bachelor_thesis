@@ -734,15 +734,37 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{A14}
+  \missing{JVT}
+  \missing{antikt}
   \missing{atlas_higgs}
+  \missing{btag_algo}
+  \missing{cluster_model}
   \missing{cms_higgs}
+  \missing{evtgen}
+  \missing{fastsim}
+  \missing{fullsim}
+  \missing{geant4}
+  \missing{herwig}
   \missing{higgs}
   \missing{higgs_mass}
   \missing{keras}
   \missing{lumi_unc}
+  \missing{lund_string}
+  \missing{mediumquality}
+  \missing{pdf_23}
+  \missing{pdf_30}
+  \missing{pdf_30nf4}
+  \missing{powheg}
   \missing{prev_measure}
+  \missing{pythia}
+  \missing{sherpa}
+  \missing{t_t_xsec}
   \missing{tchan_xsec}
   \missing{tensor}
+  \missing{tightiso}
+  \missing{tightlh}
+  \missing{ts_xsec}
   \missing{ttbar_cross}
   \missing{tw_xsec}
 \endrefsection

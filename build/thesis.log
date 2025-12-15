@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  14 DEC 2025 21:45
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 01:08
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2293,6 +2293,27 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                A14
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                JVT
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                antikt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                atlas_higgs
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2300,7 +2321,56 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                btag_algo
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                cluster_model
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                cms_higgs
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                evtgen
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fastsim
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fullsim
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                geant4
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                herwig
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2335,7 +2405,70 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                lund_string
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                mediumquality
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                pdf_23
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                pdf_30
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                pdf_30nf4
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                powheg
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                prev_measure
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                pythia
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                sherpa
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                t_t_xsec
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2350,6 +2483,27 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                tensor
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tightiso
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tightlh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                ts_xsec
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2539,54 +2693,141 @@ Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
 [10]
 chapter 4.
 
+LaTeX Warning: Citation 'powheg' on page 11 undefined on input line 30.
+
+
+LaTeX Warning: Citation 'pythia' on page 11 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'lund_string' on page 11 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'A14' on page 11 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'herwig' on page 11 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'cluster_model' on page 11 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'sherpa' on page 11 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'evtgen' on page 11 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'pdf_30' on page 11 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'pdf_23' on page 11 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'ts_xsec' on page 11 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'pdf_30nf4' on page 11 undefined on input line 40.
+
+
+LaTeX Warning: Citation 't_t_xsec' on page 11 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'fullsim' on page 11 undefined on input line 55.
+
+
+LaTeX Warning: Citation 'geant4' on page 11 undefined on input line 55.
+
+
+LaTeX Warning: Citation 'fastsim' on page 11 undefined on input line 56.
+
+
+Overfull \hbox (3.86057pt too wide) in paragraph at lines 24--57
+\TU/lmr/m/n/10.95 The $\TU/LatinModernMath(1)/m/n/10.95 𝑡[]$ \TU/lmr/m/n/10.
+95 pro-duc-tion is uti-liz-ing the \TU/lmr/m/sc/10.95 Powheg \TU/lmr/m/n/10.95 
+gen-er-a-tor at NLO with the \TU/lmr/m/sc/10.95 NNPDF3.0nlo
+ []
+
+
 
 [11
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12]) (./content/05_study.tex
 
-[13]
+
+[12]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: Citation 'tightlh' on page 13 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'tightiso' on page 13 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'mediumquality' on page 13 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'tightiso' on page 13 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'antikt' on page 13 undefined on input line 74.
+
+
+LaTeX Warning: Citation 'JVT' on page 13 undefined on input line 75.
+
+
+LaTeX Warning: Citation 'btag_algo' on page 13 undefined on input line 77.
+
+
+
+[13]) (./content/05_study.tex
 
 [14]
+
+[15]
 chapter 5.
 
-LaTeX Warning: Citation 'keras' on page 15 undefined on input line 22.
+LaTeX Warning: Citation 'keras' on page 16 undefined on input line 22.
 
 
-LaTeX Warning: Citation 'tensor' on page 15 undefined on input line 22.
+LaTeX Warning: Citation 'tensor' on page 16 undefined on input line 22.
 
 
 
-[15
+[16
 
 ]
-<imgs/seperation.png, id=220, 598.235pt x 574.145pt>
+<imgs/seperation.png, id=225, 598.235pt x 574.145pt>
 File: imgs/seperation.png Graphic file (type png)
 <use imgs/seperation.png>
 Package luatex.def Info: imgs/seperation.png  used on input line 64.
 (luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=221, 598.235pt x 674.52pt>
+<imgs/SR-Schannel.png, id=226, 598.235pt x 674.52pt>
 File: imgs/SR-Schannel.png Graphic file (type png)
 <use imgs/SR-Schannel.png>
 Package luatex.def Info: imgs/SR-Schannel.png  used on input line 71.
 (luatex.def)             Requested size: 189.28883pt x 213.42181pt.
 
 
-[16]
+[17]
 
-[17<./imgs/seperation.png><./imgs/SR-Schannel.png>]
-
-[18]
+[18<./imgs/seperation.png><./imgs/SR-Schannel.png>]
 
 [19]
 
-LaTeX Warning: Citation 'lumi_unc' on page 20 undefined on input line 143.
-
-
-
 [20]
-<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=250, 598.235pt x 508.90125pt>
+
+LaTeX Warning: Citation 'lumi_unc' on page 21 undefined on input line 143.
+
+
+
+[21]
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=255, 598.235pt x 508.90125pt>
 File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
 <use imgs/Ranking_SigXsecOverSM_Breakdown.png>
 Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
@@ -2594,15 +2835,15 @@ t line 181.
 (luatex.def)             Requested size: 276.04749pt x 234.82735pt.
 
 
-[21<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
+[22<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
 
-[22]
-<imgs/syst/ps_sig.png, id=265, 798.985pt x 574.145pt>
+[23]
+<imgs/syst/ps_sig.png, id=270, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
 Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 217.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=266, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=271, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
 Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 225.
@@ -2612,22 +2853,22 @@ Underfull \hbox (badness 2393) in paragraph at lines 226--226
 [][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 The jet en-ergy res-o-lu-tion noise pre-
  []
 
-<imgs/syst/jer_effective.png, id=267, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=272, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
 Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 232.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=268, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=273, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
 Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 240.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=269, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=274, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
 Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 247.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/pileup.png, id=270, 798.985pt x 574.145pt>
+<imgs/syst/pileup.png, id=275, 798.985pt x 574.145pt>
 File: imgs/syst/pileup.png Graphic file (type png)
 <use imgs/syst/pileup.png>
 Package luatex.def Info: imgs/syst/pileup.png  used on input line 255.
@@ -2639,30 +2880,26 @@ Overfull \hbox (75.19864pt too wide) in paragraph at lines 288--313
 
 ) (./content/06_outlook.tex
 
-[23]
+[24]
 
-[24<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
+[25<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
 .png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_match_sig.png><./imgs/syst/pileu
 p.png>]
 
-[25]
+[26]
 chapter 6.
 ) (./content/a_anhang.tex
 
-[26
+[27
 
 ]
 chapter A.
 )
 
-[27
+[28
 
 ]
 chapter without number
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
 Overfull \hbox (24.54785pt too wide) in paragraph at lines 205--205
 \TU/lmr/m/n/10.95 de-tec-tor us-ing <mml:math xmlns:mml=”http://www.w3.org/199
@@ -2682,7 +2919,7 @@ l:math>
 
 
 
-[28
+[29
 
 
 ]
@@ -2705,12 +2942,7 @@ At-las/GROUPS/PHYSICS/PUB-
 
 
 
-[29]
-
-[30
-
-
-]
+[30]
 <content/Eidesstattliche_Versicherung.pdf, id=357, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
@@ -2748,35 +2980,37 @@ on input line 208.
 (luatex.def)             Requested size: 597.57832pt x 845.11382pt.
 [31
 
+
+
 <./content/Eidesstattliche_Versicherung.pdf>] (./build/thesis.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: EC27C2D43A28049AA5E745932ADF3652;22850.
+(rerunfilecheck)             Checksum: 0DE24DB192281A4D5AC1A0307310231B;24184.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 0B1BE0FB53DD9F78D7AF58C91E0DB3D6;1909.
+(rerunfilecheck)             Checksum: 2CCD3FC6079755111E95D1A9EB1972AC;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55927 strings out of 476291
+ 55928 strings out of 476291
  125007,2848258 words of node,token memory allocated
- 929 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 61
- attribute, 79 glue_spec, 32 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:20,2:6358,3:1740,4:183,5:438,6:112,7:9522,8:70,9:1030,10:25,11
-:781,12:1
- 76839 multiletter control sequences out of 65536+600000
- 180 fonts using 60757507 bytes
+ 935 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 63
+ attribute, 79 glue_spec, 33 attribute_list, 2 write, 15 pdf_action nodes
+   avail lists: 1:20,2:6357,3:1756,4:186,5:496,6:112,7:10367,8:70,9:1030,10:25,1
+1:808,12:1
+ 76840 multiletter control sequences out of 65536+600000
+ 180 fonts using 60758807 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
-mmono10-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
-opentype/public/lm/lmroman6-regular.otf></home/alfredo-manente/.local/texlive/20
-25/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/alfredo-
+mroman6-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
+opentype/public/lm-math/latinmodern-math.otf></home/alfredo-manente/.local/texli
+ve/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/alfredo-
 manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromancaps10-re
 gular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman9-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-d
@@ -2795,7 +3029,7 @@ ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (35 pages, 1512753 bytes).
+Output written on thesis.pdf (35 pages, 1520611 bytes).
 
 PDF statistics: 548 PDF objects out of 1000 (max. 8388607)
  428 compressed objects within 5 object streams

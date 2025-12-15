@@ -2400,14 +2400,37 @@
     <bcf:citekey order="21" intorder="1">prev_measure</bcf:citekey>
     <bcf:citekey order="22" intorder="1">Bianchi:2837191</bcf:citekey>
     <bcf:citekey order="23" intorder="1">Bianchi:2837191</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">niklas_master</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">keras</bcf:citekey>
-    <bcf:citekey order="25" intorder="2">tensor</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">pthard</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">lumi_unc</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">covariance_matrix_method</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">lastmeasure_atlas</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">lastmeasure_atlas</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">powheg</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">pythia</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">lund_string</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">A14</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">herwig</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">cluster_model</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">sherpa</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">evtgen</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">pdf_30</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">pdf_23</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">ts_xsec</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">pdf_30nf4</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">t_t_xsec</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">fullsim</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">geant4</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">fastsim</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">tightlh</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">tightiso</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">mediumquality</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">tightiso</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">antikt</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">JVT</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">btag_algo</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">niklas_master</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">keras</bcf:citekey>
+    <bcf:citekey order="48" intorder="2">tensor</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">pthard</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">lumi_unc</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">covariance_matrix_method</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">lastmeasure_atlas</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">lastmeasure_atlas</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

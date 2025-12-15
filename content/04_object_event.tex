@@ -3,41 +3,82 @@
 
 \section{Monte Carlo Samples}
 
-In order to study processes in particle physics, signal processes have to be seperated from background processes. 
-Instead of only using recorded data, simulations are done, to better compare these processes with their SM predicitons, via varying assumptions and parameters.
-In this thesis the single top-quark $s$-channel production mode is to be examined, with the major backgrounds being $\ttbar$-production, single top-quark production in the $t$-channel, associated $tW$-production, $W$+jets and $Z$+jets production.
-As multijet background is estimated via fits to data, it is dropped out of consideration.
-Monte Carlo (MC) simulators are used to reproduce particle events using a Markow Chain process. 
-At LO and NLO, hard scattering events can be calculated using pertubation theory, by calculating the relevant matrix elements (ME).
-Whereas parton showers (PS) and hadronization due to the strong interaction have to be calculated, utilizing phenomenological models to incorporate the effects of confinement and asymptotic freedom present in QCD. 
-These models use different hadronization models and free parameter, which are tuned using recorded data. 
-As a general purpose MC simulator \textsc{Sherpa} can calculate the hard scattering ME, as well as parton showers and hadronisation. \textsc{Powheg box v2} can generate hard scattering events up to NLO. \textsc{Pythia 8} models parton shower and hadronisation via the \textit{Lund String model}, typically making use of the \textit{A14} tune. 
-\textsc{Herwig 7} calculates parton showers and hadronisation via the \textit{heavy cluster model}.
-Finally, \textsc{Evtgen} simulates the decay of heavy-flavour hadrons, especially $b$ and $c$ hadrons.
-During all simulations a top-quark mass of $\SI{172.5}{\GeV}$ is utilized.
+In order to measure production cross-sections in High Energy Physics collision experiments, it is necessary to distinguish the signal process from the various background contributions.  
+In this analysis, the single top quark s-channel production mode is studied, with the dominant background processes being $\ttbar$ production, single top quark production in the t-channel, associated $tW$ production, as well as $W$+jets and $Z$+jets events.
+The multijet background is estimated using data-driven methods and is therefore not modelled using simulated samples.
+To compare the observed data with SM predictions and to evaluate detector effects and systematic uncertainties, Monte Carlo (MC) simulations are used.
+These simulations allow variations of theoretical assumptions and model parameters, in order to provide a detailed description of both signal and background processes.
+The simulation of particle collisions at high energies is based on the factorization theorem of Quantum Chromodynamics (QCD).
+According to this theorem, the cross-section of a hadronic process can be factorized into parton distribution functions (PDFs) and a hard scattering matrix element (ME) describing the short-distance interaction.
+The PDF is a representation of the probability distrubtion, with wich a parton carries a fraction of the momentum of a hadron, denoted by the \textit{Bjorken $x$}. 
+$p_i = x p_p$ resembles the momentum fraction the parton $i$ carries from the whole proton momentum $p_p$.
+At large momentum transfers, the strong coupling constant $\alpha_s$ is sufficiently small such that the hard scattering can be calculated perturbatively.
+In this analysis, MEs are calculated at leading order (LO) or next-to-leading order (NLO) in $\alpha_s$, depending on the process.
+By convolving the PDFs of the parton constituents $i$ and $j$ with the cross section $\sigma_{ij \rightarrow t\overline{b}}$ of the respective hard scattering sub-process and then summing over all possible sub-processes, the s-channel cross section is determined. 
 
-For the nominal single top-quark and antitop-quark $s$-channel samples, \textsc{Powheg} simulations combined with \textsc{Pythia} are used under the \textit{A14} tune. Heavy-flavour decays are further calculated by \textsc{Evtgen}.
+%occuring from the interaction of partons $i$ and $j$ , 
+\begin{equation*}
+    \sigma_{\rm{s-chan.}} = \sum_{i,j} \int \rm{d}x_i f_i (x_i, \mu_{\rm{F}}^2) \int \rm{d}x_j f_j (x_j, \mu_{\rm{F}}^2) \sigma_{ij \rightarrow t\overline{b}} (\sqrt{s}, m_t, \mu_{\rm{F}}, \mu_{\rm{R}}, \alpha_S)  
+\end{equation*}
 
-The $t$-channel single top-quark and anti-quark processes similarly make use \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used.
-
-Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO. The \textsc{NNPDF3.0nlo} PDF set is used in \textsc{Herwig} for these samples.
-
-The $\ttbar$ production is both simulated with the full-sim and fast-sim detector model, while utilizing the \textsc{Powheg} generator at NLO with the \textsc{NNPDF3.0nlo} PDF set, combined with \textsc{Pythia}. The $h_\rm{damp}$ parameter, which regulates the first gluon emission beyond the Born configuration (Was ist das?), is set to $1.5 \cdot m_\rm{top} \simeq \SI{258.75}{\GeV}$.
-
-For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used, instead of \textsc{Sherpa 2.2.14}. Here \textsc{Sherpa} calculates the matrix elements at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with parton shower models.  
-
-The Drell-Yan production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. Samples inside different invariant-mass regions, involving a low-mass interval of $(10 < m_{ll} < \SI{40}{\GeV})$, is used to improve description of dilepton spectra.
+The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the top quark mass $m_t$, the coupling strength of the strong interaction $\alpha_S$, as well as the factorisation scale $\mu_{\rm{F}}$ and the renormalisation scale $\mu_{\rm{R}}$, which are set to the energy scale of the process. 
+While the hard scattering is accessible to perturbative calculations, subsequent QCD radiation, parton showering and hadronization occur at lower energy scales, where perturbation theory is no longer usable.
+These effects are therefore modelled using phenomenological models.
+Parton showers (PS) simulate the emission of soft and collinear radiation, while hadronization models describe the transition from coloured partons to colourless hadrons, incorporating the effects of confinement and asymptotic freedom.
+The free parameters of these models are tuned using experimental data.
+Several Monte Carlo generators are used in this analysis.
+\textsc{Powheg Box v2} \cite{powheg} is employed to generate hard scattering processes at NLO accuracy.
+Parton showering and hadronization are modelled using either \textsc{Pythia 8} \cite{pythia}, which implements the \textit{Lund string model} \cite{lund_string} for hadronization and typically uses the A14 tune \cite{A14}, or \textsc{Herwig 7} \cite{herwig}, which simulates hadronization based on the \textit{cluster hadronization model} \cite{cluster_model}.
+As a general-purpose event generator, \textsc{Sherpa} \cite{sherpa} is capable of simulating both the hard scattering ME and the subsequent PS and hadronization.
+The decays of heavy-flavour hadrons are simulated using \textsc{EvtGen} \cite{evtgen}, except for samples generated with \textsc{Sherpa}.
+Throughout all simulations, a top quark mass of $\SI{172.5}{\GeV}$ is used. \\
+%
+For the nominal single top-quark and antitop-quark s-channel samples, \textsc{Powheg} simulations with the \textsc{NNPDF3.0nlo} PDF set \cite{pdf_30} are used, interfaced to \textsc{Pythia} used under the \textit{A14} tune. 
+For PS modelling the \textsc{NNPDF2.3lo} \cite{pdf_23} PDF set is used. The process is normalized at NLO in QCD to the theoretical cross-section prediction $\sigma^{\rm{SM}}_{\rm{s-chan.}}=\asym{10.32}{0.40}{0.36}{\pico\barn}$ \cite{ts_xsec}. \\
+%
+The t-channel single top-quark and anti-quark processes similarly make use of \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used.
+\textsc{Powheg} uses the \textsc{NNPDF3.0nlo}\_nf4 PDF \cite{pdf_30nf4} set for ME calculations, while \textsc{Pythia} employs the \textsc{NNPDF2.3lo} PDF set for PS modelling. The normalization  is based on the cross-section prediction of $\sigma^{\rm{SM}}_{\rm{t-chan.}}=\asym{217}{9}{8}{\pico\barn}$ at NLO in QCD \cite{t_t_xsec}. \\
+%
+Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO.
+Like the signal process, the \textsc{NNPDF3.0nlo} PDF set is used for ME calculations and the \textsc{NNPDF2.3lo} PDF set for PS modelling. The associated $tW$ produciton is normalized at NLO in QCD to the SM prediction $\sigma^{\rm{SM}}_{tW}=\SI{71.7 \pm 3.8}{\pico\barn}$.\\
+%
+The $\ttbar$ production is utilizing the \textsc{Powheg} generator at NLO with the \textsc{NNPDF3.0nlo} PDF set, combined with \textsc{Pythia} using the \textsc{NNPDF2.3lo} PDF set. The $h_\rm{damp}$ parameter, which regulates the first gluon emission beyond the Born configuration, is set to $1.5 \cdot m_\rm{top} \simeq \SI{258.75}{\GeV}$.
+The normalization at next-to-next-to-leading order (NNLO) in QCD is calculated to be $\sigma^{\rm{SM}}_{\ttbar}=\asym{832}{40}{46}{\pico\barn}$. \\
+%
+For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used.\textsc{Sherpa} calculates the MEs at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with PS models.  
+The PS modelling used the \textsc{NNPDF3.0nnlo} PDF set. Normalization at NNLO in QCD is based on $\sigma^{\rm{SM}}_{W\rm{+jets}}=\SI{60.2}{\nano\barn}$. \\
+%
+The Drell-Yan production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For the tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. 
+Similarly MEs are calculated at NLO accuracy for up to two partons and at LO accuracy for up to five partons.
+The process is normalized at NNLO accuracy in QCD to $\sigma^{\rm{SM}}_{Z\rm{+jets}}=\SI{6.32}{\nano\barn}$.\\
+%
+All nominal samples were simulated using the full ATLAS detector simulation \cite{fullsim} based on \textsc{Geant4} \cite{geant4}, hereafter reffered to as \textit{fullsim}.
+Some alternative samples use a faster simulation procedure, where the \textsc{Geant4} simulation of the calorimeter response is replaced by a detailed parameterisation of the PS shapes \cite{fastsim}, in the following refferet to as \textit{fastsim}.
 
 \section{Object Definition}
 
-The signal signature consist of different objects of significance: leptons, either electrons or muons, and their corresponding neutrinos, as well as hadron jets, especially important b-tagged jets. 
-To reconstruct these objects from the detector response a framework for the respective object defintions is to be used.
+The signal signature consists of a charged lepton (electron or muon), its corresponding neutrino, and jets originating from $b$ quarks, so-called $b$-tagged jets.
+Due to colour confinement, quarks hadronize and are reconstructed as jets.
+The flavor of a jet cannot be measured directly and is inferred using dedicated flavor-tagging algorithms.
+The following framework is used to define the object reconstruction in this analysis.
 
-Electrons are reconstructed from particle tracks in the ID and energy deposits in the ECAL. 
-A measured $\pT > \SI{10}{\GeV}$ and $|\eta_\rm{cluster}| < 2.47$, while deposits in the barrel-end cap transition region $1.36 < |\eta_\rm{cluster}|<1.52$ are discarded, are necessary, as well as passing the TightLH and isolation working point, for an electron to be identified as such. 
-Muons require at least a $\pT > \SI{10}{\GeV}$ and $|\eta|<2.5$, while passing the medium quality definition and tight isolation working point.
-Jets are reconstructed with the anti-$k_t$ algorithm with a radius parameter of $\Delta R = 0.4$.
-The \textsc{GN2v01} algorithm, determines if a jet is to be determined as b-tagged.
+
+Electrons are reconstructed from charged-particle tracks in the  ID matched to energy deposits in the ECAL.
+They are required to have a transverse momentum of $\pT > \SI{10}{\GeV}$ and a pseudorapidity of $|\eta_{\mathrm{cluster}}| < 2.47$, excluding the barrel--endcap transition region $1.36 < |\eta_{\mathrm{cluster}}| < 1.52$.
+Electrons must satisfy the \texttt{TightLH} identification \cite{tightlh} and the tight isolation working point \cite{tightiso}.
+Muons are reconstructed by combining tracks from the ID and the MS.
+They are required to have $\pT > \SI{10}{\GeV}$ and $|\eta| < 2.5$, and must pass the medium quality selection \cite{mediumquality} and the tight isolation working point \cite{tightiso}.
+To ensure consistency with the primary interaction, lepton tracks are required to originate from the primary vertex by satisfying
+$|z_0 \sin\theta| < \SI{0.5}{\milli\meter}$ and $|d_0/\sigma(d_0)| < 5~(3)$ for electrons (muons),
+where $z_0$ is the longitudinal impact parameter and $d_0$ the transverse impact parameter with respect to the beam line.
+Jets are reconstructed using the anti-$k_t$ algorithm \cite{antikt} with a radius parameter of $R = 0.4$.
+Jets originating from the hard-scatter interaction are identified using the Jet Vertex Tagger (JVT) \cite{JVT}, while forward jets ($|\eta| > 2.5$) are validated using the forward JVT (fJVT) algorithm.
+%which is later used for the forward jet veto.
+Jets containing $b$ hadrons are identified using the \textsc{GN2v01} $b$-tagging algorithm \cite{btag_algo}.
+The algorithm assigns a continuous discriminant to each jet, representing the likelihood of originating from a $b$ quark.
+A working point corresponding to a $b$-jet identification efficiency of $85\%$ is applied.
+The discriminant exploits the long lifetime of $b$ hadrons, leading to displaced decay vertices and tracks with large impact parameters.
+
 
 \section{Event Selection}
 
@@ -64,20 +105,20 @@ The SR definition with all the event selection cuts used in this analysis is sho
 
 \begin{table}
     \centering
-    \caption{Definition of the event selection for the Signal Region used in this analysis.}
+    \caption{Definition of the event selection for the Signal Region (SR) used in this analysis.}
     \label{tab:eventsel}
     \begin{tabular}{|l|c|}
         \hline
         & \textbf{SR} \\
         \hline
-        $\rm{n}(e,\mu)$ &  == 1 with $\pT > \SI{30}{\GeV}$  \\
-        $\rm{n}(\text{jets})$ &  == 2, in $|\eta| < 2.5$  \\
-        $\rm{n}(b-tags)$ & == 2, @77\%, in $|\eta|<2.5$ \\ 
+        $\rm{N}(e,\mu)$ &  == 1 with $\pT > \SI{30}{\GeV}$  \\
+        $\rm{N}(\text{jets})$ &  == 2, in $|\eta| < 2.5$  \\
+        $\rm{N}(b-tags)$ & == 2, @77\%, in $|\eta|<2.5$ \\ 
         Leading jet $\pT$ & $> \SI{40}{\GeV}$, in $|\eta|<2.5$ \\
         Subleading jet $\pT$    & $> \SI{30}{\GeV}$, in $|\eta|<2.5$ \\
         \hline
-        Missing transverse energy ($\etmiss$) & $> \SI{35}{\GeV}$ \\
-        Transverse $W$ boson mass & $> \SI{30}{\GeV}$ \\
+        Missing transverse momentum ($\etmiss$) & $> \SI{35}{\GeV}$ \\
+        Transverse $W$ boson mass ($\mtw$) & $> \SI{30}{\GeV}$ \\
         \hline
         Additional jets (low $\pT$) veto & No jets with $\pT < \SI{30}{\GeV}$ \\
         Forward jets veto & No jets with $|\eta|> 2.5$ \\ 
@@ -86,22 +127,22 @@ The SR definition with all the event selection cuts used in this analysis is sho
     \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|l|S|}
-\hline
- & {}\\
-\hline
-  s-channel   & 4139.99 \pm 850.839 \\
-  single top tchan   & 9334.36 \pm 1853.71 \\
-  single top tW   & 2619.05 \pm 612.957 \\
-  Z+jets   & 1654.39 \pm 882.368 \\
-  W+jets   & 15159.5 \pm 7858.56 \\
-  ttbar   & 75216.7 \pm 18753.3 \\
-\hline
-  Total  & 108124 \pm 24971.1 \\
-\hline
-\end{tabular}
-\caption{Yields of the analysis}
-\end{center}
+\begin{table}
+  \centering
+  \caption{blabla}
+  \label{event_yields}
+  \begin{tabular}{l c c}
+    \toprule
+    Process  & {$L_{\rm{int}} \cdot \sigma_i$} & Number of events \\
+    \midrule
+    s-channel   & & 4139.99 \pm 850.839 \\
+    t-channel &  & 9334.36 \pm 1853.71 \\
+    $tW$ production  & & 2619.05 \pm 612.957 \\
+    $Z$+jets  & & 1654.39 \pm 882.368 \\
+    $W$+jets  & & 15159.5 \pm 7858.56 \\
+    $\ttbar$   & & 75216.7 \pm 18753.3 \\
+    \midrule
+    Total & & 108124 \pm 24971.1 \\
+    \bottomrule
+  \end{tabular}
 \end{table}
