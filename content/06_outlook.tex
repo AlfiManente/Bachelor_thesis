@@ -6,15 +6,15 @@ Monte Carlo simulations corresponding to the Run2 dataset, collected between 201
 Only the leptonic decay mode of the $W$-boson from the top quark decay was considered, resulting in a signal signature consisting of exactly one charged lepton, the corresponding neutrino inferred from the missing transverse momentum $\etmiss$, and two b-tagged jets.
 As the statistical method, a binned profile likelihood fit was performed on an Asimov dataset using a single signal region.
 The output of a deep neural network was employed as the discriminant variable.
-The fitted singal strength was found to be $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
+The fitted signal strength was found to be $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
 The systematic uncertainties with the largest impact on the signal strength were discussed.
-The dominant contributions originate from PS and hadronisation modelling of the single top quark s-channel signal process, jet energy resolution uncertainties at detector level, background modelling uncertainties of the dominant $\ttbar$ background, and uncertainties related to pile-up reweighting.
+The dominant contributions originate from PS and hadronization modelling of the single top quark s-channel signal process, jet energy resolution uncertainties at detector level, background modelling uncertainties of the dominant $\ttbar$ background, and uncertainties related to pile-up reweighting.
 Compared to the MEM discriminant used in the previous analysis, the use of the DNN output as discriminant significantly reduces the overall impact of systematic uncertainties on the extracted signal strength.
 
 The following elements represent next steps for future analyses:
-Adding the remaining uncertainties, especially the PDF uncertainties.
+Adding the remaining uncertainties, especially the PDF uncertainties and ME/PS uncertaintes for the remaining background processes.
 These can affect the DNN classification through their impact on the high-level kinematic variables used as input features, especially in regions of high momentum transfer.
-Furthermore the inclusion of orthogonal control regions rich in background events, to enable a more data driven constraint of modelling and normalisation uncertainties of the background processes.
+Furthermore the inclusion of orthogonal control regions rich in background events should be considered, to enable a more data driven constraint of modelling and normalisation uncertainties of the background processes.
 This approach enables the background normalisation factors to be treated as free parameters in the fit and constrained by data rather than relying solely on theoretical cross-section uncertainties.
 Additionally, the use of a more stringent $b$-tagging working point can reduce mistag contributions and improve the purity of the events classified as signal.
 Finally, performing a fit to data allows for a validation of the analysis strategy and demonstrates the improved discriminating power of the DNN output when used as the discriminant variable.

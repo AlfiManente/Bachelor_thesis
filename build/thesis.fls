@@ -463,6 +463,8 @@ INPUT ./build/thesis.toc
 OUTPUT build/thesis.toc
 INPUT ./content/01_introduction.tex
 INPUT ./content/02_theory.tex
+INPUT ./imgs/SM1.png
+INPUT ./imgs/SM1.png
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -499,8 +501,6 @@ INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsf
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./imgs/SM1.png
-INPUT ./imgs/SM1.png
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-bold.luc
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
@@ -541,7 +541,6 @@ INPUT ./imgs/syst/me_match_sig.png
 INPUT ./imgs/syst/pileup.png
 INPUT ./imgs/syst/pileup.png
 INPUT ./content/06_outlook.tex
-INPUT ./content/a_anhang.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc
 INPUT ./content/Eidesstattliche_Versicherung.pdf

@@ -19,7 +19,5 @@
 \contentsline {section}{\numberline {5.4}Systematic Uncertainties}{19}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Results}{21}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Summary and Outlook}{26}{chapter.6}%
-\def \@chapapp {\appendixname }
-\contentsline {chapter}{\numberline {A}Appendix}{27}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{28}{chapter*.16}%
+\contentsline {chapter}{\nonumberline Bibliography}{27}{chapter*.16}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -467,6 +467,35 @@
       \verb http://dx.doi.org/10.1103/RevModPhys.71.S96
       \endverb
     \endentry
+    \entry{UZH_SM}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=be92dfc662c321cabc4e30411fc92db0}{%
+           family={Serra},
+           familyi={S\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{bibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorbibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authornamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Standard Model}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+      \verb{url}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+    \endentry
     \entry{higgs_theory}{article}{}{}
       \name{author}{1}{}{%
         {{hash=3e19a08b8763d812b642d1d6654aa521}{%
@@ -486,8 +515,8 @@
       \strng{authornamehash}{3e19a08b8763d812b642d1d6654aa521}
       \strng{authorfullhash}{3e19a08b8763d812b642d1d6654aa521}
       \strng{authorfullhashraw}{3e19a08b8763d812b642d1d6654aa521}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{16}
@@ -506,35 +535,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.13.508
-      \endverb
-    \endentry
-    \entry{UZH_SM}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=be92dfc662c321cabc4e30411fc92db0}{%
-           family={Serra},
-           familyi={S\bibinitperiod},
-           given={Nicola},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{fullhash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{fullhashraw}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{bibnamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorbibnamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authornamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorfullhash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorfullhashraw}{be92dfc662c321cabc4e30411fc92db0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Standard Model}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
-      \endverb
-      \verb{url}
-      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
       \endverb
     \endentry
     \entry{top_theory}{article}{}{}
@@ -849,8 +849,8 @@
       \strng{authornamehash}{08565706058718b454be32b190e67d73}
       \strng{authorfullhash}{08565706058718b454be32b190e67d73}
       \strng{authorfullhashraw}{08565706058718b454be32b190e67d73}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -902,8 +902,8 @@
       \strng{authornamehash}{9a0fcbd16f305691a517c5a5cc0bcc06}
       \strng{authorfullhash}{9a0fcbd16f305691a517c5a5cc0bcc06}
       \strng{authorfullhashraw}{9a0fcbd16f305691a517c5a5cc0bcc06}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -960,8 +960,8 @@
       \strng{authornamehash}{d41752b4a4e490a62ebfa4e4eada93fa}
       \strng{authorfullhash}{8660cbd2550b2e100f878d91799190c4}
       \strng{authorfullhashraw}{8660cbd2550b2e100f878d91799190c4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -1062,8 +1062,8 @@
       \strng{authornamehash}{7796720858cc351b041c32eaff704d44}
       \strng{authorfullhash}{ddc39dbe0c60df5a1ea317676fa4faf3}
       \strng{authorfullhashraw}{ddc39dbe0c60df5a1ea317676fa4faf3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -2624,8 +2624,8 @@
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
       \field{extraname}{14}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2014-018}
@@ -2660,8 +2660,8 @@
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
       \field{extraname}{15}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -3393,8 +3393,8 @@
       \strng{authornamehash}{abde844ee4ceb5d13e2592528d5b7ea8}
       \strng{authorfullhash}{af3c57f0781edbf575bae9c7924d9695}
       \strng{authorfullhashraw}{af3c57f0781edbf575bae9c7924d9695}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.data-an}

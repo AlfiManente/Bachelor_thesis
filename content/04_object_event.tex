@@ -30,27 +30,26 @@ Several Monte Carlo generators are used in this analysis.
 \textsc{Powheg Box v2}\,\cite{powheg1, powheg2, powheg3} is employed to generate hard scattering processes at NLO accuracy.
 Parton showering and hadronization are modelled using either \textsc{Pythia 8}\,\cite{pythia1}, which implements the \textit{Lund string model}\,\cite{lundstring} for hadronization and typically uses the A14 tune\,\cite{A14tune}, or \textsc{Herwig 7} \cite{herwig1,herwig2}, which simulates hadronization based on the \textit{cluster hadronization model}\,\cite{clustermodel}.
 As a general-purpose event generator, \textsc{Sherpa}\,\cite{sherpa} is capable of simulating both the hard scattering ME and the subsequent PS and hadronization.
-The decays of heavy-flavour hadrons are simulated using \textsc{EvtGen}\,\cite{evtgen}, except for samples generated with \textsc{Sherpa}.
+The decays of heavy-flavor hadrons are simulated using \textsc{EvtGen}\,\cite{evtgen}, except for samples generated with \textsc{Sherpa}.
 Throughout all simulations, a top quark mass of $\SI{172.5}{\GeV}$ is used. \\
 %
 For the nominal single top-quark and antitop-quark s-channel samples, \textsc{Powheg} simulations with the \textsc{NNPDF3.0nlo} PDF set\,\cite{pdf_30} are used, interfaced to \textsc{Pythia} used under the \textit{A14} tune. 
-For PS modelling the \textsc{NNPDF2.3lo}\,\cite{pdf_23} PDF set is used. The process is normalized at NLO in QCD to the theoretical cross-section prediction $\sigma^{\rm{SM}}_{\rm{s-chan.}}=\asym{10.32}{0.40}{0.36}{\pico\barn}$\,\cite{ts_xsec}. \\
+For PS modelling the \textsc{NNPDF2.3lo}\,\cite{pdf_23} PDF set is used. The process is normalized at NLO in QCD to the theoretical cross-section prediction $\sigma^{\rm{SM}}_{\rm{s-chan.}}=\asym{11.073}{0.193}{0.176}{\pico\barn}$\,\cite{t_xsec}. \\
 %
 The t-channel single top-quark and anti-quark processes similarly make use of \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used.
-\textsc{Powheg} uses the \textsc{NNPDF3.0nlo}\_nf4 PDF \cite{pdf_30} set for ME calculations, while \textsc{Pythia} employs the \textsc{NNPDF2.3lo} PDF set for PS modelling. The normalization  is based on the cross-section prediction of $\sigma^{\rm{SM}}_{\rm{t-chan.}}=\asym{217}{9}{8}{\pico\barn}$ at NLO in QCD \,\cite{t_t_xsec}. \\
+\textsc{Powheg} uses the \textsc{NNPDF3.0nlo}\_nf4 PDF \cite{pdf_30} set for ME calculations, while \textsc{Pythia} employs the \textsc{NNPDF2.3lo} PDF set for PS modelling. The normalization  is based on the cross-section prediction of $\sigma^{\rm{SM}}_{\rm{t-chan.}}=\asym{214.2}{4.1}{2.6}{\pico\barn}$ at NLO in QCD \,\cite{t_xsec}. \\
 %
 Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO.
-Like the signal process, the \textsc{NNPDF3.0nlo} PDF set is used for ME calculations and the \textsc{NNPDF2.3lo} PDF set for PS modelling. The associated $tW$ produciton is normalized at NLO in QCD to the SM prediction $\sigma^{\rm{SM}}_{tW}=\SI{71.7 \pm 3.8}{\pico\barn}$\,\cite{tw_xsec}.\\
+Like the signal process, the \textsc{NNPDF3.0nlo} PDF set is used for ME calculations and the \textsc{NNPDF2.3lo} PDF set for PS modelling. The associated $tW$ produciton is normalized at NLO in QCD to the SM prediction $\sigma^{\rm{SM}}_{tW}=\asym{79.3}{2.9}{2.8}{\pico\barn}$\,\cite{t_xsec}.\\
 %
 The $\ttbar$ production is utilizing the \textsc{Powheg} generator at NLO with the \textsc{NNPDF3.0nlo} PDF set, combined with \textsc{Pythia} using the \textsc{NNPDF2.3lo} PDF set. The $h_\rm{damp}$ parameter, which regulates the first gluon emission beyond the Born configuration, is set to $1.5 \cdot m_\rm{top} \simeq \SI{258.75}{\GeV}$.
-The normalization at next-to-next-to-leading order (NNLO) in QCD is calculated to be $\sigma^{\rm{SM}}_{\ttbar}=\asym{832}{40}{46}{\pico\barn}$. \\
+The normalization at next-to-next-to-leading order (NNLO) in QCD is calculated to be $\sigma^{\rm{SM}}_{\ttbar}=\asym{833}{37.4}{43}{\pico\barn}$\,\cite{tt_xsec}. \\
 %
 For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used.\textsc{Sherpa} calculates the MEs at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with PS models.  
-The PS modelling used the \textsc{NNPDF3.0nnlo} PDF set. Normalization at NNLO in QCD is based on $\sigma^{\rm{SM}}_{W\rm{+jets}}=\SI{60.2}{\nano\barn}$. \\
+The PS modelling used the \textsc{NNPDF3.0nnlo} PDF set.\\
 %
 The Drell-Yan production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For the tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. 
-Similarly MEs are calculated at NLO accuracy for up to two partons and at LO accuracy for up to five partons.
-The process is normalized at NNLO accuracy in QCD to $\sigma^{\rm{SM}}_{Z\rm{+jets}}=\SI{6.32}{\nano\barn}$.\\
+Similarly MEs are calculated at NLO accuracy for up to two partons and at LO accuracy for up to five partons.\\
 %
 All nominal samples were simulated using the full ATLAS detector simulation\,\cite{fullsim} based on \textsc{Geant4}\,\cite{geant4}, hereafter reffered to as \textit{fullsim}.
 Some alternative samples use a faster simulation procedure, where the \textsc{Geant4} simulation of the calorimeter response is replaced by a detailed parameterisation of the PS shapes\,\cite{fullsim}, in the following refferet to as \textit{fastsim}.
@@ -129,7 +128,7 @@ All selection criteria defining the signal region are summarized in \autoref{tab
 
 \begin{table}
   \centering
-  \caption{blabla}
+  \caption{Number of events passing the event selection for each process inspected in this analyses. Multiplying the integrated luminosity with the cross-section prediction results in the number of expected events.}
   \label{event_yields}
   \begin{tabular}{l c c}
     \toprule

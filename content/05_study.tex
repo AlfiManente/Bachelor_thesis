@@ -87,7 +87,7 @@ To determine the cross-section, a \textit{binned profile likelihood fit} is perf
 This framework is used to extract the signal strength parameter $\mu$ together with the NPs describing systematic uncertainties by maximizing the likelihood function.
 This determines the parameter values that best describe the data assuming the presence of the single top quark s-channel signal.
 The likelihood function states the probability by which an outcome happens with respect to a set of given model parameters. 
-Since analyses in High Energy Physics involve large event samples, the data are represented in histograms, where events are grouped into bins rather than treated individually.
+Since this analysis involves a large event sample, the data are represented in histograms, where events are grouped into bins rather than treated individually.
 The binning of data also introduces Poisson probabilities into the likelihood as can be seen in the following equation:
 
 \begin{equation*}
@@ -101,7 +101,7 @@ The binned likelihood function multiplies the Poisson probabilities $\rm{Pois} (
 \end{equation*}
 
 multiplied with the product of all constraint terms $\pi_j (\theta_j)$ for each NP $j$.
-A NP of $\theta_j = 0$ conforms to the nominal prediction made by the simulation, while $\theta_j = \pm 1$ represents a variation of one standard deviation $\pm \sigma$. 
+A NP of $\theta_j = 0$ resembles the nominal prediction made by the simulation, while $\theta_j = \pm 1$ represents a variation of one standard deviation $\pm \sigma$. 
 For most systematic uncertainties, the constraint terms are modelled as Gaussian distributions centered at the nominal value $\theta_j^0$ with a width corresponding to the estimated uncertainty $\sigma_{\theta_j^0}$.
 The one standard deviation variations are provided in the form of up and down shifted histograms.
 Statistical uncertainties arising from the limited number of simulated events are included as dedicated  NPs $\gamma_i$ for each respective bin $i$, which are modelled as Poisson-constrained parameters with a nominal value of 1.
@@ -126,8 +126,8 @@ The systematic uncertainties are categorized into modelling uncertainties of the
 
 Modelling uncertainties arise from different theoretical descriptions of the hard-scattering process and its subsequent evolution, including variations in ME calculations, PS modelling, hadronization, and the choice of generator-specific parameters.
 For the single top quark s-channel signal process, additional MC samples were produced by varying the $\pT^{\rm hard}$ parameter to 1, compared to the nominal value of 0. 
-The $\pT^{\rm hard}$ variable determines how the event hardness calculated by \textsc{Powheg} is passed to \textsc{Pythia} to regulate the parton shower. 
-By default, the hardness scale \textit{SCALUP} provided by \textsc{Powheg} is used directly. 
+The $\pT^{\rm hard}$ variable determines how the event hardness calculated by \textsc{Powheg} is passed to \textsc{Pythia} to regulate the PS modelling. 
+Nominally, the hardness scale variable \textit{SCALUP} given by \textsc{Powheg} is used for the event hardness. 
 When setting $\pT^{\rm hard}=1$, the event hardness is instead defined by the transverse momentum of the hardest \textsc{Powheg} emission\,\cite{pthard}. 
 This variation probes uncertainties related to the matching between the NLO matrix element and the PS.
 In addition, samples interfacing \textsc{Powheg} with \textsc{Herwig} were generated to assess uncertainties originating from different parton shower and hadronization models.
@@ -135,7 +135,7 @@ Similar modelling variations were applied to the $\ttbar$ background process.
 Further $\ttbar$ samples were produced with $\pT^{\rm hard}=1$, and with the $h_{\rm{damp}}$ parameter increased from $1.5 \cdot m_{\rm top}$ to $3 \cdot m_{\rm top}$, allowing the study of uncertainties related to the modelling of high-$p_T$ radiation in the hardest emissions.
 
 In addition to ME and PS modelling uncertainties, background processes are subject to uncertainties in their theoretical cross-section predictions, which affect their normalisation. 
-A cross-section uncertainty of $6\%$ is assigned to the $\ttbar$ background and to the single top quark production modes. 
+A cross-section uncertainty of $5.2\%$\,\cite{tt_xsec} is assigned to the $\ttbar$ background and $3.7\%$\,\cite{t_xsec} to the single top quark production modes. 
 For the $W$+jets and $Z$+jets background processes, a conservative uncertainty of $50\%$ is assumed.
 
 Detector modelling uncertainties include both one-sided and two-sided systematic variations. 
@@ -144,9 +144,9 @@ The latter include uncertainties on the missing transverse momentum $\etmiss$, p
 The integrated luminosity uncertainty is taken to be $0.83\%$~\cite{lumi_unc}.
 Jet-related uncertainties include jet energy resolution (JER), jet vertex tagger (JVT), and jet energy scale (JES) uncertainties. 
 The JER uncertainty is represented by 15 NPs, while two efficiency-related nuisance parameters are used for JVT. 
-The JES uncertainty accounts for effects related to jet flavour composition, flavour response, $b$-jet energy scale, pile-up, punch-through, and jet $\eta$ intercalibration, as well as various pre-recommendations, and is encoded using 32 nuisance parameters.
-Flavour tagging uncertainties are modelled using 55 nuisance parameters for $b$-tagging, 33 for $c$-tagging, and 42 for light-flavour jet tagging. 
-In addition, four nuisance parameters per flavour are included to describe uncertainties arising from the extrapolation of the jet calibration to the high transverse momentum regime, where direct experimental constraints are limited.
+The JES uncertainty accounts for effects related to jet flavor composition, flavor response, $b$-jet energy scale, pile-up, punch-through, and jet $\eta$ intercalibration, as well as various pre-recommendations, and is encoded using 32 nuisance parameters.
+Flavour tagging uncertainties are modelled using 55 nuisance parameters for $b$-tagging, 33 for $c$-tagging, and 42 for light-flavor jet tagging. 
+In addition, four nuisance parameters per flavor are included to describe uncertainties arising from the extrapolation of the jet calibration to the high transverse momentum regime.
 Uncertainties related to the modelling of electrons and muons are also considered.
 For electrons, six nuisance parameters are included, covering trigger efficiencies as well as energy scale and resolution effects for electrons and photons. 
 For muons, 16 nuisance parameters are used to describe momentum scale and resolution uncertainties, as well as trigger-related effects. 
@@ -161,14 +161,13 @@ Uncertainties with only an up or down variation undergo one-sided symmetrisation
 
 \section{Results}
 
-After fitting the NLL onto the Asimov Dataset, the expected signal strength is found to be $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
-The DNNs output is therefore still consistent with the SM prediction, even after incorporating several more systematic uncertainties into this analysis, as were considered in Niklas Düser's work.
+After fitting the NLL onto the Asimov dataset, the expected signal strength is found to be $\mu_{\rm{s-chan.}} = 1^{+0.25}_{-0.20}$.
 From the fit the NPs influences on the signal strength are now accessible. 
 The ranking plot sorts the NPs, with the most influential NP shown on the top of the plot, based on their impact on the signal strength. 
 Their respective impacts are calculated using the \textit{covariance matrix method} \cite{covariance_matrix_method}.
 Here the impact $I=\sigma_\text{total}^{\mu} C_{\mu,\rm{NP}} \sigma^{\rm{NP}}$ is determined with the correlation $C_{\mu,NP}$ between the signal strength and the respective NP, the total uncertainty $\sigma_\text{total}^{\mu}$ of the signal strength and the uncertainty $\sigma^{\rm{NP}}$ of the NP. 
 The ranking therefore reflects the sensitivity of the analysis to variations of individual nuisance parameters and provides insight into the dominant sources of systematic uncertainty.
-The ranking plot for this analysis is displayed in \autoref{fig:ranking}
+The ranking plot for this analysis is displayed in \autoref{fig:ranking}.
 
  
 %The pre-fit impact of a NP is determined by calculating the shift in the signal strength between the nominal fit and a fit where the respective NP is fixed to the value $\hat{\theta} \pm \Delta \theta$. 
@@ -216,7 +215,7 @@ These plots show the relative variation of a given observable under the up- and 
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/ps_sig.png}
-        \caption{PS and hadronization modelling uncertainty for the signal process. \\}
+        \caption{PS and hadronization modelling (signal). \\}
         \label{subfig:pshadwignal}
     \end{subfigure}
     \hfill
@@ -224,14 +223,14 @@ These plots show the relative variation of a given observable under the up- and 
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/jer_noise.png}
-        \caption{The jet energy resolution noise pre-recommendation uncertainty for the signal process.}
+        \caption{The JER noise pre-recommendation uncertainty (signal).}
         \label{subfig:jernoiseprerec}
     \end{subfigure}
     % Ratio Plot: JER_EffectiveNP_1
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/jer_effective.png}
-        \caption{The jet energy resolution effective NP~1 uncertainty for the signal process.}
+        \caption{The JER effective NP~1 uncertainty (signal).}
         \label{subfig:jereffnp1}
     \end{subfigure}
     \hfill
@@ -239,14 +238,14 @@ These plots show the relative variation of a given observable under the up- and 
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/mur_ttbar.png}
-        \caption{Uncertainty for the renormalisation factor $\mu_{\rm{R}}$ for the $\ttbar$ background process.}
+        \caption{Uncertainty for the renormalisation scale $\mu_{\rm{R}}$ for the $\ttbar$ background process.}
         \label{subfig:ttbarmur}
     \end{subfigure}
     % Ratio Plot: s-channel ME matching
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/me_match_sig.png}
-        \caption{ME matching uncertainty for the signal process.}
+        \caption{ME matching uncertainty (signal).}
         \label{subfig:mesignal}
     \end{subfigure}
     \hfill
@@ -254,7 +253,7 @@ These plots show the relative variation of a given observable under the up- and 
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=0.95\textwidth]{imgs/syst/pileup.png}
-        \caption{The pile-up reweighting uncertainty for the signal process.}
+        \caption{Pile-up reweighting uncertainty (signal).}
         \label{subfig:pileup}
     \end{subfigure}
     \caption{Ratio plots for the six uncertainties with the largest impact on the signal strength in this analysis. The upper pad of each plot displays the nominal distribution together with the up- and down-variations, while the lower pad shows the ratio.}
@@ -270,7 +269,7 @@ All nuisance parameters within a given category were fixed and then fitted, and 
 
 The reduction of the uncertainties can be attributed to the DNN's ability to exploit a large set of high-level kinematic features and to capture non-linear correlations between them. In contrast, the MEM is limited to a smaller set of observables and simplified correlations, which makes it more sensitive to individual variations in the input distributions. 
 In addition, several systematic uncertainties have been refined since the previous measurement. 
-The ME matching uncertainty for the respective MC samples has been updated, the JER uncertainty now includes a larger set of effective nuisance parameters, and the JES uncertainty benefits from the introduction of a pre-recommendation. 
+The ME matching uncertainty for the respective MC samples has been updated and the JER uncertainty now includes a larger set of effective nuisance parameters.
 These uncertainties directly affect the high-level kinematic variables used as input features in the DNN, such as the transverse momenta of the leading and subleading jets and the event-level correlations between them. 
 By providing a more detailed and accurate modelling of these effects, the improved uncertainties reduce unrealistic variations in the input features, which in turn leads to a smaller propagated impact on the DNN classification and the measured signal strength. 
 
@@ -284,17 +283,18 @@ By providing a more detailed and accurate modelling of these effects, the improv
 
 \begin{table}
     \centering
-    \caption{Category-wise impact of systematic uncertainties on the fitted signal strength. Systematic uncertainties of this analysis are compared with the impacts in the previous measurement, taken from \cite{lastmeasure_atlas}.}
+    \caption{Category-wise impact of systematic uncertainties on the fitted signal strength. Systematic uncertainties of this analysis are compared with the impacts in the previous measurement\,
+    \cite{lastmeasure_atlas}. This analysis foregoes a more detailed subcategorization of the signal and background modelling uncertainties.}
     \label{tab:cat_impact_sigxsecoversm}
     \begin{tabular}{l c c}
         \toprule
         \makecell[l]{Systematic} &
         \makecell[c]{Previous measurement \\ $\frac{\Delta \mu}{\mu}\,[\%]$} &
-        \makecell[c]{Current measurement \\ $\frac{\Delta \mu}{\mu}\,[\%]$} \\
+        \makecell[c]{This analysis \\ $\frac{\Delta \mu}{\mu}\,[\%]$} \\
         %Systematic & Previous measurement: $\frac{\Delta \mu}{\mu} [\%]$ & Current measurement  $\frac{\Delta \mu}{\mu} [\%]$ \\
         \midrule
-        s-channel modelling             & $+ 18/- 8$  & $+ 2/- 2$ \\
-        $\ttbar$ shape modelling        & $+ 18/ -15$ & $+ 6/- 5$ \\
+        s-channel modelling             & $+ 18/- 8$  & $+ 18/- 12$ \\
+        $\ttbar$ shape modelling        & $+ 18/ -15$ & $+ 7/- 6$ \\
         Jet Energy Resolution           & $+ 18/- 12$ & $+ 11/- 9$ \\
         Jet Energy Scale                & $+ 18/- 13$ & $+ 5/- 4$ \\
         Jet Vertex Tagger               &  --         & $+ 1/- 1$ \\
@@ -305,7 +305,9 @@ By providing a more detailed and accurate modelling of these effects, the improv
         Electron                        &  --         & $+ 1/- 1$ \\ 
         Muon                            &  --         & $+ 1/- 1$ \\
         Missing Transverse Momentum     & $+1 /-1$    & $+ 5/- 4$ \\
-        Background Normalisation   & -- & $+ 20/- 13$ \\
+        $\ttbar$ normalization          & $+24 /-17$  & $+ 4/- 3$ \\
+        $W$+jets normalization          & $+11/-8 $   & $+ 3/- 2$ \\
+        Normalization of other processes& $+ 6/- 5$         & $+ 3/ -2$ \\
         \midrule
         Systematic uncertainties        & $+ 42/- 34$ & $+ 21/- 19$ \\
         \midrule        

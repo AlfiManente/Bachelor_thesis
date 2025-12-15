@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 08:56
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 15:52
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2303,21 +2303,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                t_t_xsec
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                tchan_xsec
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ts_xsec
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2403,50 +2389,49 @@ Package siunitx Warning: Unit macro \barn has been deprecated in this release.
 
 ]
 chapter 2.
+<imgs/SM1.png, id=104, 763.8939pt x 516.0078pt>
+File: imgs/SM1.png Graphic file (type png)
+<use imgs/SM1.png>
+Package luatex.def Info: imgs/SM1.png  used on input line 18.
+(luatex.def)             Requested size: 276.04749pt x 186.47128pt.
 Missing character: There is no 𝜇 (U+1D707) in font [lmroman10-regular]:+tlig;
 !
 Missing character: There is no 𝜇 (U+1D707) in font [lmroman8-regular]:+tlig;!
-LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 30.
 
 
 
 [2
 
-]
-<imgs/SM1.png, id=116, 763.8939pt x 516.0078pt>
-File: imgs/SM1.png Graphic file (type png)
-<use imgs/SM1.png>
-Package luatex.def Info: imgs/SM1.png  used on input line 44.
-(luatex.def)             Requested size: 276.04749pt x 186.47128pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<./imgs/SM1.png>]
+Underfull \vbox (badness 2698) has occurred while \output is active []
 
 
 
-[3<./imgs/SM1.png>]
+[3]
 
 [4]
 
-LaTeX Warning: Citation 'tchan_xsec' on page 5 undefined on input line 152.
+LaTeX Warning: Citation 'tchan_xsec' on page 5 undefined on input line 155.
 
 
-LaTeX Warning: Citation 'tw_xsec' on page 5 undefined on input line 152.
+LaTeX Warning: Citation 'tw_xsec' on page 5 undefined on input line 155.
 
 
 
 [5]
-Overfull \hbox (8.90327pt too wide) in paragraph at lines 178--179
+Overfull \hbox (8.90327pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 179--179
+Underfull \hbox (badness 1142) in paragraph at lines 182--182
 [][]\TU/lmr/bx/n/9 (a)[][] []|$\TU/LatinModernMath(1)/m/n/9 𝑡[]$ \TU/lmr/m/n
 /9 pro-duc-tion through
  []
 
 
-Overfull \hbox (23.3091pt too wide) in paragraph at lines 220--221
+Overfull \hbox (23.3091pt too wide) in paragraph at lines 223--224
  [][] 
  []
 
@@ -2458,7 +2443,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [6]
 
 LaTeX Warning: Citation 'schan_theory_xsec' on page 7 undefined on input line 2
-62.
+65.
 
 ) (./content/03_detector.tex
 
@@ -2466,7 +2451,7 @@ LaTeX Warning: Citation 'schan_theory_xsec' on page 7 undefined on input line 2
 
 [8]
 chapter 3.
-<imgs/ATLAS_schematic.png, id=197, 1445.4pt x 886.31125pt>
+<imgs/ATLAS_schematic.png, id=195, 1445.4pt x 886.31125pt>
 File: imgs/ATLAS_schematic.png Graphic file (type png)
 <use imgs/ATLAS_schematic.png>
 Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
@@ -2478,16 +2463,7 @@ Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
 <./imgs/ATLAS_schematic.png>]
 chapter 4.
 
-LaTeX Warning: Citation 'ts_xsec' on page 10 undefined on input line 37.
-
-
-LaTeX Warning: Citation 't_t_xsec' on page 10 undefined on input line 40.
-
-
-LaTeX Warning: Citation 'tw_xsec' on page 10 undefined on input line 43.
-
-
-Overfull \hbox (3.86057pt too wide) in paragraph at lines 24--57
+Overfull \hbox (3.86057pt too wide) in paragraph at lines 24--56
 \TU/lmr/m/n/10.95 The $\TU/LatinModernMath(1)/m/n/10.95 𝑡[]$ \TU/lmr/m/n/10.
 95 pro-duc-tion is uti-liz-ing the \TU/lmr/m/sc/10.95 Powheg \TU/lmr/m/n/10.95 
 gen-er-a-tor at NLO with the \TU/lmr/m/sc/10.95 NNPDF3.0nlo
@@ -2520,12 +2496,12 @@ chapter 5.
 [15
 
 ]
-<imgs/seperation.png, id=306, 598.235pt x 574.145pt>
+<imgs/seperation.png, id=310, 598.235pt x 574.145pt>
 File: imgs/seperation.png Graphic file (type png)
 <use imgs/seperation.png>
 Package luatex.def Info: imgs/seperation.png  used on input line 65.
 (luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=307, 598.235pt x 674.52pt>
+<imgs/SR-Schannel.png, id=311, 598.235pt x 674.52pt>
 File: imgs/SR-Schannel.png Graphic file (type png)
 <use imgs/SR-Schannel.png>
 Package luatex.def Info: imgs/SR-Schannel.png  used on input line 72.
@@ -2541,82 +2517,66 @@ Package luatex.def Info: imgs/SR-Schannel.png  used on input line 72.
 [19]
 
 [20]
-<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=345, 598.235pt x 508.90125pt>
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=351, 598.235pt x 508.90125pt>
 File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
 <use imgs/Ranking_SigXsecOverSM_Breakdown.png>
 Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
-t line 182.
+t line 181.
 (luatex.def)             Requested size: 276.04749pt x 234.82735pt.
 
 
 [21<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
-
-[22]
-<imgs/syst/ps_sig.png, id=360, 798.985pt x 574.145pt>
+<imgs/syst/ps_sig.png, id=361, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
-Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 218.
+Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 217.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=361, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=362, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
-Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 226.
+Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 225.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-
-Underfull \hbox (badness 2393) in paragraph at lines 227--227
-[][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 The jet en-ergy res-o-lu-tion noise pre-
- []
-
-<imgs/syst/jer_effective.png, id=362, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=363, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
-Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 233.
+Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 232.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=363, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=364, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
-Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 241.
+Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 240.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=364, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=365, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
-Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 248.
+Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 247.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/pileup.png, id=365, 798.985pt x 574.145pt>
+<imgs/syst/pileup.png, id=366, 798.985pt x 574.145pt>
 File: imgs/syst/pileup.png Graphic file (type png)
 <use imgs/syst/pileup.png>
-Package luatex.def Info: imgs/syst/pileup.png  used on input line 256.
+Package luatex.def Info: imgs/syst/pileup.png  used on input line 255.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
-Overfull \hbox (3.1482pt too wide) in paragraph at lines 289--317
- [][] 
- []
 
-) (./content/06_outlook.tex
+[22]
 
-[23]
-
-[24<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
+[23<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
 .png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_match_sig.png><./imgs/syst/pileu
-p.png>]
+p.png>]) (./content/06_outlook.tex
+
+[24]
 
 [25]
 chapter 6.
-) (./content/a_anhang.tex
-
-[26
-
-]
-chapter A.
 )
 
-[27
+[26
 
 ]
 chapter without number
 
 
-[28
+[27
 
 
 ]
@@ -2626,25 +2586,12 @@ Overfull \hbox (55.6741pt too wide) in paragraph at lines 208--208
  []
 
 
-Overfull \hbox (132.40996pt too wide) in paragraph at lines 208--208
-\TU/lmr/m/n/10.95 channel in pro-ton–pro-ton col-li-sions at <mml:math xmlns:m
-ml=”http://www.w3.org/1998/Math/MathML”
- []
 
-
-Overfull \hbox (677.02669pt too wide) in paragraph at lines 208--208
-\TU/lmr/m/n/10.95 al-timg=”si1.gif” over-flow=”scroll”><mml:msqrt><mml:m
-i>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>8</mml:mn><mml:mtext> </mml:m
-text><mml:mtext>TeV</mml:mtext></mml:math>
- []
-
-
+[28]
 
 [29]
 
 [30]
-
-[31]
 Overfull \hbox (0.7675pt too wide) in paragraph at lines 208--208
 \TU/lmr/m/n/10.95 https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS/CONFNOTES/ATL
 AS-
@@ -2652,12 +2599,14 @@ AS-
 
 
 
-[32]
+[31]
 
 Package biblatex Warning: No driver for 'masterthesis'.
 (biblatex)                Using fallback driver on input line 207.
 
 
+
+[32]
 
 [33]
 
@@ -2665,13 +2614,13 @@ Package biblatex Warning: No driver for 'masterthesis'.
 
 
 ]
-<content/Eidesstattliche_Versicherung.pdf, id=574, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=584, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 211.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=576, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=586, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2708,25 +2657,25 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 9B71E3458A19D3EF836C3DF6F85CF49D;29279.
+(rerunfilecheck)             Checksum: 8F6908227201078BD9D210B4804C3E6D;29383.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 15CE68C706AE1B2225FC9AE97192051D;1909.
+(rerunfilecheck)             Checksum: B8AA056059F6E34B97E9D32CBDA10918;1811.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 56204 strings out of 476291
+ 56200 strings out of 476291
  125011,2848258 words of node,token memory allocated
  1383 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 1 sub_mlist
 , 3 glyph, 135 attribute, 79 glue_spec, 69 attribute_list, 2 write, 52 pdf_actio
 n nodes
-   avail lists: 1:13,2:6522,3:1750,4:180,5:502,6:109,7:10268,8:72,9:1043,10:26,1
-1:803,12:1
- 77077 multiletter control sequences out of 65536+600000
- 181 fonts using 60890495 bytes
+   avail lists: 1:15,2:6524,3:1754,4:175,5:502,6:105,7:10114,8:72,9:1042,10:25,1
+1:857,12:1
+ 77078 multiletter control sequences out of 65536+600000
+ 181 fonts using 60890235 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mroman6-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2740,8 +2689,8 @@ texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/alf
 redo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-bo
 ld.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/publ
 ic/lm/lmroman5-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist
-/fonts/opentype/public/lm/lmroman10-bold.otf></home/alfredo-manente/.local/texli
-ve/2025/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/al
+/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/alfredo-manente/.loc
+al/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/al
 fredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latin
 modern-math.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/open
 type/public/lm/lmroman8-regular.otf></home/alfredo-manente/.local/texlive/2025/t
@@ -2751,10 +2700,10 @@ f></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm
 /lmroman12-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fon
 ts/opentype/public/lm/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/20
 25/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (39 pages, 1438176 bytes).
+Output written on thesis.pdf (39 pages, 1438147 bytes).
 
-PDF statistics: 773 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 129 named destinations out of 1000 (max. 131072)
- 168 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 780 PDF objects out of 1000 (max. 8388607)
+ 649 compressed objects within 7 object streams
+ 130 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -467,6 +467,35 @@
       \verb http://dx.doi.org/10.1103/RevModPhys.71.S96
       \endverb
     \endentry
+    \entry{UZH_SM}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=be92dfc662c321cabc4e30411fc92db0}{%
+           family={Serra},
+           familyi={S\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{fullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{bibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorbibnamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authornamehash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhash}{be92dfc662c321cabc4e30411fc92db0}
+      \strng{authorfullhashraw}{be92dfc662c321cabc4e30411fc92db0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Standard Model}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+      \verb{url}
+      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
+      \endverb
+    \endentry
     \entry{higgs_theory}{article}{}{}
       \name{author}{1}{}{%
         {{hash=3e19a08b8763d812b642d1d6654aa521}{%
@@ -486,8 +515,8 @@
       \strng{authornamehash}{3e19a08b8763d812b642d1d6654aa521}
       \strng{authorfullhash}{3e19a08b8763d812b642d1d6654aa521}
       \strng{authorfullhashraw}{3e19a08b8763d812b642d1d6654aa521}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{16}
@@ -506,35 +535,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.13.508
-      \endverb
-    \endentry
-    \entry{UZH_SM}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=be92dfc662c321cabc4e30411fc92db0}{%
-           family={Serra},
-           familyi={S\bibinitperiod},
-           given={Nicola},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{fullhash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{fullhashraw}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{bibnamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorbibnamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authornamehash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorfullhash}{be92dfc662c321cabc4e30411fc92db0}
-      \strng{authorfullhashraw}{be92dfc662c321cabc4e30411fc92db0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Standard Model}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
-      \endverb
-      \verb{url}
-      \verb https://www.physik.uzh.ch/groups/serra/StandardModel.html
       \endverb
     \endentry
     \entry{top_theory}{article}{}{}
@@ -783,7 +783,7 @@
       \field{issn}{0370-2693}
       \field{journaltitle}{Physics Letters B}
       \field{month}{5}
-      \field{title}{Evidence for single top-quark production in the s-channel in proton–proton collisions at <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.gif" overflow="scroll"><mml:msqrt><mml:mi>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>8</mml:mn><mml:mtext> </mml:mtext><mml:mtext>TeV</mml:mtext></mml:math> with the ATLAS detector using the Matrix Element Method}
+      \field{title}{Evidence for single top-quark production in the s-channel in proton–proton collisions at $\sqrt{s}=\SI{8}{\TeV}$ with the ATLAS detector using the Matrix Element Method}
       \field{volume}{756}
       \field{year}{2016}
       \field{pages}{228\bibrangedash 246}
@@ -1697,6 +1697,98 @@
       \verb http://dx.doi.org/10.1016/j.nuclphysb.2012.10.003
       \endverb
     \endentry
+    \entry{t_xsec}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{11}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2025-035}
+      \field{title}{{Reference Single Top-Quark Cross-Sections for ATLAS and CMS Analyses}}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2942746
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2942746
+      \endverb
+    \endentry
+    \entry{tt_xsec}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5c80c564a296aee721ad3bf8ce043db4}{%
+           family={Beneke},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=39218e436e95f15e9820338eab7bb776}{%
+           family={Falgari},
+           familyi={F\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b84e63b7f37e6ae404002b140d7ec41d}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5bf48395aea2d9f75248988bbcd4bfea}{%
+           family={Schwinn},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cec2ef33403d1c15f2520f4ab087763}
+      \strng{fullhash}{12bee6874efeed5d13d569cad0494884}
+      \strng{fullhashraw}{12bee6874efeed5d13d569cad0494884}
+      \strng{bibnamehash}{3cec2ef33403d1c15f2520f4ab087763}
+      \strng{authorbibnamehash}{3cec2ef33403d1c15f2520f4ab087763}
+      \strng{authornamehash}{3cec2ef33403d1c15f2520f4ab087763}
+      \strng{authorfullhash}{12bee6874efeed5d13d569cad0494884}
+      \strng{authorfullhashraw}{12bee6874efeed5d13d569cad0494884}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We compute the total top-quark pair production cross section at the Tevatron and LHC based on approximate NNLO results, and on the summation of threshold logarithms and Coulomb enhancements to all orders with next-to-next-to-leading logarithmic (NNLL) accuracy, including bound-state effects. We findσtt¯(Tevatron)=(7.22−0.47+0.31−0.55+0.71) pb,σtt¯(LHC,s=7 TeV)=(162.6−7.6+7.4−14.7+15.4) pb for mt=173.3 GeV. The implementation of joint soft and Coulomb resummation, its ambiguities, and the present theoretical uncertainty are discussed in detail. We further obtain new approximate results at N3LO.}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{number}{3}
+      \field{title}{Hadronic top-quark pair production with NNLL threshold resummation}
+      \field{volume}{855}
+      \field{year}{2012}
+      \field{pages}{695\bibrangedash 741}
+      \range{pages}{47}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.nuclphysb.2011.10.021
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0550321311005803
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0550321311005803
+      \endverb
+    \endentry
     \entry{fullsim}{article}{}{}
       \name{author}{1}{}{%
         {{hash=a3364242a05dc5a80a93fa55804031af}{%
@@ -1717,7 +1809,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{11}
+      \field{extraname}{12}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2429,7 +2521,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{12}
+      \field{extraname}{13}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2473,7 +2565,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{13}
+      \field{extraname}{14}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2526,8 +2618,8 @@
       \strng{authorfullhash}{cc4b1f772e2313dc9fc5e11538cab46e}
       \strng{authorfullhashraw}{cc4b1f772e2313dc9fc5e11538cab46e}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -2580,8 +2672,8 @@
       \strng{authorfullhash}{cc4b1f772e2313dc9fc5e11538cab46e}
       \strng{authorfullhashraw}{cc4b1f772e2313dc9fc5e11538cab46e}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -2623,7 +2715,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{14}
+      \field{extraname}{15}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2659,7 +2751,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{15}
+      \field{extraname}{16}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2697,7 +2789,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{16}
+      \field{extraname}{17}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2736,7 +2828,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{17}
+      \field{extraname}{18}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2780,7 +2872,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{18}
+      \field{extraname}{19}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2818,7 +2910,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{19}
+      \field{extraname}{20}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3284,7 +3376,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{20}
+      \field{extraname}{21}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3320,9 +3412,9 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{21}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{extraname}{22}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -3413,9 +3505,7 @@
     \endentry
   \enddatalist
   \missing{schan_theory_xsec}
-  \missing{t_t_xsec}
   \missing{tchan_xsec}
-  \missing{ts_xsec}
   \missing{tw_xsec}
 \endrefsection
 \endinput
