@@ -14,14 +14,13 @@ As systematic uncertainties are the limiting factors in the search for the singl
 
 The single top quark s--channel process is dominated by large backgrounds.
 Extracting signal events from this large background is rather difficult. 
-To achieve an optimal separation between signal and background, a multivariate approach that exploits as much kinematic information as possible is required.
+To achieve an optimal separation between signal and background, a multivariate approach that uses as much kinematic information as possible is required.
 For this reason, a DNN classification will be used as the discriminant variable in the binned likelihood fit.
 The DNN used in this analysis was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master}. 
 It makes use of several high--level kinematic variables to distinguish signal events from background events. 
 The network architecture consists of an input layer with 128 nodes, followed by four hidden layers with 256, 64, 32 and 16 nodes, respectively.
 The model was trained using the \textsc{Keras} API within the \textsc{TensorFlow} framework\,\cite{keras, tensorflow}, employing the binary cross--entropy loss function and the Adam optimizer\,\cite{adam}.
-For the training and validation datasets, the single top quark s-channel events were used as signal.
-While the $\ttbar$ process, the single top quark t-channel and associated $tW$ production processes, as well as the $W$+jets and $Z$+jets processes constitute the background. 
+For the training and validation datasets, the single top quark s-channel events were used as signal, while the $\ttbar$ process, the single top quark t-channel and associated $tW$ production processes, as well as the $W$+jets and $Z$+jets processes constitute the background. 
 The training samples correspond to an integrated luminosity of $\SI{28}{fb^{-1}}$.
 For every single particle that gets reconstructed, the kinematic variables $\pT, \eta, \varphi$ and the invariant mass $m$ get included as features for the DNN model.
 For particle pairs their pseudorapidity difference $\Delta \eta$ and the difference in the azimuthal angle $\Delta \varphi$ is incorporated as a feature.
@@ -50,10 +49,14 @@ Through the sorted eigenvalues of the momentum tensor $\lambda_0 > \lambda_1 > \
     &\text{Sphericity}:   & \mathcal{S} &= \lambda_1 - \lambda_2. \\
 \end{align*}
 
+The DNN responds particularly sensitive to momentum variables.
+In particular, the transverse momenta of the two $b$-tagged jets and the top quark have the biggest impact on the DNN output.
 The DNN is applied to all signal and background events in the SR.
 The corresponding distributions are shown in \autoref{fig:dnn_output}.
 \autoref{subfig:separation} shows signal and background normalized to the same integral, to show the achieved separation of the classifier.
 The combined DNN output histograms of each respective process is shown in \autoref{subfig:histos}.
+
+
 
 %Möchte ich hier nochmal auf die Tabelle in Kap 4 Referenzieren?
 %The event yields given out from the DNN are shown in \autoref{tab:yields}.
@@ -207,7 +210,7 @@ These plots show the relative variation of a given observable under the up- and 
 %The upper pad of each plot typically displays the nominal distribution together with the up- and down-variations, while the lower pad shows the ratio. A deviation from unity indicates that the corresponding uncertainty has an effect on the predicted distribution.
 %The plots allow a visual assessment of how each uncertainty modifies the kinematic features used by the DNN classifier, providing an intuitive complement to the quantitative ranking of nuisance parameters.
 
-
+\noindent
 
 \begin{figure}
     \centering
@@ -263,10 +266,11 @@ These plots show the relative variation of a given observable under the up- and 
 %\newpage
 
 The overall impact of systematic uncertainties is reduced in this analysis compared to the previous measurement.  
+Especially of note are the improvements in the $\ttbar$ shape modelling uncertainties.
+In particular the effects of the PS uncertainties are diminished.
 This improvement is illustrated in \autoref{tab:cat_impact_sigxsecoversm}, which shows the percentage impact of the systematic uncertainties grouped by categories. 
 For the comparison of the impact of systematic uncertainties between analyses, the category-wise impacts were determined.
 All nuisance parameters within a given category were fixed and then fitted, and the resulting change in the signal strength was compared to the nominal full fit.
-
 The reduction of the uncertainties can be attributed to the DNN's ability to exploit a large set of high-level kinematic features and to capture non-linear correlations between them. In contrast, the MEM is limited to a smaller set of observables and simplified correlations, which makes it more sensitive to individual variations in the input distributions. 
 In addition, several systematic uncertainties have been refined since the previous measurement. 
 The ME matching uncertainty for the respective MC samples has been updated and the JER uncertainty now includes a larger set of effective nuisance parameters.
@@ -283,7 +287,7 @@ By providing a more detailed and accurate modelling of these effects, the improv
 
 \begin{table}
     \centering
-    \caption{Category-wise impact of systematic uncertainties on the fitted signal strength. Systematic uncertainties of this analysis are compared with the impacts in the previous measurement\,
+    \caption{Category-wise impact of systematic uncertainties on the fitted signal strength, in order of their impacts on this analysis. Systematic uncertainties of this analysis are compared with the impacts in the previous measurement\,
     \cite{lastmeasure_atlas}. This analysis foregoes a more detailed subcategorization of the signal and background modelling uncertainties.}
     \label{tab:cat_impact_sigxsecoversm}
     \begin{tabular}{l c c}
@@ -294,20 +298,18 @@ By providing a more detailed and accurate modelling of these effects, the improv
         %Systematic & Previous measurement: $\frac{\Delta \mu}{\mu} [\%]$ & Current measurement  $\frac{\Delta \mu}{\mu} [\%]$ \\
         \midrule
         s-channel modelling             & $+ 18/- 8$  & $+ 18/- 12$ \\
-        $\ttbar$ shape modelling        & $+ 18/ -15$ & $+ 7/- 6$ \\
         Jet Energy Resolution           & $+ 18/- 12$ & $+ 11/- 9$ \\
+        $\ttbar$ shape modelling        & $+ 18/ -15$ & $+ 7/- 6$ \\
         Jet Energy Scale                & $+ 18/- 13$ & $+ 5/- 4$ \\
-        Jet Vertex Tagger               &  --         & $+ 1/- 1$ \\
-        MC statistics                   & $+ 13/- 11$ & $+ 1/- 1$ \\
-        Flavor Tagging                  & $+ 12/- 10$ & $+ 4/- 4$ \\
-        Luminosity                      & $+ 4/- 3$   & $+ 1/- 1$ \\
-        Pile-up Reweighting             & $+ 5/- 3$   & $+ 4/- 3$ \\
-        Electron                        &  --         & $+ 1/- 1$ \\ 
-        Muon                            &  --         & $+ 1/- 1$ \\
         Missing Transverse Momentum     & $+1 /-1$    & $+ 5/- 4$ \\
+        Flavor Tagging                  & $+ 12/- 10$ & $+ 4/- 4$ \\
         $\ttbar$ normalization          & $+24 /-17$  & $+ 4/- 3$ \\
+        Pile-up Reweighting             & $+ 5/- 3$   & $+ 4/- 3$ \\
         $W$+jets normalization          & $+11/-8 $   & $+ 3/- 2$ \\
-        Normalization of other processes& $+ 6/- 5$         & $+ 3/ -2$ \\
+        Normalization of other processes& $+ 6/- 5$   & $+ 3/ -2$ \\
+        Other detector sources          & $+1/-1$     & $+ 2/ -2$ \\
+        MC statistics                   & $+ 13/- 11$ & $+ 1/- 1$ \\
+        Luminosity                      & $+ 4/- 3$   & $+ 1/- 1$ \\
         \midrule
         Systematic uncertainties        & $+ 42/- 34$ & $+ 21/- 19$ \\
         \midrule        

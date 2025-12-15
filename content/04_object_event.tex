@@ -21,10 +21,10 @@ By convolving the PDFs of the parton constituents $i$ and $j$ with the cross sec
     \sigma_{\rm{s-chan.}} = \sum_{i,j} \int \rm{d}x_i f_i (x_i, \mu_{\rm{F}}^2) \int \rm{d}x_j f_j (x_j, \mu_{\rm{F}}^2) \sigma_{ij \rightarrow t\overline{b}} (\sqrt{s}, m_t, \mu_{\rm{F}}, \mu_{\rm{R}}, \alpha_S)  
 \end{equation*}
 
-The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the top quark mass $m_t$, the coupling strength of the strong interaction $\alpha_S$, as well as the factorization scale $\mu_{\rm{F}}$ and the renormalization scale $\mu_{\rm{R}}$, which are set to the energy scale of the process. 
+The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the top quark mass $m_t$, the coupling strength of the strong interaction $\alpha_s$, as well as the factorization scale $\mu_{\rm{F}}$ and the renormalization scale $\mu_{\rm{R}}$, which are set to the energy scale of the process. 
 While the hard scattering is accessible to perturbative calculations, subsequent QCD radiation, parton showering and hadronization occur at lower energy scales, where perturbation theory is no longer usable.
 These effects are therefore modelled using phenomenological models.
-Parton showers (PS) simulate the emission of soft and collinear radiation, while hadronization models describe the transition from colored partons to colorless hadrons, incorporating the effects of confinement and asymptotic freedom.
+Parton showers (PS) simulate the emission QCD radiation, while hadronization models describe the transition from colored partons to colorless hadrons, incorporating the effects of confinement and asymptotic freedom.
 The free parameters of these models are tuned using experimental data.
 Several Monte Carlo generators are used in this analysis.
 \textsc{Powheg Box v2}\,\cite{powheg1, powheg2, powheg3} is employed to generate hard scattering processes at NLO accuracy.
@@ -39,13 +39,13 @@ For PS modelling the \textsc{NNPDF2.3lo}\,\cite{pdf_23} PDF set is used. The pro
 The t-channel single top-quark and anti-quark processes similarly make use of \textsc{Powheg} and \textsc{Pythia}. The leptonic decay of the $W$-boson from the top-quark decay is enforced and a Breit-Wigner propagator scheme with a fixed top-quark width of $\SI{50}{\GeV}$ is used.
 \textsc{Powheg} uses the \textsc{NNPDF3.0nlo}\_nf4 PDF \cite{pdf_30} set for ME calculations, while \textsc{Pythia} employs the \textsc{NNPDF2.3lo} PDF set for PS modelling. The normalization  is based on the cross-section prediction of $\sigma^{\rm{SM}}_{\rm{t-chan.}}=\asym{214.2}{4.1}{2.6}{\pico\barn}$ at NLO in QCD \,\cite{t_xsec}. \\
 %
-Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme (citation) to handle interference with $\ttbar$ production at NLO.
+Associated $tW$ production samples are generated with \textsc{Powheg} interfaced with \textsc{Pythia}, while further making use of the diagram removal scheme\,\cite{diagram_removal} to handle interference with $\ttbar$ production at NLO.
 Like the signal process, the \textsc{NNPDF3.0nlo} PDF set is used for ME calculations and the \textsc{NNPDF2.3lo} PDF set for PS modelling. The associated $tW$ produciton is normalized at NLO in QCD to the SM prediction $\sigma^{\rm{SM}}_{tW}=\asym{79.3}{2.9}{2.8}{\pico\barn}$\,\cite{t_xsec}.\\
 %
 The $\ttbar$ production is utilizing the \textsc{Powheg} generator at NLO with the \textsc{NNPDF3.0nlo} PDF set, combined with \textsc{Pythia} using the \textsc{NNPDF2.3lo} PDF set. The $h_\rm{damp}$ parameter, which regulates the first gluon emission beyond the Born configuration, is set to $1.5 \cdot m_\rm{top} \simeq \SI{258.75}{\GeV}$.
 The normalization at next-to-next-to-leading order (NNLO) in QCD is calculated to be $\sigma^{\rm{SM}}_{\ttbar}=\asym{833}{37.4}{43}{\pico\barn}$\,\cite{tt_xsec}. \\
 %
-For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used.\textsc{Sherpa} calculates the MEs at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with PS models.  
+For the $W$+jets samples the \textsc{Sherpa 2.2.11} version is used.\, \textsc{Sherpa} calculates the MEs at NLO accuracy for up to two partons and at LO accuracy for up to five partons, which is combined with PS models.  
 The PS modelling used the \textsc{NNPDF3.0nnlo} PDF set.\\
 %
 The Drell-Yan production modes of $Z \rightarrow ee, ~ Z \rightarrow \mu \mu, ~ Z \rightarrow \tau \tau$ are simulated with \textsc{Sherpa 2.2.11} for the light leptons. For the tau decay \textsc{Sherpa 2.2.14} with the \textsc{NNPDF3.0nnlo} PDF set is utilized. 
@@ -76,7 +76,7 @@ Jets originating from the hard-scatter interaction are identified using the Jet 
 Jets containing $b$ hadrons are identified using the \textsc{GN2v01} $b$-tagging algorithm\,\cite{btag_algo, btag1, btag2, btag3}.
 The algorithm assigns a continuous discriminant to each jet, representing the likelihood of originating from a $b$ quark.
 A working point corresponding to a $b$-jet identification efficiency of $85\%$ is applied.
-The discriminant exploits the long lifetime of $b$ hadrons, leading to displaced decay vertices and tracks with large impact parameters.
+%The discriminant exploits the long lifetime of $b$ hadrons, leading to displaced decay vertices and tracks with large impact parameters.
 
 
 \section{Event Selection}
@@ -96,11 +96,13 @@ Furthermore, $\etmiss > \SI{35}{\GeV}$ and the transverse mass of the $W$ boson,
 \begin{equation*}
  m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))},
 \end{equation*}
-is required to exceed $\SI{30}{\GeV}$, effectively suppressing multijet background contributions.
-Additional vetoes are applied to further reduce background contamination. Events containing extra jets with
+is required to exceed $\SI{30}{\GeV}$, suppressing multijet background contributions.
+Additional vetos are applied to further reduce background contamination. 
+Events containing extra jets with
 $\pT > \SI{30}{\GeV}$ or forward jets ($|\eta|>2.5$) are rejected, significantly reducing the single top quark t-channel background.
-Events with additional low transverse momentum leptons are vetoed to suppress multilepton backgrounds.
+Events with additional low transverse momentum leptons are discarded to suppress multilepton backgrounds.
 All selection criteria defining the signal region are summarized in \autoref{tab:eventsel}.
+The number of events passing the event selection is displayed in \autoref{tab:event_yields}
 
 \begin{table}
     \centering
@@ -128,20 +130,20 @@ All selection criteria defining the signal region are summarized in \autoref{tab
 
 \begin{table}
   \centering
-  \caption{Number of events passing the event selection for each process inspected in this analyses. Multiplying the integrated luminosity with the cross-section prediction results in the number of expected events.}
-  \label{event_yields}
-  \begin{tabular}{l c c}
+  \caption{Number of events passing the event selection for each process inspected in this analysis. \textit{PDG Rounding} is applied to the values\,\cite[18]{pdg}.}
+  \label{tab:event_yields}
+  \begin{tabular}{l c}
     \toprule
-    Process  & {$L_{\rm{int}} \cdot \sigma_i$} & Number of events \\
+    Process   & Number of events \\
     \midrule
-    s-channel   & \num{461e3} & 4139.99 \pm 850.839 \\
-    t-channel & \num{6.28e6} & 9334.36 \pm 1853.71 \\
-    $tW$ production  & \num{10.1e6} & 2619.05 \pm 612.957 \\
-    $Z$+jets  &  & 1654.39 \pm 882.368 \\
-    $W$+jets  & & 15159.5 \pm 7858.56 \\
-    $\ttbar$   & \num{102e6}& 75216.7 \pm 18753.3 \\
+    s-channel                 & 4100 \pm 900 \\
+    t-channel                 & 9300 \pm 1800 \\
+    $tW$ production           & 2600 \pm 600 \\
+    $Z$+jets                  & 1700 \pm 900 \\
+    $W$+jets                  & 15000 \pm 8000 \\
+    $\ttbar$                  & 75000 \pm 19000 \\
     \midrule
-    Total & & 108124 \pm 24971.1 \\
+    Total                     &  108000 \pm 25000 \\
     \bottomrule
   \end{tabular}
 \end{table}

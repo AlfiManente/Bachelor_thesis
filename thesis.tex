@@ -145,6 +145,13 @@
 % Umbrüche in der Tabelle ----------------------------------------------------
 \usepackage{makecell}
 
+% verhindert Seitenumbrüche bei Bilatex --------------------------------------------
+\usepackage{etoolbox}
+
+\AtBeginBibliography{%
+  \interlinepenalty=10000
+}
+
 
 %  Selbst definierte  Kommandos die mir noch nützlich werden -----------------
 
