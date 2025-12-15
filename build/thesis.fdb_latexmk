@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/thesis"] 1765775536.52263 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1765775557.78014 0
-  "build/thesis.bcf" 1765775557.10146 112486 4ba3c8b4fb82c08cdf52b234e6716abb "lualatex"
-  "references.bib" 1765775523.62709 26628 8937bbe95a634f2e3fc9fa85c61d3466 ""
+["biber build/thesis"] 1765779123.16471 "build/thesis.bcf" "build/thesis.bbl" "build/thesis" 1765779143.51818 0
+  "build/thesis.bcf" 1765779142.83039 112890 3f60bc6fa686f213cf8f8fca5df111a5 "lualatex"
+  "references.bib" 1765777380.9155 27944 f3dd416322d2d0c3916ab7978e9b4be9 ""
   (generated)
   "build/thesis.bbl"
   "build/thesis.blg"
   (rewritten before read)
-["lualatex"] 1765775548.00374 "thesis.tex" "build/thesis.pdf" "thesis" 1765775557.78059 0
+["lualatex"] 1765779134.2155 "thesis.tex" "build/thesis.pdf" "thesis" 1765779143.51853 0
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -16,6 +16,7 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1255129361 110400 d844cffffa1af59f9d2bb1bfdb6f1a2c ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf" 1255129361 111872 0b5e13b31880d81af0a80d609d006699 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf" 1255129361 112212 f133bf18e62239f8946eb96eb60e2777 ""
+  "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf" 1255129361 110792 5c4b6a3d7f194f073a529b5124a181af ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf" 1255129361 111948 cee9e390fd6d23cfb4d6871ba2a9ee5b ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf" 1255129361 113040 97646768b80c4c82be4499ab1d090e1d ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf" 1255129361 112680 8bab1cbacdfe2fe22ce627aaf5174f5d ""
@@ -422,6 +423,7 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc" 1749582440.22617 125985 8af6da6c8028b5d87a2cd3ba63821a52 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc" 1750969262.30094 128534 d0d552753c28e988ed28f73843e0ac8e ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc" 1749672825.68832 136009 0e5ead73c076d8b18811ba94427c5d1d ""
+  "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc" 1750969262.21494 128393 2652ea81fda481e85806ae73e2b40a02 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc" 1749672825.60332 135564 f3b8ac1e8bbd14f2ddde66e404f95638 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1749582440.15817 128164 afd4b820b28a615704bd908b35e55bde ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-bold.luc" 1760957537.93072 128469 5bb6d190a375abb58b30c8d568b08e79 ""
@@ -434,13 +436,13 @@
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1760632366.54958 376334 2df6f5fdc025450ae36d3a0780b892cb ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/tex/generic/config/language.dat" 1760631587.50663 6852 a999c2c6d6731f81509e518672d1bd97 ""
   "/home/alfredo-manente/.local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1760631790 5631844 454969244ed651204b7a3d3851d8276d ""
-  "build/thesis.aux" 1765775557.08146 27672 b5cede9c12b94bfb3c28d171f581bfb6 "lualatex"
-  "build/thesis.bbl" 1765775538.20603 128133 369856fbd985ed33b433f53d14fa9b68 "biber build/thesis"
-  "build/thesis.run.xml" 1765775557.10373 2447 6dc6d7096b36570b09ad9062b6bbc292 "lualatex"
-  "build/thesis.toc" 1765775557.09946 1909 2ccd3fc6079755111e95d1a9eb1972ac "lualatex"
+  "build/thesis.aux" 1765779142.80939 29279 cc8d51d267b520612fca000a5e7eee17 "lualatex"
+  "build/thesis.bbl" 1765779124.89507 131550 0703be4271bb0fff26f00e21dd5e5673 "biber build/thesis"
+  "build/thesis.run.xml" 1765779142.83257 2447 6dc6d7096b36570b09ad9062b6bbc292 "lualatex"
+  "build/thesis.toc" 1765779142.82839 1909 6c52dd768a3a79ee745ee01c1bf42952 "lualatex"
   "content/00_abstract.tex" 1765193293.98885 923 4416671f33a1c652810d0111a167f229 ""
   "content/01_introduction.tex" 1765657266.57853 2966 f88ae594fef3b14ebf6394e245ce2b8a ""
-  "content/02_theory.tex" 1765771488.80543 20573 1d98dfbeed527ff3ad44403cbbb76bb1 ""
+  "content/02_theory.tex" 1765779111.62244 20655 782ecce298f8aeefc44389ccfb325309 ""
   "content/03_detector.tex" 1765653462.11833 2796 bb00ef4c58b3b0506d54f2851db5d847 ""
   "content/04_object_event.tex" 1765774348.83828 13178 b5ef05381e2a0a620cc7124133739e99 ""
   "content/05_study.tex" 1765771487.18843 28738 04b9896a8dc59bbc0b9079eed0e90787 ""
@@ -451,7 +453,6 @@
   "imgs/Ranking_SigXsecOverSM_Breakdown.png" 1765717503.361 18692 e173093fc9bdd4eeb741113b8b8f6904 ""
   "imgs/SM1.png" 1763712082.53751 544470 d8dbc8c8021105c11d9ecac39686f921 ""
   "imgs/SR-Schannel.png" 1765263524.76092 22015 61b07061a2e3f2205175ac4b0ddc84ea ""
-  "imgs/fig_10.png" 1762290654.70753 140750 1ec5e8595e3fc28357cf7ad52872091b ""
   "imgs/seperation.png" 1765263525.30192 12221 6235e2b5c6b3428b7e95dd216b2d25fd ""
   "imgs/syst/jer_effective.png" 1765396598.38971 21000 d8e080b50ee2779b1e0232f39d3012cb ""
   "imgs/syst/jer_noise.png" 1765396595.26171 20233 23e7948ca65267e673c8091c14212dcf ""

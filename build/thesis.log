@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 06:12
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 07:12
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2298,13 +2298,6 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                prev_measure
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                schan_theory_xsec
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2436,55 +2429,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [4]
 
+LaTeX Warning: Citation 'tchan_xsec' on page 5 undefined on input line 152.
+
+
+LaTeX Warning: Citation 'tw_xsec' on page 5 undefined on input line 152.
+
+
+
 [5]
-
-LaTeX Warning: Citation 'tchan_xsec' on page 6 undefined on input line 181.
-
-
-LaTeX Warning: Citation 'tw_xsec' on page 6 undefined on input line 181.
-
-
-Overfull \hbox (8.90327pt too wide) in paragraph at lines 207--208
+Overfull \hbox (8.90327pt too wide) in paragraph at lines 178--179
  [][] 
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 208--208
+Underfull \hbox (badness 1142) in paragraph at lines 179--179
 [][]\TU/lmr/bx/n/9 (a)[][] []|$\TU/LatinModernMath(1)/m/n/9 𝑡[]$ \TU/lmr/m/n
 /9 pro-duc-tion through
  []
 
 
-Overfull \hbox (23.3091pt too wide) in paragraph at lines 249--250
+Overfull \hbox (23.3091pt too wide) in paragraph at lines 220--221
  [][] 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [6]
-<imgs/fig_10.png, id=170, 1987.425pt x 1261.71375pt>
-File: imgs/fig_10.png Graphic file (type png)
-<use imgs/fig_10.png>
-Package luatex.def Info: imgs/fig_10.png  used on input line 281.
-(luatex.def)             Requested size: 335.20438pt x 212.79431pt.
-
-
-LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 282.
-
-
-LaTeX Warning: Citation 'prev_measure' on page 7 undefined on input line 282.
-
 
 LaTeX Warning: Citation 'schan_theory_xsec' on page 7 undefined on input line 2
-88.
+62.
 
 ) (./content/03_detector.tex
 
 [7]
 
-[8<./imgs/fig_10.png>]
+[8]
 chapter 3.
-<imgs/ATLAS_schematic.png, id=185, 1445.4pt x 886.31125pt>
+<imgs/ATLAS_schematic.png, id=197, 1445.4pt x 886.31125pt>
 File: imgs/ATLAS_schematic.png Graphic file (type png)
 <use imgs/ATLAS_schematic.png>
 Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
@@ -2540,12 +2524,12 @@ chapter 5.
 [16
 
 ]
-<imgs/seperation.png, id=298, 598.235pt x 574.145pt>
+<imgs/seperation.png, id=310, 598.235pt x 574.145pt>
 File: imgs/seperation.png Graphic file (type png)
 <use imgs/seperation.png>
 Package luatex.def Info: imgs/seperation.png  used on input line 65.
 (luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=299, 598.235pt x 674.52pt>
+<imgs/SR-Schannel.png, id=311, 598.235pt x 674.52pt>
 File: imgs/SR-Schannel.png Graphic file (type png)
 <use imgs/SR-Schannel.png>
 Package luatex.def Info: imgs/SR-Schannel.png  used on input line 72.
@@ -2561,7 +2545,7 @@ Package luatex.def Info: imgs/SR-Schannel.png  used on input line 72.
 [20]
 
 [21]
-<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=337, 598.235pt x 508.90125pt>
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=349, 598.235pt x 508.90125pt>
 File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
 <use imgs/Ranking_SigXsecOverSM_Breakdown.png>
 Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
@@ -2572,12 +2556,12 @@ t line 182.
 [22<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
 
 [23]
-<imgs/syst/ps_sig.png, id=352, 798.985pt x 574.145pt>
+<imgs/syst/ps_sig.png, id=364, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
 Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 218.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=353, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=365, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
 Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 226.
@@ -2587,22 +2571,22 @@ Underfull \hbox (badness 2393) in paragraph at lines 227--227
 [][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 The jet en-ergy res-o-lu-tion noise pre-
  []
 
-<imgs/syst/jer_effective.png, id=354, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=366, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
 Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 233.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=355, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=367, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
 Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 241.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=356, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=368, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
 Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 248.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/pileup.png, id=357, 798.985pt x 574.145pt>
+<imgs/syst/pileup.png, id=369, 798.985pt x 574.145pt>
 File: imgs/syst/pileup.png Graphic file (type png)
 <use imgs/syst/pileup.png>
 Package luatex.def Info: imgs/syst/pileup.png  used on input line 256.
@@ -2640,10 +2624,31 @@ chapter without number
 
 
 ]
+Overfull \hbox (55.6741pt too wide) in paragraph at lines 206--206
+\TU/lmr/m/n/10.95 avail-able at https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS
+/CONFNOTES/ATLAS-
+ []
+
+
+Overfull \hbox (132.40996pt too wide) in paragraph at lines 206--206
+\TU/lmr/m/n/10.95 channel in pro-ton–pro-ton col-li-sions at <mml:math xmlns:m
+ml=”http://www.w3.org/1998/Math/MathML”
+ []
+
+
+Overfull \hbox (677.02669pt too wide) in paragraph at lines 206--206
+\TU/lmr/m/n/10.95 al-timg=”si1.gif” over-flow=”scroll”><mml:msqrt><mml:m
+i>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>8</mml:mn><mml:mtext> </mml:m
+text><mml:mtext>TeV</mml:mtext></mml:math>
+ []
+
+
 
 [30]
 
 [31]
+
+[32]
 Overfull \hbox (0.7675pt too wide) in paragraph at lines 206--206
 \TU/lmr/m/n/10.95 https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS/CONFNOTES/ATL
 AS-
@@ -2651,23 +2656,21 @@ AS-
 
 
 
-[32]
+[33]
 
 Package biblatex Warning: No driver for 'masterthesis'.
 (biblatex)                Using fallback driver on input line 205.
 
 
 
-[33]
-
 [34]
-<content/Eidesstattliche_Versicherung.pdf, id=556, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=574, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 209.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=558, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=576, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2706,25 +2709,25 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: B5CEDE9C12B94BFB3C28D171F581BFB6;27672.
+(rerunfilecheck)             Checksum: CC8D51D267B520612FCA000A5E7EEE17;29279.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 2CCD3FC6079755111E95D1A9EB1972AC;1909.
+(rerunfilecheck)             Checksum: 6C52DD768A3A79EE745EE01C1BF42952;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 56082 strings out of 476291
- 125007,2848258 words of node,token memory allocated
- 1346 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 sub_mlist
-, 3 glyph, 131 attribute, 79 glue_spec, 67 attribute_list, 2 write, 49 pdf_actio
+ 56081 strings out of 476291
+ 125011,2848258 words of node,token memory allocated
+ 1383 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 1 sub_mlist
+, 3 glyph, 135 attribute, 79 glue_spec, 69 attribute_list, 2 write, 52 pdf_actio
 n nodes
-   avail lists: 1:21,2:6329,3:1765,4:189,5:502,6:104,7:10268,8:72,9:1035,10:25,1
+   avail lists: 1:13,2:6522,3:1750,4:180,5:502,6:109,7:10268,8:72,9:1043,10:26,1
 1:803,12:1
- 76955 multiletter control sequences out of 65536+600000
- 180 fonts using 60757247 bytes
+ 76954 multiletter control sequences out of 65536+600000
+ 181 fonts using 60889975 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mroman6-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2732,26 +2735,27 @@ opentype/public/lm-math/latinmodern-math.otf></home/alfredo-manente/.local/texli
 ve/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/alfredo-
 manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromancaps10-re
 gular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/p
-ublic/lm/lmroman9-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-d
-ist/fonts/opentype/public/lm/lmroman9-bold.otf></home/alfredo-manente/.local/tex
-live/2025/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/alfred
-o-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold
-.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public
-/lm/lmromanslant10-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-
-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/alfredo-manente/.local
-/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></ho
-me/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmrom
-an10-italic.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/open
-type/public/lm-math/latinmodern-math.otf></home/alfredo-manente/.local/texlive/2
-025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/alfredo-man
-ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
-tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
-m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
-opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (39 pages, 1543415 bytes).
+ublic/lm/lmroman7-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-d
+ist/fonts/opentype/public/lm/lmroman9-regular.otf></home/alfredo-manente/.local/
+texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/alfred
+o-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman5-regul
+ar.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/publ
+ic/lm/lmroman10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/f
+onts/opentype/public/lm/lmromanslant10-regular.otf></home/alfredo-manente/.local
+/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/al
+fredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latin
+modern-math.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/open
+type/public/lm/lmroman10-italic.otf></home/alfredo-manente/.local/texlive/2025/t
+exmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/alfredo-mane
+nte/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.ot
+f></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm
+/lmroman12-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fon
+ts/opentype/public/lm/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/20
+25/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on thesis.pdf (39 pages, 1438257 bytes).
 
-PDF statistics: 748 PDF objects out of 1000 (max. 8388607)
- 622 compressed objects within 7 object streams
- 126 named destinations out of 1000 (max. 131072)
+PDF statistics: 773 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 129 named destinations out of 1000 (max. 131072)
  168 words of extra memory for PDF output out of 10000 (max. 100000000)
 

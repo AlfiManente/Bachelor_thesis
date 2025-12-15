@@ -67,39 +67,10 @@ At the LHC, the annihilating particles are predominantly valence up quarks ($u$)
 
 The Feynman diagram of the s-channel process at LO in QCD is shown in \autoref{subfig:schan}.
 
-(Den folgenden Teil erst bei der simulationen erwähnen)
-
-The parton density function (PDF) is a representation of the probability distrubtion with wich a parton carries a fraction of the momentum of a hadron, denoted by using the \textit{Bjorken $x$}. 
-$p_i = x p_p$ resembles the momentum fraction the parton $i$ carries from the whole proton momentum $p_p$. 
-Where a parton is a hadron component, either a quark or gluon. 
-The cross-section $\sigma_{\rm{s-chan.}}$ of the single top quark s-channel process, is determined using the factorisation theorem of the QCD.
-By convolving the PDFs of the parton constituents $i$ and $j$ with the cross section $\sigma_{ij \rightarrow t\overline{b}}$ of the respective sub-process and then summing over all possible sub-processes, the s-channel cross section is determined. 
-
-%occuring from the interaction of partons $i$ and $j$ , 
-\begin{equation*}
-    \sigma_{\rm{s-chan.}} = \sum_{i,j} \int \rm{d}x_i f_i (x_i, \mu_{\rm{F}}^2) \int \rm{d}x_j f_j (x_j, \mu_{\rm{F}}^2) \sigma_{ij \rightarrow t\overline{b}} (\sqrt{s}, m_t, \mu_{\rm{F}}, \mu_{\rm{R}}, \alpha_S) .  
-\end{equation*}
-
-The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the top quark mass $m_t$, the coupling strength of the strong interaction $\alpha_S$, as well as the factorisation scale $\mu_{\rm{F}}$ and the renormalisation scale $\mu_{\rm{R}}$, which are set to the energy scale of the process. 
-
-
-
-
-
-% \begin{itemize}
-%     \item faktorisierungstheorem als "aufhänger" (nachlesen)
-%     \item s-channel is our production mode of interest
-%     \item s-channel has the smallest cross section
-%     \item Anti quarks from sea quarks in the pdf
-%     \item Explain PDFs to explain sea and partons
-%     \item How does the theoretical cross section get calculated? Via factorisation theorem
-%     \item what does the signature look like?
-% \end{itemize}
-
 
 \begin{figure}
     \centering
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{feynman}
@@ -128,7 +99,7 @@ The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the 
         \label{subfig:schan}
     \end{subfigure}
     % \hfill
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{feynman}
@@ -269,24 +240,53 @@ In the case of multijet background, leptons from heavy flavor decays, electrons 
 
 \subsection{Previous Measurements}
 
-\begin{itemize}
-    \item Beschreibe welche Unsicherheiten genau die vorherige Messung verschlechtert
-\end{itemize}
+\autoref{tab:prev_measure} summarizes the previous measurements of the single top quark s-channel processes taken at the ATLAS detector. 
 
-In \autoref{fig:prev_measure} previous measurements of the three different single top-quark production modes at different center of mass energies $\sqrt{s}$ are shown, taken at the ATLAS and CMS experiments at the LHC with data from $pp$-collisions.
+\begin{table}
+    \centering
+    \caption{The three previous measurments of the single top quark s-channel processes taken at the ATLAS detector. Displayed are the cross-sections $\sigma_{s-\rm{chan.}}$, the observed (expected) significance and the integrated luminosity for each respective measurement\,\cite{schan1, schan2, lastmeasure_atlas}.}
+    \label{tab:prev_measure}
+    \begin{tabular}{l c c c}
+        \toprule
+        $\sqrt{s}$ & $\sigma_{s-\rm{chan.}}$ & $\sigma_\text{observed} (\sigma_\text{expected})$ & $L_\text{int}$ \\
+        \midrule
+        \SI{7}{\TeV}    & $ \SI{< \, 26.5}{\pico\barn}$ & --  & $\SI{0.70}{\femto\barn^{-1}} $\\
+        \SI{8}{\TeV}    & $4.8 \pm 0.8 (\text{stat.})^{+1.6}_{-1.3}(\text{syst.})\unit{\pico\barn}$ & $ 3.2(3.9)$  & $\SI{20.3}{\femto\barn^{-1}} $\\
+        \SI{13}{\TeV}   & $8.2 \pm 0.6 (\text{stat.})^{+3.4}_{-2.8}(\text{syst.})\unit{\pico\barn}$ & $ 3.3(3.9)$  & $\SI{140}{\femto\barn^{-1}} $\\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
-% Das Bild muss ja eh raus
-\begin{figure}
-    \center
-    \includegraphics[width=0.85\textwidth]{imgs/fig_10.png}
-    \caption{Chart of all measurements taken of the three different sinlge top production modes at the ATLAS and CMS experiments \cite{prev_measure}}
-    \label{fig:prev_measure}
-\end{figure}
-
-The most recent measurement of the s-channel was done by ATLAS with a center of mass energy of
+The most recent measurement of the s-channel process was done by ATLAS with a center of mass energy of
 $\sqrt{s}=\SI{13}{\TeV}$, with data collected between the years 2015 and 2018, corresponding to the Run 2 dataset at an integrated luminosity of \SI{140}{\femto\barn^{-1}}\,\cite{lastmeasure_atlas}. 
 The cross section of the measured s-channel resulted in $\sigma_\rm{s-chan} = 8.2 \pm 0.6 (\text{stat.})^{+3.4}_{-2.8}(\text{syst.})\unit{\pico\barn}$, in comparison to the theoretical estimate of $\sigma_\rm{s-chan}^{\rm{theo.}}=\asym{10.32}{0.40}{0.36}{\pico\barn}$\,\cite{schan_theory_xsec}. 
 This is equivalent with an observed (expected) signal significance of $3.3(3.9) \sigma$ over the background only hypothesis .
-The analysis strategy consisted of a preselection and then a split into one signal region and three validation regions, for better modelling of the background processes.
+The analysis strategy consisted of a preselection and then a split of the events into four categories. 
+First, the so-called signal region (SR), which is enriched with signal events and used to determine the signal strength.
+Three more control regions are inlcuded, depleted in signal events and enriched in background events, to enhance the modelling of the major backgrounds.
+These are orthogonal, meaning any event gets put only in one of the regions.
 To extract the signal strength from the events, a profile likelihood fit was done, with a matrix element method (MEM) discriminant.
-The limiting factors of the previous measurement where noticeably the systematic uncertainties, where $\ttbar$ modelling and signal modelling uncertainties, as well as detector modelling uncertainties, had the biggest impact (Irgendwie muss ich das ja noch zeigen? Wie soll ich da mit der Systematics Tabelle aus dem Paper umgehen?).
+The limiting factors of the previous measurement where noticeably the systematic uncertainties, where $\ttbar$ modelling and signal modelling uncertainties, as well as detector modelling uncertainties, had the biggest impact.
+\autoref{tab:prev_sys} displays the systematic uncertainties with the largest percentual impact on the signal strength.
+The following analysis uses a \textit{Deep Neural Network} discriminant for the profile likelihood fit. 
+As it uses a high-dimensional feature set based on kinematic variables to extraxt signal from background events, an improvement on the impact of the systematic uncertaintes and more precise signal extraxtion is expected.
+
+
+\begin{table}
+    \centering
+    \caption{The systematic uncertainties whith largest impact on the cross-section measurement of the previous ATLAS measurement of the single top quark s-channel process. The percentual impact of the respective uncertainty on the cross section is shown\,\cite{lastmeasure_atlas}.}
+    \label{tab:prev_sys}
+    \begin{tabular}{l|c}
+        \toprule
+        Systematic uncertainty & $\frac{\Delta \sigma}{\sigma} [\%]$ \\
+        \midrule
+        $\ttbar$ normalisation      & $+24\-17$ \\
+        $\ttbar$ shape modelling    & $+18\-15$ \\
+        s-channel modelling         & $+18\-8$ \\
+        Jet energy resolution       & $+18\-12$ \\
+        Jet energy scale            & $+18\-13$ \\
+        MC statistics               & $+13\-11$ \\
+        Flavour Tagging             & $+12\-10$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}

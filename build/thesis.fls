@@ -514,8 +514,7 @@ INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsf
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./imgs/fig_10.png
-INPUT ./imgs/fig_10.png
+INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
 INPUT ./content/03_detector.tex
 INPUT ./imgs/ATLAS_schematic.png
 INPUT ./imgs/ATLAS_schematic.png

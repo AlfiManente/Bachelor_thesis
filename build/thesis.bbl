@@ -718,6 +718,86 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.110.252004
       \endverb
     \endentry
+    \entry{schan1}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2011-118}
+      \field{title}{{Search for s-Channel Single Top-Quark Production in $pp$ Collisions at $\sqrt{s} = \SI{7}{\TeV}$}}
+      \field{type}{techreport}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1376410
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1376410
+      \endverb
+    \endentry
+    \entry{schan2}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3364242a05dc5a80a93fa55804031af}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{fullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
+      \field{extraname}{9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{month}{5}
+      \field{title}{Evidence for single top-quark production in the s-channel in proton–proton collisions at <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.gif" overflow="scroll"><mml:msqrt><mml:mi>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>8</mml:mn><mml:mtext> </mml:mtext><mml:mtext>TeV</mml:mtext></mml:math> with the ATLAS detector using the Matrix Element Method}
+      \field{volume}{756}
+      \field{year}{2016}
+      \field{pages}{228\bibrangedash 246}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2016.03.017
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.physletb.2016.03.017
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.physletb.2016.03.017
+      \endverb
+    \endentry
     \entry{Bianchi:2837191}{unpublished}{}{}
       \name{author}{1}{}{%
         {{hash=a3364242a05dc5a80a93fa55804031af}{%
@@ -734,7 +814,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{8}
+      \field{extraname}{10}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -769,8 +849,8 @@
       \strng{authornamehash}{08565706058718b454be32b190e67d73}
       \strng{authorfullhash}{08565706058718b454be32b190e67d73}
       \strng{authorfullhashraw}{08565706058718b454be32b190e67d73}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -822,8 +902,8 @@
       \strng{authornamehash}{9a0fcbd16f305691a517c5a5cc0bcc06}
       \strng{authorfullhash}{9a0fcbd16f305691a517c5a5cc0bcc06}
       \strng{authorfullhashraw}{9a0fcbd16f305691a517c5a5cc0bcc06}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -880,8 +960,8 @@
       \strng{authornamehash}{d41752b4a4e490a62ebfa4e4eada93fa}
       \strng{authorfullhash}{8660cbd2550b2e100f878d91799190c4}
       \strng{authorfullhashraw}{8660cbd2550b2e100f878d91799190c4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -982,8 +1062,8 @@
       \strng{authornamehash}{7796720858cc351b041c32eaff704d44}
       \strng{authorfullhash}{ddc39dbe0c60df5a1ea317676fa4faf3}
       \strng{authorfullhashraw}{ddc39dbe0c60df5a1ea317676fa4faf3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -1637,7 +1717,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{9}
+      \field{extraname}{11}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2349,7 +2429,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{10}
+      \field{extraname}{12}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2393,7 +2473,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{11}
+      \field{extraname}{13}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -2543,9 +2623,9 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{12}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraname}{14}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2014-018}
@@ -2579,9 +2659,9 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{13}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraname}{15}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -2617,7 +2697,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{14}
+      \field{extraname}{16}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2656,7 +2736,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{15}
+      \field{extraname}{17}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2700,7 +2780,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{16}
+      \field{extraname}{18}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2738,7 +2818,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{17}
+      \field{extraname}{19}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3204,7 +3284,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{18}
+      \field{extraname}{20}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3240,7 +3320,7 @@
       \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
       \strng{authorfullhashraw}{a3364242a05dc5a80a93fa55804031af}
-      \field{extraname}{19}
+      \field{extraname}{21}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3313,8 +3393,8 @@
       \strng{authornamehash}{abde844ee4ceb5d13e2592528d5b7ea8}
       \strng{authorfullhash}{af3c57f0781edbf575bae9c7924d9695}
       \strng{authorfullhashraw}{af3c57f0781edbf575bae9c7924d9695}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.data-an}
@@ -3332,7 +3412,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{prev_measure}
   \missing{schan_theory_xsec}
   \missing{t_t_xsec}
   \missing{tchan_xsec}
