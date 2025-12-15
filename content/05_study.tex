@@ -3,24 +3,25 @@
 
 \section{Analysis Strategy}
 
-Throughout this analysis, steps are taken to determine the signal strength $\mu_{\rm{s-chan.}}=\sfrac{\sigma_{\rm{s-chan.}}^{\rm{measured}}}{\sigma_{\rm{s-chan.}}^{\rm{theory}}}$ of the single top quark s-channel process. 
+Throughout this analysis, steps are taken to determine the signal strength $\mu_{\rm{s-chan.}}=\sfrac{\sigma_{\rm{s-chan.}}^{\rm{measured}}}{\sigma_{\rm{s-chan.}}^{\rm{theory}}}$ of the single top quark s--channel process. 
 This is done via a binned likelihood fit, where a \textit{Deep Neural Network} (DNN) output is used as discriminant value, to descern signal events from background events.
 Only one signal region, passing the event selection in \autoref{tab:eventsel}, is defined in this thesis.
-As systematic uncertainties are the limiting factors in the search for the single top quark s-channel process, the systematics with the biggest impact are further inspected and discussed. 
+As systematic uncertainties are the limiting factors in the search for the single top quark s--channel process, the systematics with the biggest impact are further inspected and discussed. 
 
 
 \section{DNN Model}
 \label{subsec:dnn}
 
-The single top quark s-channel process is dominated by large backgrounds.
+The single top quark s--channel process is dominated by large backgrounds.
 Extracting signal events from this large background is rather difficult. 
 To achieve an optimal separation between signal and background, a multivariate approach that exploits as much kinematic information as possible is required.
 For this reason, a DNN classification will be used as the discriminant variable in the binned likelihood fit.
 The DNN used in this analysis was designed by Niklas Düser as part of his Master's Thesis at the \textit{Technische Universität Dortmund} \cite{niklas_master}. 
-It makes use of several high-level kinematic variables to distinguish signal events from background events. 
+It makes use of several high--level kinematic variables to distinguish signal events from background events. 
 The network architecture consists of an input layer with 128 nodes, followed by four hidden layers with 256, 64, 32 and 16 nodes, respectively.
-The model was trained using the \textsc{Keras} API within the \textsc{TensorFlow} framework \cite{keras, tensor}, employing the binary cross- entropy loss function and the Adam optimizer.
-For the training and validation datasets, the single top quark s-channel events were used as signal, while the $\ttbar$ process, the single top quark t-channel and associated $tW$ production processes, as well as the $W$+jets and $Z$+jets processes were used as background. 
+The model was trained using the \textsc{Keras} API within the \textsc{TensorFlow} framework\,\cite{keras, tensorflow}, employing the binary cross--entropy loss function and the Adam optimizer\,\cite{adam}.
+For the training and validation datasets, the single top quark s-channel events were used as signal.
+While the $\ttbar$ process, the single top quark t-channel and associated $tW$ production processes, as well as the $W$+jets and $Z$+jets processes constitute the background. 
 The training samples correspond to an integrated luminosity of $\SI{28}{fb^{-1}}$.
 For every single particle that gets reconstructed, the kinematic variables $\pT, \eta, \varphi$ and the invariant mass $m$ get included as features for the DNN model.
 For particle pairs their pseudorapidity difference $\Delta \eta$ and the difference in the azimuthal angle $\Delta \varphi$ is incorporated as a feature.
@@ -69,10 +70,10 @@ The combined DNN output histograms of each respective process is shown in \autor
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{imgs/SR-Schannel.png}
-        \caption{The combined DNN output for every process of interest in this analysis. Histograms are stacked, where the signal yield is displayed in \textcolor{red}{red} on the top of the stack.}
+        \caption{The combined DNN output for every process of interest in this analysis. Histograms are stacked, where the signal events are displayed in \textcolor{red}{red} on the top of the stack.}
         \label{subfig:histos}
     \end{subfigure}
-    \caption{The DNNs output is shown with a separation plot and the combined DNN output for the different processes }
+    \caption{The DNNs output is shown with a separation plot and the combined DNN output for the different processes.}
     \label{fig:dnn_output}
 \end{figure}
 
@@ -82,7 +83,7 @@ The combined DNN output histograms of each respective process is shown in \autor
 With the neural network output $x$ as the discriminant, the expected number of events in the $i$-th bin $\lambda_i (\mu, \theta) = \mu \cdot s_i (\theta) + b_i (\theta)$ is used to incorporate the signal strength. 
 Here $s_i(\theta)$ and $b_i(\theta)$ signify the expected signal and background contributions respectively, which are obtained by processing the simulated signal and background events through the trained DNN model and evaluating the corresponding output score $x$.
 The parameter $\mu$ represents the signal strength and scales the overall signal contribution uniformly across all bins, while the nuisance parameters (NPs) $\theta$ encode the effect of systematic uncertainties on both the normalization and the shape of the signal and background distributions.
-To determine the cross-section, a \textit{binned profile likelihood fit} is performed with the \textsc{HistFactory} tool (citation).
+To determine the cross-section, a \textit{binned profile likelihood fit} is performed with the \textsc{HistFactory} tool\,\cite{histfactory}.
 This framework is used to extract the signal strength parameter $\mu$ together with the NPs describing systematic uncertainties by maximizing the likelihood function.
 This determines the parameter values that best describe the data assuming the presence of the single top quark s-channel signal.
 The likelihood function states the probability by which an outcome happens with respect to a set of given model parameters. 
@@ -107,13 +108,13 @@ Statistical uncertainties arising from the limited number of simulated events ar
 By maximizing the likelihood function via variaton of the parameters $\mu$ and $\theta_j$, their final values are determined by $\displaystyle \hat{\mu}, \hat{\theta} = \operatorname*{argmax}_{\mu, \theta} \mathcal{L}(\mu, \theta)$.
 In practice, the negative logarithm of the likelihood function $-\ln \mathcal{L}$ is minimized, as the maximum is unaffected by taking the logarithm and the multiplications are transformed into sums.
 Summing over the logarithms and minimizing is computationally more robust. 
-The negative log-likelihood (NLL) function is minimized with \textsc{Minuit} (citation).
+The negative log-likelihood (NLL) function is minimized with \textsc{Minuit}\,\cite{minuit}.
 The signal strength $\mu$ and all NPs can vary while fitting.
 $\mu$ is free-floating, while the NPs are penalized based on their respective uncertainties. 
 If after the fit the uncertainty of a NP is smaller then the provided uncertainty $\sigma_{\theta_j^0}$, the fit achieved a constraint on the respective systematic uncertainty. 
 
 To assess the expected sensitivity of the analysis and study the impact of systematic uncertainties in the absence of statistical fluctuations, an \textit{Asimov fit} is performed.
-The \textit{Asimov dataset} is constructed by replacing the observed event counts in each bin with their expected values under the nominal signal-plus-background hypothesis.
+The \textit{Asimov dataset} is constructed by replacing the observed event counts in each bin with their expected values under the nominal SM predictions.
 The Asimov fit provides the expected best-fit values and uncertainties of the signal strength and nuisance parameters, assuming perfect agreement between data and the model.
 
 %It is commonly used to evaluate the expected precision of the measurement, to study the constraining power of the data on systematic uncertainties, and to disentangle statistical and systematic contributions to the total uncertainty.
@@ -127,8 +128,8 @@ Modelling uncertainties arise from different theoretical descriptions of the har
 For the single top quark s-channel signal process, additional MC samples were produced by varying the $\pT^{\rm hard}$ parameter to 1, compared to the nominal value of 0. 
 The $\pT^{\rm hard}$ variable determines how the event hardness calculated by \textsc{Powheg} is passed to \textsc{Pythia} to regulate the parton shower. 
 By default, the hardness scale \textit{SCALUP} provided by \textsc{Powheg} is used directly. 
-When setting $\pT^{\rm hard}=1$, the event hardness is instead defined by the transverse momentum of the hardest \textsc{Powheg} emission~\cite{pthard}. 
-This variation probes uncertainties related to the matching between the NLO matrix element and the parton shower.
+When setting $\pT^{\rm hard}=1$, the event hardness is instead defined by the transverse momentum of the hardest \textsc{Powheg} emission\,\cite{pthard}. 
+This variation probes uncertainties related to the matching between the NLO matrix element and the PS.
 In addition, samples interfacing \textsc{Powheg} with \textsc{Herwig} were generated to assess uncertainties originating from different parton shower and hadronization models.
 Similar modelling variations were applied to the $\ttbar$ background process.
 Further $\ttbar$ samples were produced with $\pT^{\rm hard}=1$, and with the $h_{\rm{damp}}$ parameter increased from $1.5 \cdot m_{\rm top}$ to $3 \cdot m_{\rm top}$, allowing the study of uncertainties related to the modelling of high-$p_T$ radiation in the hardest emissions.
@@ -165,7 +166,7 @@ The DNNs output is therefore still consistent with the SM prediction, even after
 From the fit the NPs influences on the signal strength are now accessible. 
 The ranking plot sorts the NPs, with the most influential NP shown on the top of the plot, based on their impact on the signal strength. 
 Their respective impacts are calculated using the \textit{covariance matrix method} \cite{covariance_matrix_method}.
-Here the impact $I=\sigma_\text{total}^a C_{a,n} \sigma^n$ is determined with the correlation $C_{a,n}$ between the POI $a$ and the NP $n$, the total uncertainty $\sigma_\text{total}^a$ of the NP and the uncertainty $\sigma^n$ of the POI. 
+Here the impact $I=\sigma_\text{total}^{\mu} C_{\mu,\rm{NP}} \sigma^{\rm{NP}}$ is determined with the correlation $C_{\mu,NP}$ between the signal strength and the respective NP, the total uncertainty $\sigma_\text{total}^{\mu}$ of the signal strength and the uncertainty $\sigma^{\rm{NP}}$ of the NP. 
 The ranking therefore reflects the sensitivity of the analysis to variations of individual nuisance parameters and provides insight into the dominant sources of systematic uncertainty.
 The ranking plot for this analysis is displayed in \autoref{fig:ranking}
 
