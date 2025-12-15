@@ -455,7 +455,6 @@ INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/fonts/map/pdftex/updma
 INPUT ./content/00_abstract.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
-INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc
@@ -515,6 +514,7 @@ INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsf
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
+INPUT /home/alfredo-manente/.local/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT ./content/03_detector.tex
 INPUT ./imgs/ATLAS_schematic.png
 INPUT ./imgs/ATLAS_schematic.png
