@@ -155,3 +155,56 @@ The SR definition with all the event selection cuts used in this analysis is sho
 \caption{Yields of the analysis}
 \end{center}
 \end{table}
+
+\section{Event Selection}
+
+A dedicated event selection is applied to obtain a signal-enriched sample targeting the single top-quark
+s-channel signature, characterized by one charged lepton (electron or muon), missing transverse momentum
+$\etmiss$ from the neutrino, and two $b$-tagged jets.
+
+Events are required to pass a pre-selection consisting of exactly one isolated lepton with $\pT > \SI{28}{\GeV}$
+and at least two $b$-tagged jets with $\pT > \SI{20}{\GeV}$, where at least one jet must satisfy the $85\%$
+$b$-tagging working point.
+
+The final selection defines the signal region (SR). Events must contain exactly one isolated lepton with
+$\pT > \SI{30}{\GeV}$ and exactly two central jets ($|\eta|<2.5$), both fulfilling the $77\%$ $b$-tagging
+working point. 
+The leading (subleading) jet is required to have $\pT > \SI{40}{\GeV}$ ($\SI{30}{\GeV}$).
+Furthermore, $\etmiss > \SI{35}{\GeV}$ and the transverse mass of the $W$ boson,
+
+\begin{equation*}
+ m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))},
+\end{equation*}
+
+is required to exceed $\SI{30}{\GeV}$, effectively suppressing multijet background contributions.
+
+Additional vetoes are applied to further reduce background contamination. Events containing extra jets with
+$\pT > \SI{30}{\GeV}$ or forward jets ($|\eta|>2.5$) are rejected, significantly reducing the single top quark t-channel background.
+Events with additional low transverse momentum leptons are vetoed to suppress multilepton backgrounds.
+
+All selection criteria defining the signal region are summarized in \autoref{tab:eventsel}.
+
+%-----------------------------------------------------
+
+With the expected signal signature in mind, a dedicated event selection is used to achieve a signal enriched sample. 
+For single top quark production in the s-channel, a charged lepton, either electron or muon, missing transverse momentum $\etmiss$ from the undetected neutrino, and two b-tagged jets are expected.
+First, the events have to pass a pre-selection. 
+Only events that contain exactly one isolated lepton with $\pT > \SI{28}{\GeV}$ and at least two $b$-tagged jets with $\pT > \SI{20}{\GeV}$, of which at least one must fullfill the 85\% working point requirement, pass the pre-selection. 
+To reject the background processes further, a more strict final selection is applied, where only the signal region (SR) is taken into account. 
+Exactly one isolated lepton, either an electron or muon, with $\pT > \SI{30}{\GeV}$ has to be included. 
+Events inside the signal region encompass exactly two central jets, each in a $|\eta|<2.5$ range and fulfilling the $77\%$ $b$-tagging working point requirement.
+Further transverse momentum requirements are used, where the leading jet has to satisfy $\pT > \SI{40}{\GeV}$, while the subleading jet requires $\pT > \SI{30}{\GeV}$.
+The missing transverse momentum of the event has to fulfill $\etmiss > \SI{35}{\GeV}$, while the reconstructed transverse mass of the $W$-boson,
+
+\begin{equation*}
+ m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))}
+\end{equation*}    
+
+is required to be $m_T^W > \SI{30}{\GeV}$.
+These requirements suppress QCD multijet evente where fake leptons or mismeasure $\etmiss$ could mimic signal topology.
+In addition jet and lepton vetos are applied. 
+Events with an additional jet with $\pT < \SI{30}{\GeV}$ or an additional jet in the forward region ($|\eta|> 2.5$) are discarded.
+This strongly reduces contributions form the t-channel single top production mode.
+The lepton veto discard events with additional leptons carrying $\pT < \SI{30}{\GeV}$.
+Further reducing contamination form multilepton backgrounds. 
+The SR definition with all the selection criteria used in this analysis is summarized in \autoref{tab:eventsel}.

@@ -24,7 +24,7 @@ By convolving the PDFs of the parton constituents $i$ and $j$ with the cross sec
 The formular takes in, the centre-of-mass energy $\sqrt{s}$ of the process, the top quark mass $m_t$, the coupling strength of the strong interaction $\alpha_S$, as well as the factorisation scale $\mu_{\rm{F}}$ and the renormalisation scale $\mu_{\rm{R}}$, which are set to the energy scale of the process. 
 While the hard scattering is accessible to perturbative calculations, subsequent QCD radiation, parton showering and hadronization occur at lower energy scales, where perturbation theory is no longer usable.
 These effects are therefore modelled using phenomenological models.
-Parton showers (PS) simulate the emission of soft and collinear radiation, while hadronization models describe the transition from coloured partons to colourless hadrons, incorporating the effects of confinement and asymptotic freedom.
+Parton showers (PS) simulate the emission of soft and collinear radiation, while hadronization models describe the transition from colored partons to colorless hadrons, incorporating the effects of confinement and asymptotic freedom.
 The free parameters of these models are tuned using experimental data.
 Several Monte Carlo generators are used in this analysis.
 \textsc{Powheg Box v2}\,\cite{powheg1, powheg2, powheg3} is employed to generate hard scattering processes at NLO accuracy.
@@ -58,7 +58,7 @@ Some alternative samples use a faster simulation procedure, where the \textsc{Ge
 \section{Object Definition}
 
 The signal signature consists of a charged lepton (electron or muon), its corresponding neutrino, and jets originating from $b$ quarks, so-called $b$-tagged jets.
-Due to colour confinement, quarks hadronize and are reconstructed as jets.
+Due to color confinement, quarks hadronize and are reconstructed as jets.
 The flavor of a jet cannot be measured directly and is inferred using dedicated flavor-tagging algorithms.
 The following framework is used to define the object reconstruction in this analysis.
 
@@ -82,26 +82,26 @@ The discriminant exploits the long lifetime of $b$ hadrons, leading to displaced
 
 \section{Event Selection}
 
-With the expected signal signature in mind, a framework for the event selection is used. 
-For single top quark production in the $s$-channel, a charged lepton, either electron or muon, missing transverse momentum $\etmiss$ from the undetected neutrino, and two b-tagged jets are expected.
-A preselection in the ntuple production inside \textsc{TopCPToolkit} is utilized. 
-Only events with at least two b-tagged jets with $\pT > \SI{20}{\GeV}$, of which at least one must fullfill the 85\% working point requirements, and exatly one isolated lepton with $\pT > \SI{28}{\GeV}$, survive.
-The precise event selection is then achieved inside \textsc{FastFrames}, a software tool to further process ntuples and gather histograms from.
-For this analysis a single signal region (SR) is defined, without any other validation regions.
-Events inside the signal region encompass two central jets, each in a $|\eta|<2.5$ range and fulfilling the $77\%$ b-tagging working point. 
-Further transverse momentum requirements are used, where the leading jet has to satisfy $\pT > \SI{40}{\GeV}$, while the subleading jet requires $\pT > \SI{30}{\GeV}$.
-Exactly one isolated lepton, either an electron or muon, with $\pT > \SI{30}{\GeV}$ has to be included. 
-An additional lepton veto discards all events with an extra lepton with $\pT < \SI{30}{\GeV}$.
-The missing transverse momentum of the undetected neutrino in an event has to fulfill $\etmiss > \SI{35}{\GeV}$, while the reconstructed transverse mass of the $W$-boson,
 
+A dedicated event selection is applied to obtain a signal-enriched sample targeting the single top-quark
+s-channel signature, characterized by one charged lepton (electron or muon), missing transverse momentum
+$\etmiss$ from the neutrino, and two $b$-tagged jets.
+Events are required to pass a pre-selection consisting of exactly one isolated lepton with $\pT > \SI{28}{\GeV}$
+and at least two $b$-tagged jets with $\pT > \SI{20}{\GeV}$, where at least one jet must satisfy the $85\%$
+$b$-tagging working point.
+The final selection defines the signal region (SR). Events must contain exactly one isolated lepton with
+$\pT > \SI{30}{\GeV}$ and exactly two central jets ($|\eta|<2.5$), both fulfilling the $77\%$ $b$-tagging
+working point. 
+The leading (subleading) jet is required to have $\pT > \SI{40}{\GeV}$ ($\SI{30}{\GeV}$).
+Furthermore, $\etmiss > \SI{35}{\GeV}$ and the transverse mass of the $W$ boson,
 \begin{equation*}
- m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))}
-\end{equation*}    
-
-is required to be $m_T^W > \SI{30}{\GeV}$.
-Another additional jet veto is used, where events with additional jets carrying $\pT > \SI{30}{\GeV}$ or additional jets in the forward region ($|\eta|> 2.5$) are rejected. 
-The SR definition with all the event selection cuts used in this analysis is shown in \autoref{tab:eventsel}.
-
+ m_T^W = \sqrt{2 \pT^l \etmiss (1 - \cos \Delta \phi(l,\etmiss))},
+\end{equation*}
+is required to exceed $\SI{30}{\GeV}$, effectively suppressing multijet background contributions.
+Additional vetoes are applied to further reduce background contamination. Events containing extra jets with
+$\pT > \SI{30}{\GeV}$ or forward jets ($|\eta|>2.5$) are rejected, significantly reducing the single top quark t-channel background.
+Events with additional low transverse momentum leptons are vetoed to suppress multilepton backgrounds.
+All selection criteria defining the signal region are summarized in \autoref{tab:eventsel}.
 
 \begin{table}
     \centering
@@ -135,12 +135,12 @@ The SR definition with all the event selection cuts used in this analysis is sho
     \toprule
     Process  & {$L_{\rm{int}} \cdot \sigma_i$} & Number of events \\
     \midrule
-    s-channel   & & 4139.99 \pm 850.839 \\
-    t-channel &  & 9334.36 \pm 1853.71 \\
-    $tW$ production  & & 2619.05 \pm 612.957 \\
-    $Z$+jets  & & 1654.39 \pm 882.368 \\
+    s-channel   & \num{461e3} & 4139.99 \pm 850.839 \\
+    t-channel & \num{6.28e6} & 9334.36 \pm 1853.71 \\
+    $tW$ production  & \num{10.1e6} & 2619.05 \pm 612.957 \\
+    $Z$+jets  &  & 1654.39 \pm 882.368 \\
     $W$+jets  & & 15159.5 \pm 7858.56 \\
-    $\ttbar$   & & 75216.7 \pm 18753.3 \\
+    $\ttbar$   & \num{102e6}& 75216.7 \pm 18753.3 \\
     \midrule
     Total & & 108124 \pm 24971.1 \\
     \bottomrule

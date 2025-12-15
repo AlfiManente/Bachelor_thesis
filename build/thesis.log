@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 04:19
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 06:12
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -1243,6 +1243,11 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \backup@length=\skip75
 \ar@cellbox=\box70
 ))
+
+Package siunitx Warning: Option "output-product" has been removed in this
+(siunitx)                release.
+
+
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/booktabs/bookta
 bs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -2630,30 +2635,6 @@ chapter A.
 ]
 chapter without number
 
-Overfull \hbox (556.0219pt too wide) in paragraph at lines 206--206
-\TU/lmr/m/n/10.95 xmlns:mml=”http://www.w3.org/1998/Math/MathML” dis-play=
-”in-line”><mml:msqrt><mml:mi>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn
->7</mml:mn></mml:math>
- []
-
-
-Overfull \hbox (24.54785pt too wide) in paragraph at lines 206--206
-\TU/lmr/m/n/10.95 de-tec-tor us-ing <mml:math xmlns:mml=”http://www.w3.org/199
-8/Math/MathML”
- []
-
-
-Overfull \hbox (7.44208pt too wide) in paragraph at lines 206--206
-\TU/lmr/m/n/10.95 <mml:mrow> <mml:mi>t</mml:mi> </mml:mrow> <mml:mrow> <mml:mo
- []
-
-
-Overfull \hbox (5.99545pt too wide) in paragraph at lines 206--206
-\TU/lmr/m/n/10.95 stretchy=”false”>¯</mml:mo> </mml:mrow> </mml:mover> </mm
-l:math>
- []
-
-
 
 [29
 
@@ -2663,13 +2644,14 @@ l:math>
 [30]
 
 [31]
-
-[32]
 Overfull \hbox (0.7675pt too wide) in paragraph at lines 206--206
 \TU/lmr/m/n/10.95 https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS/CONFNOTES/ATL
 AS-
  []
 
+
+
+[32]
 
 Package biblatex Warning: No driver for 'masterthesis'.
 (biblatex)                Using fallback driver on input line 205.
@@ -2677,21 +2659,15 @@ Package biblatex Warning: No driver for 'masterthesis'.
 
 
 [33]
-Overfull \hbox (45.41504pt too wide) in paragraph at lines 206--206
-\TU/lmr/m/n/10.95 il-iary fig-ures are avail-able at https://at-las.web.cern.ch/
-At-las/GROUPS/PHYSICS/PUB-
- []
-
-
 
 [34]
-<content/Eidesstattliche_Versicherung.pdf, id=553, 597.55244pt x 845.0772pt>
+<content/Eidesstattliche_Versicherung.pdf, id=556, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
 t line 209.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
-<content/Eidesstattliche_Versicherung.pdf, id=555, page=1, 597.55244pt x 845.07
+<content/Eidesstattliche_Versicherung.pdf, id=558, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
@@ -2730,7 +2706,7 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 56E869088CC2BE7775DAB96FB1D49371;27672.
+(rerunfilecheck)             Checksum: B5CEDE9C12B94BFB3C28D171F581BFB6;27672.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
 (rerunfilecheck)             Checksum: 2CCD3FC6079755111E95D1A9EB1972AC;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -2741,14 +2717,14 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of LuaTeX's memory you used:
  56082 strings out of 476291
  125007,2848258 words of node,token memory allocated
- 1340 words of node memory still in use:
+ 1346 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 sub_mlist
-, 3 glyph, 135 attribute, 79 glue_spec, 69 attribute_list, 2 write, 46 pdf_actio
+, 3 glyph, 131 attribute, 79 glue_spec, 67 attribute_list, 2 write, 49 pdf_actio
 n nodes
-   avail lists: 1:21,2:6323,3:1765,4:189,5:502,6:107,7:10268,8:72,9:1035,10:25,1
-1:801,12:1
+   avail lists: 1:21,2:6329,3:1765,4:189,5:502,6:104,7:10268,8:72,9:1035,10:25,1
+1:803,12:1
  76955 multiletter control sequences out of 65536+600000
- 180 fonts using 60758287 bytes
+ 180 fonts using 60757247 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mroman6-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2772,10 +2748,10 @@ ente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (39 pages, 1544216 bytes).
+Output written on thesis.pdf (39 pages, 1543415 bytes).
 
-PDF statistics: 745 PDF objects out of 1000 (max. 8388607)
- 619 compressed objects within 7 object streams
+PDF statistics: 748 PDF objects out of 1000 (max. 8388607)
+ 622 compressed objects within 7 object streams
  126 named destinations out of 1000 (max. 131072)
  168 words of extra memory for PDF output out of 10000 (max. 100000000)
 
