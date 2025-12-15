@@ -409,11 +409,11 @@ INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/hyperref/hl
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/ncctools/extdash.sty
+INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT ./build/thesis.aux
 OUTPUT build/thesis.aux
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT /home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl

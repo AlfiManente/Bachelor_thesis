@@ -3,31 +3,21 @@
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{imgs/ATLAS_schematic.png}
+    \includegraphics[width=0.5\textwidth]{imgs/ATLAS_schematic.png}
     \caption{Schematic overview of the ATLAS Detector and all its subsystems \cite{Bianchi:2837191}}
     \label{atlas_detector}
 \end{figure}
 
-As a general purpose detector, the ATLAS detector covers a solid angle range of 4 $\pi$.
-% to detect all outgoing particles originating from the hard scattering interaction point. 
-The full angular coverage in the beams symmetry plane is granted through its cylindrical design, with a central barrel and two endcaps.
-%The detector posseses a mass of 7000 tons in a length of $\SI{44}{\m}$ and diameter of $\SI{25}{\m}$.
-It consists of three main subsystems, which are the \textit{Inner Detector} (ID), the \textit{Calorimeter System} and the \textit{Muon Spectrometer} (MS). 
-With the help of a $\SI{2}{\tesla}$ solenoid magnet, the trajectory of charged particles are bent using the Lorentz force and then reconstructed inside the ID.
-%To measure both electromagnetic and hadronic signatures, 
-The calorimeter system consists of an Electromagnetic Calorimeter (ECAL) and Hadronic Calorimeter (HCAL).
-Inside the ECAL the incoming electrons and photons trigger showers, which ionize parts of the calorimeter and results in energy and direction measurements.
-Similarly, the HCAL absorbs hadronic jets and triggers hadronic showers, leading to light emissions in the scintillator tubes of the HCAL, from which energy and direction of the jets are determined.   
-%Through these light emissions the energy and direction of the hadron jets can be determined. 
-As minimal ionizing particles,  muons pass all the previously mentioned subsystems and can only be detected in the MS. 
-Here the toroidal magnets in the endcap and barrel parts of the detector bend their tracks and helps in trajectory and charge measurements.
-
-%A spherical coordinate system aids in a Lorentz invariant translation of the particle trajectories, but for this the initial definition of the cartesian coordinate system is necessary.
-Cartesian coordinates  within the LHC are defined as follows:
-The $z$-axis is aligned with the beam pipe, the $x$-axis points to the center of the LHC and the $y$-axis points upwards to the beam plane.
-To introduce spherical coordinates, $\phi$ is used to describe the angle between the $y$- and $x$-axis, while $\theta$ describes the angle between the $y$- and $z$-axis. 
-Lorentz invariance can then be achieved by introducing the pseudorapidity $\eta = - \ln (\tan \frac{\theta}{2})$.
-Particle distances within the detector are then defined by the value $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$.
-Transverse momentum is calculated within the cartesian coordinates  with $\pT = \sqrt{p_x^2+p_y^2}$.
-
-
+As a general-purpose detector, ATLAS covers a solid angle range of $4\pi$.
+Its cylindrical geometry, consisting of a central barrel and two endcaps, ensures uniform angular coverage.
+The detector is composed of three main subsystems: the Inner Detector (ID), the Calorimeter System, and the Muon Spectrometer (MS).
+Charged-particle trajectories are reconstructed in the ID, which is immersed in a $\SI{2}{\tesla}$ solenoidal magnetic field.
+The curvature induced by the Lorentz force allows for momentum and charge measurements.
+The calorimeter system comprises an electromagnetic calorimeter (ECAL) and a hadronic calorimeter (HCAL).
+Electrons and photons trigger electromagnetic showers in the ECAL, enabling energy and position measurements, while hadrons are absorbed in the HCAL, where hadronic showers are used to determine jet energies and directions.
+Muons at the LHC are minimally ionising particles and are therefor not absorbed by the ID and calorimeters.
+From tracks in the ID and energy deposits in the MS, trajectory and energies are reconstructed, with additional help of toroidal magnets in the barrel and endcap.
+A right-handed Cartesian coordinate system is used, with the $z$-axis along the beam pipe, the $x$-axis pointing towards the centre of the LHC ring, and the $y$-axis pointing upwards.
+The azimuthal angle $\phi$ is defined in the transverse plane, while the polar angle $\theta$ is measured with respect to the beam axis.
+The pseudorapidity differences $\Delta\eta = -\ln(\tan(\Delta\theta/2))$ are used due to Lorentz invariance.
+Distances in the detector are defined as $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$, and the transverse momentum is given by $\pT = \sqrt{p_x^2 + p_y^2}$.

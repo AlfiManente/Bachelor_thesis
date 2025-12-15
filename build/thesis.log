@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 07:52
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.10.16)  15 DEC 2025 08:56
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2090,71 +2090,69 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 h.sty
 Package: extdash 2018/06/24 v1.3 Extended Dash Package (NCC)
 )
+(/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/makecell/makece
+ll.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen334
+\c@nlinenum=\count515
+\TeXr@lab=\toks48
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./build/thesis.aux)
 \openout1 = thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-Package scrbase Info: activating american \partname on input line 179.
-Package scrbase Info: activating american \chaptername on input line 179.
-Package scrbase Info: activating american \appendixname on input line 179.
-Package scrbase Info: activating american \figurename on input line 179.
-Package scrbase Info: activating american \tablename on input line 179.
-Package scrbase Info: activating american \contentsname on input line 179.
-Package scrbase Info: activating american \listfigurename on input line 179.
-Package scrbase Info: activating american \listtablename on input line 179.
-Package scrbase Info: activating american \bibname on input line 179.
-Package scrbase Info: activating american \indexname on input line 179.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+Package scrbase Info: activating american \partname on input line 181.
+Package scrbase Info: activating american \chaptername on input line 181.
+Package scrbase Info: activating american \appendixname on input line 181.
+Package scrbase Info: activating american \figurename on input line 181.
+Package scrbase Info: activating american \tablename on input line 181.
+Package scrbase Info: activating american \contentsname on input line 181.
+Package scrbase Info: activating american \listfigurename on input line 181.
+Package scrbase Info: activating american \listtablename on input line 181.
+Package scrbase Info: activating american \bibname on input line 181.
+Package scrbase Info: activating american \indexname on input line 181.
 
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/context/base/mkii/sup
 p-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count515
-\scratchdimen=\dimen334
+\scratchcounter=\count516
+\scratchdimen=\dimen335
 \scratchbox=\box92
-\nofMPsegments=\count516
-\nofMParguments=\count517
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count518
-\MPscratchDim=\dimen335
-\MPnumerator=\count519
-\makeMPintoPDFobject=\count520
-\everyMPtoPDFconversion=\toks49
+\nofMPsegments=\count517
+\nofMParguments=\count518
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count519
+\MPscratchDim=\dimen336
+\MPnumerator=\count520
+\makeMPintoPDFobject=\count521
+\everyMPtoPDFconversion=\toks50
 )
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/ep
 stopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/grfext/grfext.s
-ty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/latexconfig/eps
 topdf-sys.cfg
@@ -2165,13 +2163,13 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 179.
-Package microtype Info: Applying patch `item' on input line 179.
-Package microtype Info: Applying patch `toc' on input line 179.
-Package microtype Info: Applying patch `eqnum' on input line 179.
-Package microtype Info: Applying patch `footnote' on input line 179.
-Package microtype Info: Applying patch `verbatim' on input line 179.
-LaTeX Info: Redefining \microtypesetup on input line 179.
+LaTeX Info: Redefining \microtypecontext on input line 181.
+Package microtype Info: Applying patch `item' on input line 181.
+Package microtype Info: Applying patch `toc' on input line 181.
+Package microtype Info: Applying patch `eqnum' on input line 181.
+Package microtype Info: Applying patch `footnote' on input line 181.
+Package microtype Info: Applying patch `verbatim' on input line 181.
+LaTeX Info: Redefining \microtypesetup on input line 181.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2190,19 +2188,19 @@ ern Roman (RS)
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/LatinModernMath(1)/m/n --> TU/lmr/m/n on input line 
-179.
+181.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 179.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 179.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 179.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 179.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 179.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 179.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 181.
 
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/translations/tr
 anslations-basic-dictionary-english.trsl
@@ -2215,7 +2213,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 179.
+or `german'. on input line 181.
 
 (/home/alfredo-manente/.local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdfls
 cape.sty
@@ -2331,13 +2329,13 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 179.
-Package biblatex Info: Reference segment=0 on input line 179.
-Package hyperref Info: Link coloring OFF on input line 179.
+Package biblatex Info: Reference section=0 on input line 181.
+Package biblatex Info: Reference segment=0 on input line 181.
+Package hyperref Info: Link coloring OFF on input line 181.
 <logos/tu-logo.pdf, id=7, 340.27126pt x 55.20625pt>
 File: logos/tu-logo.pdf Graphic file (type pdf)
 <use logos/tu-logo.pdf>
-Package luatex.def Info: logos/tu-logo.pdf  used on input line 183.
+Package luatex.def Info: logos/tu-logo.pdf  used on input line 185.
 (luatex.def)             Requested size: 263.06886pt x 42.67912pt.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
@@ -2376,8 +2374,8 @@ Package babel Info: Importing data for english
 )
 
 [3]
-Package tocbasic Info: character protrusion at toc deactivated on input line 18
-9.
+Package tocbasic Info: character protrusion at toc deactivated on input line 19
+1.
  (./build/thesis.toc)
 \tf@toc=\write5
 
@@ -2472,23 +2470,21 @@ chapter 3.
 File: imgs/ATLAS_schematic.png Graphic file (type png)
 <use imgs/ATLAS_schematic.png>
 Package luatex.def Info: imgs/ATLAS_schematic.png  used on input line 6.
-(luatex.def)             Requested size: 236.61555pt x 145.0855pt.
-
+(luatex.def)             Requested size: 197.17763pt x 120.90459pt.
+) (./content/04_object_event.tex
 
 [9
 
-<./imgs/ATLAS_schematic.png>]) (./content/04_object_event.tex
-
-[10]
+<./imgs/ATLAS_schematic.png>]
 chapter 4.
 
-LaTeX Warning: Citation 'ts_xsec' on page 11 undefined on input line 37.
+LaTeX Warning: Citation 'ts_xsec' on page 10 undefined on input line 37.
 
 
-LaTeX Warning: Citation 't_t_xsec' on page 11 undefined on input line 40.
+LaTeX Warning: Citation 't_t_xsec' on page 10 undefined on input line 40.
 
 
-LaTeX Warning: Citation 'tw_xsec' on page 11 undefined on input line 43.
+LaTeX Warning: Citation 'tw_xsec' on page 10 undefined on input line 43.
 
 
 Overfull \hbox (3.86057pt too wide) in paragraph at lines 24--57
@@ -2499,53 +2495,53 @@ gen-er-a-tor at NLO with the \TU/lmr/m/sc/10.95 NNPDF3.0nlo
 
 
 
-[11
+[10
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[12]
+[11]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[13]) (./content/05_study.tex
+[12]) (./content/05_study.tex
+
+[13]
 
 [14]
-
-[15]
 chapter 5.
 
 
-[16
+[15
 
 ]
-<imgs/seperation.png, id=310, 598.235pt x 574.145pt>
+<imgs/seperation.png, id=306, 598.235pt x 574.145pt>
 File: imgs/seperation.png Graphic file (type png)
 <use imgs/seperation.png>
 Package luatex.def Info: imgs/seperation.png  used on input line 65.
 (luatex.def)             Requested size: 189.28883pt x 181.66261pt.
-<imgs/SR-Schannel.png, id=311, 598.235pt x 674.52pt>
+<imgs/SR-Schannel.png, id=307, 598.235pt x 674.52pt>
 File: imgs/SR-Schannel.png Graphic file (type png)
 <use imgs/SR-Schannel.png>
 Package luatex.def Info: imgs/SR-Schannel.png  used on input line 72.
 (luatex.def)             Requested size: 189.28883pt x 213.42181pt.
 
 
-[17]
+[16]
 
-[18<./imgs/seperation.png><./imgs/SR-Schannel.png>]
+[17<./imgs/seperation.png><./imgs/SR-Schannel.png>]
+
+[18]
 
 [19]
 
 [20]
-
-[21]
-<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=349, 598.235pt x 508.90125pt>
+<imgs/Ranking_SigXsecOverSM_Breakdown.png, id=345, 598.235pt x 508.90125pt>
 File: imgs/Ranking_SigXsecOverSM_Breakdown.png Graphic file (type png)
 <use imgs/Ranking_SigXsecOverSM_Breakdown.png>
 Package luatex.def Info: imgs/Ranking_SigXsecOverSM_Breakdown.png  used on inpu
@@ -2553,15 +2549,15 @@ t line 182.
 (luatex.def)             Requested size: 276.04749pt x 234.82735pt.
 
 
-[22<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
+[21<./imgs/Ranking_SigXsecOverSM_Breakdown.png>]
 
-[23]
-<imgs/syst/ps_sig.png, id=364, 798.985pt x 574.145pt>
+[22]
+<imgs/syst/ps_sig.png, id=360, 798.985pt x 574.145pt>
 File: imgs/syst/ps_sig.png Graphic file (type png)
 <use imgs/syst/ps_sig.png>
 Package luatex.def Info: imgs/syst/ps_sig.png  used on input line 218.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/jer_noise.png, id=365, 798.985pt x 574.145pt>
+<imgs/syst/jer_noise.png, id=361, 798.985pt x 574.145pt>
 File: imgs/syst/jer_noise.png Graphic file (type png)
 <use imgs/syst/jer_noise.png>
 Package luatex.def Info: imgs/syst/jer_noise.png  used on input line 226.
@@ -2571,72 +2567,72 @@ Underfull \hbox (badness 2393) in paragraph at lines 227--227
 [][]\TU/lmr/bx/n/9 (b)[][] []|\TU/lmr/m/n/9 The jet en-ergy res-o-lu-tion noise pre-
  []
 
-<imgs/syst/jer_effective.png, id=366, 798.985pt x 574.145pt>
+<imgs/syst/jer_effective.png, id=362, 798.985pt x 574.145pt>
 File: imgs/syst/jer_effective.png Graphic file (type png)
 <use imgs/syst/jer_effective.png>
 Package luatex.def Info: imgs/syst/jer_effective.png  used on input line 233.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/mur_ttbar.png, id=367, 798.985pt x 574.145pt>
+<imgs/syst/mur_ttbar.png, id=363, 798.985pt x 574.145pt>
 File: imgs/syst/mur_ttbar.png Graphic file (type png)
 <use imgs/syst/mur_ttbar.png>
 Package luatex.def Info: imgs/syst/mur_ttbar.png  used on input line 241.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/me_match_sig.png, id=368, 798.985pt x 574.145pt>
+<imgs/syst/me_match_sig.png, id=364, 798.985pt x 574.145pt>
 File: imgs/syst/me_match_sig.png Graphic file (type png)
 <use imgs/syst/me_match_sig.png>
 Package luatex.def Info: imgs/syst/me_match_sig.png  used on input line 248.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
-<imgs/syst/pileup.png, id=369, 798.985pt x 574.145pt>
+<imgs/syst/pileup.png, id=365, 798.985pt x 574.145pt>
 File: imgs/syst/pileup.png Graphic file (type png)
 <use imgs/syst/pileup.png>
 Package luatex.def Info: imgs/syst/pileup.png  used on input line 256.
 (luatex.def)             Requested size: 179.8238pt x 129.22086pt.
 
-Overfull \hbox (75.19864pt too wide) in paragraph at lines 289--314
+Overfull \hbox (3.1482pt too wide) in paragraph at lines 289--317
  [][] 
  []
 
 ) (./content/06_outlook.tex
 
-[24]
+[23]
 
-[25<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
+[24<./imgs/syst/ps_sig.png><./imgs/syst/jer_noise.png><./imgs/syst/jer_effective
 .png><./imgs/syst/mur_ttbar.png><./imgs/syst/me_match_sig.png><./imgs/syst/pileu
 p.png>]
 
-[26]
+[25]
 chapter 6.
 ) (./content/a_anhang.tex
 
-[27
+[26
 
 ]
 chapter A.
 )
 
-[28
+[27
 
 ]
 chapter without number
 
 
-[29
+[28
 
 
 ]
-Overfull \hbox (55.6741pt too wide) in paragraph at lines 206--206
+Overfull \hbox (55.6741pt too wide) in paragraph at lines 208--208
 \TU/lmr/m/n/10.95 avail-able at https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS
 /CONFNOTES/ATLAS-
  []
 
 
-Overfull \hbox (132.40996pt too wide) in paragraph at lines 206--206
+Overfull \hbox (132.40996pt too wide) in paragraph at lines 208--208
 \TU/lmr/m/n/10.95 channel in pro-ton–pro-ton col-li-sions at <mml:math xmlns:m
 ml=”http://www.w3.org/1998/Math/MathML”
  []
 
 
-Overfull \hbox (677.02669pt too wide) in paragraph at lines 206--206
+Overfull \hbox (677.02669pt too wide) in paragraph at lines 208--208
 \TU/lmr/m/n/10.95 al-timg=”si1.gif” over-flow=”scroll”><mml:msqrt><mml:m
 i>s</mml:mi></mml:msqrt><mml:mo>=</mml:mo><mml:mn>8</mml:mn><mml:mtext> </mml:m
 text><mml:mtext>TeV</mml:mtext></mml:math>
@@ -2644,64 +2640,67 @@ text><mml:mtext>TeV</mml:mtext></mml:math>
 
 
 
+[29]
+
 [30]
 
 [31]
-
-[32]
-Overfull \hbox (0.7675pt too wide) in paragraph at lines 206--206
+Overfull \hbox (0.7675pt too wide) in paragraph at lines 208--208
 \TU/lmr/m/n/10.95 https://at-las.web.cern.ch/At-las/GROUPS/PHYSICS/CONFNOTES/ATL
 AS-
  []
 
 
 
-[33]
+[32]
 
 Package biblatex Warning: No driver for 'masterthesis'.
-(biblatex)                Using fallback driver on input line 205.
+(biblatex)                Using fallback driver on input line 207.
 
 
 
-[34]
+[33]
+
+[34
+
+
+]
 <content/Eidesstattliche_Versicherung.pdf, id=574, 597.55244pt x 845.0772pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf  used on inpu
-t line 209.
+t line 211.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
 <content/Eidesstattliche_Versicherung.pdf, id=576, page=1, 597.55244pt x 845.07
 72pt>
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf , page1 used 
-on input line 209.
+on input line 211.
 (luatex.def)             Requested size: 597.55098pt x 845.07513pt.
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf , page1 used 
-on input line 209.
+on input line 211.
 (luatex.def)             Requested size: 597.57832pt x 845.11382pt.
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf , page1 used 
-on input line 209.
+on input line 211.
 (luatex.def)             Requested size: 597.57832pt x 845.11382pt.
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf , page1 used 
-on input line 209.
+on input line 211.
 (luatex.def)             Requested size: 597.57832pt x 845.11382pt.
 
 
 File: content/Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use content/Eidesstattliche_Versicherung.pdf, page 1>
 Package luatex.def Info: content/Eidesstattliche_Versicherung.pdf , page1 used 
-on input line 209.
+on input line 211.
 (luatex.def)             Requested size: 597.57832pt x 845.11382pt.
 [35
-
-
 
 <./content/Eidesstattliche_Versicherung.pdf>] (./build/thesis.aux)
  ***********
@@ -2709,16 +2708,16 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: CC8D51D267B520612FCA000A5E7EEE17;29279.
+(rerunfilecheck)             Checksum: 9B71E3458A19D3EF836C3DF6F85CF49D;29279.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 6C52DD768A3A79EE745EE01C1BF42952;1909.
+(rerunfilecheck)             Checksum: 15CE68C706AE1B2225FC9AE97192051D;1909.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 56081 strings out of 476291
+ 56204 strings out of 476291
  125011,2848258 words of node,token memory allocated
  1383 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 1 sub_mlist
@@ -2726,8 +2725,8 @@ Here is how much of LuaTeX's memory you used:
 n nodes
    avail lists: 1:13,2:6522,3:1750,4:180,5:502,6:109,7:10268,8:72,9:1043,10:26,1
 1:803,12:1
- 76954 multiletter control sequences out of 65536+600000
- 181 fonts using 60889455 bytes
+ 77077 multiletter control sequences out of 65536+600000
+ 181 fonts using 60890495 bytes
  122i,20n,114p,11209b,2368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm/l
 mroman6-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/
@@ -2752,7 +2751,7 @@ f></home/alfredo-manente/.local/texlive/2025/texmf-dist/fonts/opentype/public/lm
 /lmroman12-regular.otf></home/alfredo-manente/.local/texlive/2025/texmf-dist/fon
 ts/opentype/public/lm/lmsans10-bold.otf></home/alfredo-manente/.local/texlive/20
 25/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (39 pages, 1440061 bytes).
+Output written on thesis.pdf (39 pages, 1438176 bytes).
 
 PDF statistics: 773 PDF objects out of 1000 (max. 8388607)
  642 compressed objects within 7 object streams
